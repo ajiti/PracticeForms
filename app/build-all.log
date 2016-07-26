@@ -1,0 +1,606 @@
+Repository Path: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\ 
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building KonySuperPOM 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ KonySuperPOM ---
+[INFO] Deleting E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonySuperPOM\target
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (jar) @ KonySuperPOM ---
+[WARNING] JAR will be empty - no content was marked for inclusion!
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonySuperPOM\target\KonySuperPOM-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (test-jar) @ KonySuperPOM ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (sources-jar) @ KonySuperPOM >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (sources-jar) @ KonySuperPOM <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (sources-jar) @ KonySuperPOM ---
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonySuperPOM >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonySuperPOM <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonySuperPOM ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ KonySuperPOM ---
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonySuperPOM\pom.xml to C:\Users\KH1748\.m2\repository\com\kony\KonySuperPOM\0.0.1-SNAPSHOT\KonySuperPOM-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.536s
+[INFO] Finished at: Fri Mar 18 18:41:47 IST 2016
+[INFO] Final Memory: 7M/120M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building hibernate-memcached 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ hibernate-memcached ---
+[INFO] Deleting E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\hibernate-memcached\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ hibernate-memcached ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\hibernate-memcached\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ hibernate-memcached ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 49 source files to E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\hibernate-memcached\target\classes
+[WARNING] /E:/MilestonQa/KonyFramework/hibernate-memcached/src/main/java/com/googlecode/hibernate/memcached/strategy/AbstractReadWriteMemcachedAccessStrategy.java: Some input files use unchecked or unsafe operations.
+[WARNING] /E:/MilestonQa/KonyFramework/hibernate-memcached/src/main/java/com/googlecode/hibernate/memcached/strategy/AbstractReadWriteMemcachedAccessStrategy.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ hibernate-memcached ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ hibernate-memcached ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ hibernate-memcached ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ hibernate-memcached ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\hibernate-memcached\target\hibernate-memcached-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (jar) @ hibernate-memcached ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (test-jar) @ hibernate-memcached ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (sources-jar) @ hibernate-memcached >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (sources-jar) @ hibernate-memcached <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (sources-jar) @ hibernate-memcached ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\hibernate-memcached\target\hibernate-memcached-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:test-jar (testSources-jar) @ hibernate-memcached >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:test-jar (testSources-jar) @ hibernate-memcached <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:test-jar (testSources-jar) @ hibernate-memcached ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\hibernate-memcached\target\hibernate-memcached-0.0.1-SNAPSHOT-test-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ hibernate-memcached ---
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\hibernate-memcached\target\hibernate-memcached-0.0.1-SNAPSHOT.jar to C:\Users\KH1748\.m2\repository\com\kony\hibernate-memcached\0.0.1-SNAPSHOT\hibernate-memcached-0.0.1-SNAPSHOT.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\hibernate-memcached\pom.xml to C:\Users\KH1748\.m2\repository\com\kony\hibernate-memcached\0.0.1-SNAPSHOT\hibernate-memcached-0.0.1-SNAPSHOT.pom
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\hibernate-memcached\target\hibernate-memcached-0.0.1-SNAPSHOT-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\hibernate-memcached\0.0.1-SNAPSHOT\hibernate-memcached-0.0.1-SNAPSHOT-sources.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\hibernate-memcached\target\hibernate-memcached-0.0.1-SNAPSHOT-test-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\hibernate-memcached\0.0.1-SNAPSHOT\hibernate-memcached-0.0.1-SNAPSHOT-test-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 9.532s
+[INFO] Finished at: Fri Mar 18 18:41:58 IST 2016
+[INFO] Final Memory: 16M/151M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building KonyCommons 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ KonyCommons ---
+[INFO] Deleting E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyCommons\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ KonyCommons ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ KonyCommons ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 40 source files to E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyCommons\target\classes
+[WARNING] /E:/MilestonQa/KonyFramework/KonyCommons/src/main/java/com/kony/commons/json/JSONUtils.java: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyCommons\src\main\java\com\kony\commons\json\JSONUtils.java uses unchecked or unsafe operations.
+[WARNING] /E:/MilestonQa/KonyFramework/KonyCommons/src/main/java/com/kony/commons/json/JSONUtils.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ KonyCommons ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ KonyCommons ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ KonyCommons ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ KonyCommons ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyCommons\target\KonyCommons-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (jar) @ KonyCommons ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (test-jar) @ KonyCommons ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (sources-jar) @ KonyCommons >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (sources-jar) @ KonyCommons <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (sources-jar) @ KonyCommons ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyCommons\target\KonyCommons-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyCommons >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyCommons <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyCommons ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyCommons\target\KonyCommons-0.0.1-SNAPSHOT-test-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ KonyCommons ---
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyCommons\target\KonyCommons-0.0.1-SNAPSHOT.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyCommons\0.0.1-SNAPSHOT\KonyCommons-0.0.1-SNAPSHOT.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyCommons\pom.xml to C:\Users\KH1748\.m2\repository\com\kony\KonyCommons\0.0.1-SNAPSHOT\KonyCommons-0.0.1-SNAPSHOT.pom
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyCommons\target\KonyCommons-0.0.1-SNAPSHOT-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyCommons\0.0.1-SNAPSHOT\KonyCommons-0.0.1-SNAPSHOT-sources.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyCommons\target\KonyCommons-0.0.1-SNAPSHOT-test-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyCommons\0.0.1-SNAPSHOT\KonyCommons-0.0.1-SNAPSHOT-test-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.915s
+[INFO] Finished at: Fri Mar 18 18:42:08 IST 2016
+[INFO] Final Memory: 20M/216M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building KonyPersistence 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ KonyPersistence ---
+[INFO] Deleting E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyPersistence\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ KonyPersistence ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ KonyPersistence ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyPersistence\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ KonyPersistence ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ KonyPersistence ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ KonyPersistence ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ KonyPersistence ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyPersistence\target\KonyPersistence-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (jar) @ KonyPersistence ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (test-jar) @ KonyPersistence ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (sources-jar) @ KonyPersistence >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (sources-jar) @ KonyPersistence <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (sources-jar) @ KonyPersistence ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyPersistence\target\KonyPersistence-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyPersistence >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyPersistence <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyPersistence ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyPersistence\target\KonyPersistence-0.0.1-SNAPSHOT-test-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ KonyPersistence ---
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyPersistence\target\KonyPersistence-0.0.1-SNAPSHOT.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyPersistence\0.0.1-SNAPSHOT\KonyPersistence-0.0.1-SNAPSHOT.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyPersistence\pom.xml to C:\Users\KH1748\.m2\repository\com\kony\KonyPersistence\0.0.1-SNAPSHOT\KonyPersistence-0.0.1-SNAPSHOT.pom
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyPersistence\target\KonyPersistence-0.0.1-SNAPSHOT-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyPersistence\0.0.1-SNAPSHOT\KonyPersistence-0.0.1-SNAPSHOT-sources.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyPersistence\target\KonyPersistence-0.0.1-SNAPSHOT-test-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyPersistence\0.0.1-SNAPSHOT\KonyPersistence-0.0.1-SNAPSHOT-test-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.570s
+[INFO] Finished at: Fri Mar 18 18:42:14 IST 2016
+[INFO] Final Memory: 22M/219M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JerseyResourceTest 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ JerseyResourceTest ---
+[INFO] Deleting E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\JerseyResourceTest\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ JerseyResourceTest ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ JerseyResourceTest ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\JerseyResourceTest\target\classes
+[WARNING] /E:/MilestonQa/KonyFramework/JerseyResourceTest/src/main/java/com/kony/rest/TestContainer.java: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\JerseyResourceTest\src\main\java\com\kony\rest\TestContainer.java uses or overrides a deprecated API.
+[WARNING] /E:/MilestonQa/KonyFramework/JerseyResourceTest/src/main/java/com/kony/rest/TestContainer.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ JerseyResourceTest ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ JerseyResourceTest ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ JerseyResourceTest ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ JerseyResourceTest ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\JerseyResourceTest\target\JerseyResourceTest-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (jar) @ JerseyResourceTest ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (test-jar) @ JerseyResourceTest ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (sources-jar) @ JerseyResourceTest >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (sources-jar) @ JerseyResourceTest <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (sources-jar) @ JerseyResourceTest ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\JerseyResourceTest\target\JerseyResourceTest-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:test-jar (testSources-jar) @ JerseyResourceTest >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:test-jar (testSources-jar) @ JerseyResourceTest <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:test-jar (testSources-jar) @ JerseyResourceTest ---
+[INFO] No sources in project. Archive not created.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ JerseyResourceTest ---
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\JerseyResourceTest\target\JerseyResourceTest-0.0.1-SNAPSHOT.jar to C:\Users\KH1748\.m2\repository\com\kony\JerseyResourceTest\0.0.1-SNAPSHOT\JerseyResourceTest-0.0.1-SNAPSHOT.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\JerseyResourceTest\pom.xml to C:\Users\KH1748\.m2\repository\com\kony\JerseyResourceTest\0.0.1-SNAPSHOT\JerseyResourceTest-0.0.1-SNAPSHOT.pom
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\JerseyResourceTest\target\JerseyResourceTest-0.0.1-SNAPSHOT-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\JerseyResourceTest\0.0.1-SNAPSHOT\JerseyResourceTest-0.0.1-SNAPSHOT-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.378s
+[INFO] Finished at: Fri Mar 18 18:42:20 IST 2016
+[INFO] Final Memory: 20M/219M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building KonyRestfulWebCore 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ KonyRestfulWebCore ---
+[INFO] Deleting E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyRestfulWebCore\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ KonyRestfulWebCore ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyRestfulWebCore\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ KonyRestfulWebCore ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 35 source files to E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyRestfulWebCore\target\classes
+[WARNING] /E:/MilestonQa/KonyFramework/KonyRestfulWebCore/src/main/java/com/kony/rest/provider/ResultMetaInjectableProvider.java: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyRestfulWebCore\src\main\java\com\kony\rest\provider\ResultMetaInjectableProvider.java uses unchecked or unsafe operations.
+[WARNING] /E:/MilestonQa/KonyFramework/KonyRestfulWebCore/src/main/java/com/kony/rest/provider/ResultMetaInjectableProvider.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ KonyRestfulWebCore ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ KonyRestfulWebCore ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ KonyRestfulWebCore ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ KonyRestfulWebCore ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyRestfulWebCore\target\kony-restfulweb-core-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (jar) @ KonyRestfulWebCore ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (test-jar) @ KonyRestfulWebCore ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (sources-jar) @ KonyRestfulWebCore >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (sources-jar) @ KonyRestfulWebCore <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (sources-jar) @ KonyRestfulWebCore ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyRestfulWebCore\target\kony-restfulweb-core-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyRestfulWebCore >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyRestfulWebCore <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyRestfulWebCore ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyRestfulWebCore\target\kony-restfulweb-core-0.0.1-SNAPSHOT-test-sources.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ KonyRestfulWebCore ---
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyRestfulWebCore\target\kony-restfulweb-core-0.0.1-SNAPSHOT.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyRestfulWebCore\0.0.1-SNAPSHOT\KonyRestfulWebCore-0.0.1-SNAPSHOT.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyRestfulWebCore\pom.xml to C:\Users\KH1748\.m2\repository\com\kony\KonyRestfulWebCore\0.0.1-SNAPSHOT\KonyRestfulWebCore-0.0.1-SNAPSHOT.pom
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyRestfulWebCore\target\kony-restfulweb-core-0.0.1-SNAPSHOT-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyRestfulWebCore\0.0.1-SNAPSHOT\KonyRestfulWebCore-0.0.1-SNAPSHOT-sources.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyRestfulWebCore\target\kony-restfulweb-core-0.0.1-SNAPSHOT-test-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyRestfulWebCore\0.0.1-SNAPSHOT\KonyRestfulWebCore-0.0.1-SNAPSHOT-test-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.580s
+[INFO] Finished at: Fri Mar 18 18:42:27 IST 2016
+[INFO] Final Memory: 21M/219M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building kony-security 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ KonySecurity ---
+[INFO] Deleting E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonySecurity\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ KonySecurity ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ KonySecurity ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 15 source files to E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonySecurity\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ KonySecurity ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ KonySecurity ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ KonySecurity ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ KonySecurity ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonySecurity\target\kony-security-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (jar) @ KonySecurity ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (test-jar) @ KonySecurity ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (sources-jar) @ KonySecurity >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (sources-jar) @ KonySecurity <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (sources-jar) @ KonySecurity ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonySecurity\target\kony-security-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonySecurity >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonySecurity <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonySecurity ---
+[INFO] No sources in project. Archive not created.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ KonySecurity ---
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonySecurity\target\kony-security-0.0.1-SNAPSHOT.jar to C:\Users\KH1748\.m2\repository\com\kony\KonySecurity\0.0.1-SNAPSHOT\KonySecurity-0.0.1-SNAPSHOT.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonySecurity\pom.xml to C:\Users\KH1748\.m2\repository\com\kony\KonySecurity\0.0.1-SNAPSHOT\KonySecurity-0.0.1-SNAPSHOT.pom
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonySecurity\target\kony-security-0.0.1-SNAPSHOT-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\KonySecurity\0.0.1-SNAPSHOT\KonySecurity-0.0.1-SNAPSHOT-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.602s
+[INFO] Finished at: Fri Mar 18 18:42:32 IST 2016
+[INFO] Final Memory: 19M/222M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Kony Scheduler 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ KonyScheduler ---
+[INFO] Deleting E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyScheduler\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ KonyScheduler ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ KonyScheduler ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 10 source files to E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyScheduler\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ KonyScheduler ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ KonyScheduler ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ KonyScheduler ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ KonyScheduler ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyScheduler\target\KonyScheduler-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (jar) @ KonyScheduler ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (test-jar) @ KonyScheduler ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (sources-jar) @ KonyScheduler >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (sources-jar) @ KonyScheduler <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (sources-jar) @ KonyScheduler ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyScheduler\target\KonyScheduler-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyScheduler >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyScheduler <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyScheduler ---
+[INFO] No sources in project. Archive not created.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ KonyScheduler ---
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyScheduler\target\KonyScheduler-0.0.1-SNAPSHOT.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyScheduler\0.0.1-SNAPSHOT\KonyScheduler-0.0.1-SNAPSHOT.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyScheduler\pom.xml to C:\Users\KH1748\.m2\repository\com\kony\KonyScheduler\0.0.1-SNAPSHOT\KonyScheduler-0.0.1-SNAPSHOT.pom
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyScheduler\target\KonyScheduler-0.0.1-SNAPSHOT-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyScheduler\0.0.1-SNAPSHOT\KonyScheduler-0.0.1-SNAPSHOT-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 4.091s
+[INFO] Finished at: Fri Mar 18 18:42:38 IST 2016
+[INFO] Final Memory: 21M/220M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building KonyNotification 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ KonyNotification ---
+[INFO] Deleting E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyNotification\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ KonyNotification ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 6 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ KonyNotification ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 36 source files to E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyNotification\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ KonyNotification ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ KonyNotification ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ KonyNotification ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ KonyNotification ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyNotification\target\KonyNotification-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (jar) @ KonyNotification ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (test-jar) @ KonyNotification ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (sources-jar) @ KonyNotification >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (sources-jar) @ KonyNotification <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (sources-jar) @ KonyNotification ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyNotification\target\KonyNotification-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyNotification >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyNotification <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyNotification ---
+[INFO] No sources in project. Archive not created.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ KonyNotification ---
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyNotification\target\KonyNotification-0.0.1-SNAPSHOT.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyNotification\0.0.1-SNAPSHOT\KonyNotification-0.0.1-SNAPSHOT.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyNotification\pom.xml to C:\Users\KH1748\.m2\repository\com\kony\KonyNotification\0.0.1-SNAPSHOT\KonyNotification-0.0.1-SNAPSHOT.pom
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyNotification\target\KonyNotification-0.0.1-SNAPSHOT-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyNotification\0.0.1-SNAPSHOT\KonyNotification-0.0.1-SNAPSHOT-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 7.625s
+[INFO] Finished at: Fri Mar 18 18:42:47 IST 2016
+[INFO] Final Memory: 26M/218M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building KonyI18N 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ KonyI18N ---
+[INFO] Deleting E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyI18N\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ KonyI18N ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ KonyI18N ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyI18N\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ KonyI18N ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ KonyI18N ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ KonyI18N ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ KonyI18N ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyI18N\target\KonyI18N-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (jar) @ KonyI18N ---
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:test-jar (test-jar) @ KonyI18N ---
+[INFO] Skipping packaging of the test-jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:jar (sources-jar) @ KonyI18N >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:jar (sources-jar) @ KonyI18N <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:jar (sources-jar) @ KonyI18N ---
+[INFO] Building jar: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyI18N\target\KonyI18N-0.0.1-SNAPSHOT-sources.jar
+[INFO] 
+[INFO] >>> maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyI18N >>>
+[INFO] 
+[INFO] <<< maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyI18N <<<
+[INFO] 
+[INFO] --- maven-source-plugin:2.2.1:test-jar (testSources-jar) @ KonyI18N ---
+[INFO] No sources in project. Archive not created.
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ KonyI18N ---
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyI18N\target\KonyI18N-0.0.1-SNAPSHOT.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyI18N\0.0.1-SNAPSHOT\KonyI18N-0.0.1-SNAPSHOT.jar
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyI18N\pom.xml to C:\Users\KH1748\.m2\repository\com\kony\KonyI18N\0.0.1-SNAPSHOT\KonyI18N-0.0.1-SNAPSHOT.pom
+[INFO] Installing E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyI18N\target\KonyI18N-0.0.1-SNAPSHOT-sources.jar to C:\Users\KH1748\.m2\repository\com\kony\KonyI18N\0.0.1-SNAPSHOT\KonyI18N-0.0.1-SNAPSHOT-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2.791s
+[INFO] Finished at: Fri Mar 18 18:42:52 IST 2016
+[INFO] Final Memory: 16M/220M
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Kony User Management 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ KonyUserMgmt ---
+[INFO] Deleting E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyUserMgmt\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ KonyUserMgmt ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.854s
+[INFO] Finished at: Fri Mar 18 18:42:57 IST 2016
+[INFO] Final Memory: 10M/151M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources) on project KonyUserMgmt: Cannot create resource output directory: E:\MilestonQa\mamng\EmmBundle\docs\dev\..\..\..\..\KonyFramework\KonyUserMgmt\target\classes -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

@@ -1,0 +1,13 @@
+<menu xmlns:androidclass="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/one"
+        android:title="One"
+        androidclass:title="world" />
+    <item
+        android:id="@+id/two"
+        android:title="Two"
+        androidclass:title="Hello" />
+
+</menu>

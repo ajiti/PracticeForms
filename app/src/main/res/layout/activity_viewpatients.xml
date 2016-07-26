@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewpatients">
+
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <include layout="@layout/toolbar"/>
+
+        <include layout="@layout/search_view"/>
+
+        <com.miguelcatalan.materialsearchview.MaterialSearchView
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Search"
+            android:textColor="@color/black"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/search" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patients_list"
+            android:footerDividersEnabled="true"
+            android:dividerHeight="1px"
+            android:divider="#000000"
+            android:scrollbarStyle="insideInset"
+            android:headerDividersEnabled="true"
+            android:layout_below="@id/searchBox" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noPatientRecords"
+            android:textSize="22dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#50000000"
+            android:text="No Patients Found"
+            android:layout_below="@id/searchBox"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registration" >
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:fillViewport="true" android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First name"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/firstName" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last name"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/lastName"
+                android:layout_below="@id/firstName" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile No"
+                android:textSize="20sp"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:id="@+id/mobileNo"
+                android:inputType="phone"
+                android:layout_below="@id/lastName" />
+            <EditText
+                android:id="@+id/email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:inputType="textEmailAddress"
+                android:layout_below="@id/mobileNo" />
+            <EditText android:id="@+id/gender"
+                android:layout_marginTop="20dp"
+                android:text="Gender"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_below="@id/email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText android:id="@+id/reg_dob"
+                android:layout_width="match_parent"
+                android:hint="Date of Birth"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/icon_date"
+                android:textSize="20sp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_below="@id/gender"
+                android:layout_marginTop="20dp" />
+
+            <EditText android:id="@+id/rwp"
+                android:layout_marginTop="20dp"
+                android:text="Relation With Patient"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reg_dob" />
+
+            <EditText android:id="@+id/country"
+                android:layout_marginTop="20dp"
+                android:text="Select Country"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rwp" />
+
+            <EditText android:id="@+id/states"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:text="Select State"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/country" />
+
+            <EditText android:id="@+id/proofType"
+                android:layout_marginTop="20dp"
+                android:text="Proof Type"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/states" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Proof No"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:id="@+id/proofNo"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_below="@id/proofType" />
+
+            <EditText
+                android:id="@+id/postal_address"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:hint= "Postal Address"
+                android:layout_below="@id/proofNo"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:inputType="textPostalAddress|textCapWords|textNoSuggestions" />
+
+            <CheckBox
+                android:id="@+id/regagree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/postal_address"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="I Agree" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/regagree"
+                android:text="Register"
+                android:shadowColor="@color/shadow_grey"
+                android:textColor="@color/white"
+                android:background="@color/button_background"
+                android:id="@+id/register"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".loginactivity" android:layout_centerVertical="true">
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:contentDescription="hello world"
+            android:paddingRight="10dp"
+            android:paddingBottom="0dp"  android:src="@drawable/splashlogo"/>
+
+        <AutoCompleteTextView
+            android:text=""
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:inputType="text"
+            android:background="#FFFFFF"
+            android:hint= "User name"
+            android:fontFamily="sans-serif-light"
+            android:textColorHighlight="#ff7eff15"
+            android:textColor="#7a7a7a"
+            android:gravity="left"
+            android:textColorHint="#7a7a7a"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:drawableRight="@drawable/clear"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@+id/imageView"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:text=""
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:gravity="left"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:imeActionLabel="Next"
+            android:background="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/editText2"
+            android:drawableLeft="@drawable/pass"
+            android:textColor="#7a7a7a"
+            android:layout_below="@+id/editText"
+            android:textColorHint="#7a7a7a"
+            android:drawableRight="@drawable/clear"
+            android:drawablePadding="5dp"
+            android:textAlignment="center"
+            android:hint="Password" />
+
+        <CheckBox
+            android:id="@+id/rememberme"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Remember Me"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_below="@+id/editText2"
+            android:ems="10"
+            android:layout_marginTop="10dp"
+            android:buttonTint="@color/black"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:fontFamily="sans-serif-light"
+            android:layout_below="@id/rememberme"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:background="#68c31f"
+            android:textStyle="bold"
+            android:paddingRight="80dp"
+            android:paddingLeft="80dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

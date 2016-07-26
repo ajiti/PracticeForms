@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/nav_case_record"
+            android:icon="@drawable/ic_case_records"
+            android:title="Case Records"/>
+    </group>
+
+    <item
+        android:id="@+id/sub_menu"
+        android:title="Messages">
+
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/inbox"
+                    android:icon="@drawable/ic_inbox"
+                    android:title="Inbox"/>
+
+                <item
+                    android:id="@+id/sent"
+                    android:icon="@drawable/ic_send"
+                    android:title="Sent"/>
+            </group>
+        </menu>
+    </item>
+</menu>

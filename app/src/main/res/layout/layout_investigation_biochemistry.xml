@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Investigations-Required" android:gravity="center"
+            android:textStyle="bold" android:textColor="#000"
+            android:background="#FFF" android:textSize="17dp"
+            android:visibility="gone" android:id="@+id/head1"/>
+        <ExpandableListView
+            android:id="@+id/in_bioch"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"/>
+        <android.support.v7.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textStyle="bold"
+            android:shadowColor="#EBEBEB"
+            android:textColor="#FFFFFF"
+            android:background="#3cb5c0"
+            android:id="@+id/inbsave"
+            android:layout_margin="10dp"
+            style="@style/Widget.AppCompat.Button.Colored"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

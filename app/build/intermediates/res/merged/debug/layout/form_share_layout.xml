@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/patientNamelbl"
+                android:text="Patient Name : "
+                android:textColor="#3cb5c0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp" />
+            <TextView
+                android:id="@+id/patientName"
+                android:layout_toRightOf="@id/patientNamelbl"
+                android:text="patientname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/hridlbl"
+                android:textColor="#3cb5c0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HRID : "
+                android:textSize="17dp"/>
+            <TextView
+                android:id="@+id/hrid"
+                android:layout_toRightOf="@id/hridlbl"
+                android:text="hrid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/crnolbl"
+                android:text="Case Record : "
+                android:textSize="17dp"
+                android:textColor="#3cb5c0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/crno"
+                android:layout_toRightOf="@id/crnolbl"
+                android:text="CR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp" />
+        </RelativeLayout>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textSize="15dp"
+            android:id="@+id/ghidcb"
+            android:clickable="false"
+            android:buttonTint="#000"
+            android:shadowColor="#FFF"/>
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15dp"
+            android:id="@+id/proofcb"
+            android:clickable="false"
+            android:buttonTint="#000"
+            android:shadowColor="#FFF"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+            <MultiAutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type here to get suggestions"
+                android:id="@+id/cclist"
+                android:minLines="1"
+                android:textColor="#000"/>
+            <ImageView
+                android:id="@+id/addCidBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/add_button1"
+                android:focusable="false" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cclistlbl"
+            android:layout_marginTop="30dp"
+            android:text="CC List :"
+            android:textSize="18dp"
+            android:textColor="#3cb5c0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cclistdata"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:minLines="1"
+            android:id="@+id/desc"
+            android:layout_marginTop="10dp"
+            android:hint="Description"
+            android:layout_below="@+id/cclistdata"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sendShareBtn"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:background="#3cb5c0"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+</LinearLayout>

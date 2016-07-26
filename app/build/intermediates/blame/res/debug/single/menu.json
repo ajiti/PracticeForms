@@ -1,0 +1,106 @@
+[
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_caserecord_forms.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_caserecord_forms.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_health_history.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_health_history.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_referred_administrators.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_referred_administrators.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_school_healthcare_screening.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_school_healthcare_screening.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_discharge_sheet.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_discharge_sheet.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_registration.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_registration.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_addforms.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_addforms.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_biochemistry_form.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_biochemistry_form.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_referred_branches.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_referred_branches.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_home.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_loginactivity.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_loginactivity.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\poupup_menu.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\poupup_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_pathology_form.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_pathology_form.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_drawer_view.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_drawer_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_general_health_screening.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_general_health_screening.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_viewpatients.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_viewpatients.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_microbiology_form.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_microbiology_form.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_dental_assessment.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_dental_assessment.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_patient_detail.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_patient_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_formshare.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_formshare.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_referred_hrids.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_referred_hrids.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_general_examination.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_general_examination.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_referred_time.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_referred_time.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_shared_details.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_shared_details.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_referred_records.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_referred_records.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_referred_case_records.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_referred_case_records.xml"
+    }
+]

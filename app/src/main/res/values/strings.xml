@@ -1,0 +1,680 @@
+<resources>
+    <string name="app_name">Virtucure</string>
+
+    <declare-styleable name="custom_font">
+        <attr name="android:fontFamily"/>
+        <attr name="android:textStyle"/>
+    </declare-styleable>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">Home</string>
+    <string name="action_logout">Logout</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_viewpatients">View Patients</string>
+    <string name="title_activity_addforms">Add Forms</string>
+    <string name="title_activity_create_new_case_record">create_new_case_record</string>
+    <string name="caseRecordsTitle"><u>Case Records</u></string>
+    <string name="title_activity_caserecord_forms">Existing Case Records</string>
+    <string name="title_activity_patient_detail">Patient Details</string>
+    <string name="title_activity_form_share">Form Share</string>
+    <string name="title_activity_referred_patient_admins">Referred Patient - Administrations</string>
+    <string name="title_activity_referred_patient_branches">Referred Patient - Branches</string>
+    <string name="title_activity_referred_patient_hrids">Referred Patient - Patients</string>
+    <string name="title_activity_referred_patient_case_records">Referred Patient - Case Records</string>
+    <string name="title_activity_referred_patient_shared_time">Referred Patient - Shared Date</string>
+    <string name="title_activity_referred_patient_forms">Referred Patient - Records</string>
+    <string name="info_referred_empty_records">No Referred Records Found</string>
+    <string name="info_share_empty_records">No Shared Records Found</string>
+    <string name="title_activity_shared_record">Shared Records</string>
+    <string name="title_activity_health_history">Health History</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="shared_name_string">%1$s ( %2$s )</string>
+
+    <string-array name="query_suggestions">
+        <item>Android</item>
+        <item>iOS</item>
+        <item>SCALA</item>
+        <item>Ruby</item>
+        <item>JavaScript</item>
+    </string-array>
+
+    <string-array name="array_formtype">
+        <item>Select Form</item>
+        <item>History Taking</item>
+        <item>General Health Screening</item>
+        <item>Dental Assessment</item>
+    </string-array>
+    <string-array name="array_gender">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>Decline To Mention</item>
+    </string-array>
+    <string-array name="relation">
+        <item>Relation with Patient</item>
+        <item>Physician</item>
+        <item>Surgeon</item>
+        <item>Dentist</item>
+        <item>Gynaecologist</item>
+        <item>Paediatrician</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="proofType">
+        <item>Proof Type</item>
+        <item>Adhar Card</item>
+        <item>Pan Card</item>
+        <item>Driving License</item>
+        <item>Voter Identity Card</item>
+        <item>Ration Card</item>
+        <item>Student Identity Card</item>
+        <item>Passport</item>
+    </string-array>
+    <string-array name="countries">
+        <item>Select Country</item>
+        <item>India</item>
+        <item>USA</item>
+    </string-array>
+    <string-array name="array_states_none">
+        <item>Select State</item>
+    </string-array>
+    <string-array name="array_States_IN">
+        <item>Select State</item>
+        <item>Andhra Pradesh</item>
+        <item>Arunachal Pradesh</item>
+        <item>Assam</item>
+        <item>Bihar</item>
+        <item>Chhattisgarh</item>
+        <item>Goa</item>
+        <item>Gujarat</item>
+        <item>Haryana</item>
+        <item>Himachal Pradesh</item>
+        <item>Jammu and Kashmir</item>
+        <item>Jharkhand</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+        <item>Madhya Pradesh</item>
+        <item>Maharashtra</item>
+        <item>Manipur</item>
+        <item>Meghalaya</item>
+        <item>Mizoram</item>
+        <item>Nagaland</item>
+        <item>Orissa</item>
+        <item>Punjab</item>
+        <item>Rajasthan</item>
+        <item>Sikkim</item>
+        <item>Tamil Nadu</item>
+        <item>Telangana</item>
+        <item>Tripura</item>
+        <item>Uttaranchal</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+    </string-array>
+    <string-array name="array_States_AUS">
+        <item>Select State</item>
+        <item>Akita</item>
+        <item>Adelaide</item>
+        <item>Brisbane</item>
+        <item>Canberra</item>
+        <item>Hobart</item>
+        <item>Kingston</item>
+        <item>Melbourne</item>
+        <item>New South Wales</item>
+        <item>Perth</item>
+        <item>Queens lands</item>
+        <item>South Australia</item>
+        <item>Sydney</item>
+        <item>Tokyo</item>
+        <item>Tasmania</item>
+        <item>Victoria</item>
+        <item>Western Australia</item>
+    </string-array>
+    <string-array name="array_States_USA">
+        <item>Select State</item>
+        <item>Alabama</item>
+        <item>Alaska</item>
+        <item>Arizona</item>
+        <item>Arkansas</item>
+        <item>California</item>
+        <item>Colorado</item>
+        <item>Connecticut</item>
+        <item>Delaware</item>
+        <item>Florida</item>
+        <item>Georgia</item>
+        <item>Hawaii</item>
+        <item>Idaho</item>
+        <item>Illinois Indiana</item>
+        <item>Iowa</item>
+        <item>Kansas</item>
+        <item>Kentucky</item>
+        <item>Louisiana</item>
+        <item>Maine</item>
+        <item>Maryland</item>
+        <item>Massachusetts</item>
+        <item>Michigan</item>
+        <item>Minnesota</item>
+        <item>Mississippi</item>
+        <item>Missouri</item>
+        <item>Montana Nebraska</item>
+        <item>Nevada</item>
+        <item>New Hampshire</item>
+        <item>New Jersey</item>
+        <item>New Mexico</item>
+        <item>New York</item>
+        <item>North Carolina</item>
+        <item>North Dakota</item>
+        <item>Ohio</item>
+        <item>Oklahoma</item>
+        <item>Oregon</item>
+        <item>Pennsylvania Rhode Island</item>
+        <item>South Carolina</item>
+        <item>South Dakota</item>
+        <item>Tennessee</item>
+        <item>Texas</item>
+        <item>Utah</item>
+        <item>Vermont</item>
+        <item>Virginia</item>
+        <item>Washington</item>
+        <item>West Virginia</item>
+        <item>Wisconsin</item>
+        <item>Wyoming</item>
+    </string-array>
+
+    <!-- dental assessment form start-->
+    <string name="title_activity_dentalAssessment">Dental Assessment</string>
+    <string name="dent_ass_1">1)Do you have sensitivity or pain in your teeth?</string>
+    <string name="dent_ass_2">2)Do you have severe sensitivity of your teeth on having hot and cold foods (or) drinks ?</string>
+    <string name="dent_ass_3">3)Do you have pain or bleeding in your gums ?</string>
+    <string name="dent_ass_4">4)Do you have loose teeth , with increasing gaps in between the teeth ?</string>
+    <string name="dent_ass_5">5)Do you have an unpleasant taste or odor in your mouth?</string>
+    <string name="dent_ass_6">6)Do you grind your teeth when you sleep?</string>
+    <string name="dent_ass_7">7)Do you have swelling in your gums with white fluid coming out ?</string>
+    <string name="dent_ass_8">8)Do you have severe pain in your teeth , do the pain increases at night when you sleep?</string>
+    <string name="dent_ass_9">9)Do you have pain and swelling in gums covering the lower back teeth region ?</string>
+    <string name="dent_ass_10">10)Do you have irregularly placed teeth ?</string>
+    <!-- dental assessment form end-->
+
+    <!-- general health screening form start-->
+    <string name="title_activity_general_health_screening">General Health Screening</string>
+    <string name="gen_health_screen_1">1) Do you have any difficulties in seeing objects (Far objects / Near objects) ?</string>
+    <string name="gen_health_screen_2">2) Do you have any Hearing trouble / Ear discharge ?</string>
+    <string name="gen_health_screen_3">3) Do you suffer with frequent episodes of Cold / Nasal obstruction / Nasal bleeding ?</string>
+    <string name="gen_health_screen_4">4) Do you have any Skin allergies ( Rashes / Itching / Pigmentation ) ?</string>
+    <string name="gen_health_screen_5">5) Do you have any Learning difficulties / Excessive sleepiness / Easy fatigue ) ?</string>
+    <string name="gen_health_screen_6">6) Do you have any history of Fits ?</string>
+    <string name="gen_health_screen_7">7) Do you have any history of Burning Chest ( acidity ) ?</string>
+    <string name="gen_health_screen_8">8) Do you have High Blood Pressure ?</string>
+    <string name="gen_health_screen_9">9) Do you have Diabetes ?</string>
+    <string name="gen_health_screen_10">10) Do you have any Dental problems like Dental carries / Tooth sensitivity / Other Dental problems ?</string>
+    <!-- general health screening form end-->
+
+    <!-- school healthscreen form start-->
+    <string name="title_activity_school_healthcare_screening">School Health Care Screening Program and Referral Card For Children</string>
+    <string name="head_school_screening">SCREENING TOOL (FOR AGE: Birth to 6 yrs.)</string>
+    <string name="subhead_a_school_screening">A. Defects at Birth</string>
+    <string name="a1_school_screening"><b>Head:</b> Abnormally large or small in size/shape deformity. (Measure, Check, Mark -&gt; 2SD; &lt; 2SD) ?</string>
+    <string name="a2_school_screening"><b>Eyes:</b> Any visible abnormality i.e. white pupil, Squint (important esp., after 3 months), frequent jerky movements, tilting the head when focusing (important esp. after 6 months) ?</string>
+    <string name="a3_school_screening"><b>Ear:</b> Any abnormality of shape ?</string>
+    <string name="a4_school_screening"><b>Lips and Palate:</b> Cleft (One side or both sides) ?</string>
+    <string name="a5_school_screening"><b>Difficulty in sucking and swallowing,</b> including sweating on forehead while trying to suck/breast feed (sign is especially important if infants is less than 6 months) ?</string>
+    <string name="a6_school_screening"><b>Neck:</b> Exceptionally short ?</string>
+    <string name="a7_school_screening"><b>HIP:</b> DDH: In case of a female child born through a breech delivery or child walking with a limp or asymmetrical thigh and gluteal skin folds ?</string>
+    <string name="a8_school_screening"><b>Limbs:</b> Any deformity/club foot ?</string>
+    <string name="a9_school_screening"><b>Spine:</b> Neural tube defect ?</string>
+
+    <string name="subhead_a10_school_screening">Features Suggestive of Down’s Syndrome - A10 :</string>
+    <string name="a10a_school_screening"><b>Eye:</b> Upward slant of eyes (imaginary line extended from the inner canthus to the outer canthus, goes below the outer canthus), and or epicanthic fold ?</string>
+    <string name="a10b_school_screening"><b>Nose:</b> Depressed Bridge ?</string>
+    <string name="a10c_school_screening"><b>Ears:</b> Low set Ears (Imaginary line extended from inner to outer canthus and to the ear, passes above ear) ?</string>
+    <string name="a10d_school_screening"><b>Palm:</b> Single crease across center of palm (Simian crease) ?</string>
+    <string name="a10e_school_screening"><b>Feet:</b> Wide gap (cleft) between the great and first toe ?</string>
+
+    <string name="a11_school_screening"><b>Congenital Heart Disease:</b> Any loud murmur on the chest or cyanosis on lips or bluish spells or features of congestive cardiac failure (Sweating during feeding, recurrent breathing difficulties, poor weight gain, Exercise intolerance, easy fatiguability, bilateral pitting oedema) ?</string>
+
+    <string name="subhead_b_school_screening">B. Deficiency</string>
+    <string name="b1_school_screening"><b>SAM:</b> Weight for Height/Length: refer if the child is less than -3SD as per WHO chart, counsel if &lt;-2SD ) ?</string>
+    <string name="b2_school_screening"><b>SAM:</b> Oedema: Bilateral pitting oedema ?</string>
+    <string name="b3_school_screening"><b>Severe anaemia:</b> Look for severe palmar pallor ?</string>
+    <string name="b4_school_screening"><b>Vitamin A Deficiency:</b> Ask for night blindness/look for Bitot’s spot (white patches on sclera) ?</string>
+    <string name="b5_school_screening"><b>Vitamin D Deficiency:</b> Look for Wrist widening/bowing of legs/nodular swelling on the chest ?</string>
+
+    <string name="subhead_c_school_screening">C. Disease</string>
+    <string name="c1_school_screening"><b>Convulsive Disorder:</b> Ask mother if child ever had spells of unconsciousness and fits include momentary blackouts or momentary loss of contact with real world with or without history of sudden falls or sudden jerky contractions ?</string>
+    <string name="c2_school_screening"><b>Otitis Media:</b> Did child have more than 3 episode of ear discharge in last 1 year/Look for active discharge from ear ?</string>
+    <string name="c3_school_screening"><b>Dental Condition:</b> Look for white/brown areas, cavitation, swollen/bleeding/red gums ?</string>
+    <string name="c4_school_screening"><b>Skin Condition:</b> Does the child have itching on skin (especially at night)/ Look for round or oval scaly patches/pustules in finger webs. Any other lesion on the skin ?</string>
+    <string name="c5_school_screening"><b>Reactive airway disease:</b> More than 3 Episodes of increased shortness of breath and difficult breathing and wheezing in the past 6 months ?</string>
+
+    <string name="subhead_d_school_screening">D. Developmental Delays</string>
+    <string name="subhead_d_desc">LOOK,ASK&amp;PERFORM ( GM-Gross Motor, FM-Fine Motor, V-Vision, C-Cognition, H-Hearing, Sp-Speech, S-Social)</string>
+    <string name="subhead_d1_school_screening">FOR AGE : ( Over 2 months but less than 4 months )</string>
+    <string name="d1_1_school_screening">Does the child move both arms and both legs freely &amp; equally when awake or when excited? <b>(GM)</b></string>
+    <string name="d1_2_school_screening">Does the child raise his or her head momentarily when lying face down? <b>(GM)</b></string>
+    <string name="d1_3_school_screening">Does the child keep his hands open and relaxed most of the time? (By 3 months) <b>(FM)</b></string>
+    <string name="d1_4_school_screening">Does the child responds to your voice or startles with loud sounds or becomes alert to new sound by quietening or smiling? <b>(H)</b></string>
+    <string name="d1_5_school_screening">Does the child coos or able to vocalise other than crying? Like “ooh” / “ng” <b>(S)</b></string>
+    <string name="d1_6_school_screening">Does the child make eye contact? (Focus their eyes on the eyes of a care giver)? <b>(V)</b></string>
+    <string name="d1_7_school_screening">Does the child give a social smile? (Reciprocal, responds to mother expression or smile i.e. smile back at you) <b>(S)</b></string>
+    <string name="d1_8_school_screening">Does the child suck and swallow well during feeding i.e. without any choking? <b>(Sp)</b></string>
+
+    <string name="subhead_d2_school_screening">AS PER AGE : ( Over 4 months but less than 6 months )</string>
+    <string name="d2_1_school_screening">Does the child hold head erect in sitting position without bobbing i.e. hold her head straight? (while sitting with support, head is held steadily) Refer if head flops or falls back on any one side when child is pulled to sitting position <b>(GM)</b></string>
+    <string name="d2_2_school_screening">Does the child reach out for an object persistently? (should use either hands but refer if preference for one hand only) Observe that grasp of the object is in the ulnar side of palm and there is lack of thumb involvement <b>(FM)</b></string>
+    <string name="d2_3_school_screening">Does the child respond to mother’s speech by looking directly at her face? <b>(H)</b></string>
+    <string name="d2_4_school_screening">Does the child laugh aloud or make squealing sounds? <b>(Sp)</b></string>
+    <string name="d2_5_school_screening">Does the child follow an object with his or her eyes? (without any visible squint) <b>(V)</b></string>
+    <string name="d2_6_school_screening">Does the child sucks on hands? <b>(C)</b></string>
+
+    <string name="subhead_d3_school_screening">AS PER AGE : ( Over 6 months but less than 9 months )</string>
+    <string name="d3_1_school_screening">Does the child roll over or turn over in either direction? <b>(GM)</b></string>
+    <string name="d3_2_school_screening">Does the child grasp a small object by using his whole hand? (secures it in the centre of palm) <b>(FM)</b></string>
+    <string name="d3_3_school_screening">Does the child locate source of sounds? I.e. turns his head or eyes if you whisper from behind? <b>(H)</b></string>
+    <string name="d3_4_school_screening">Does the child utter consonant sounds like “p” “b” “m”? <b>(Sp)</b></string>
+    <string name="d3_5_school_screening">Does your baby watch TV or any toy without tilting his/her head? <b>(V)</b></string>
+    <string name="d3_6_school_screening">Does the child raises hands to be picked up by parents? <b>(S)</b></string>
+    <string name="d3_7_school_screening">Does the child look for a spoon or toy that has dropped? <b>(C+V)</b></string>
+
+    <string name="subhead_d4_school_screening">AS PER AGE : ( Over 9 months but less than 12 months )</string>
+    <string name="d4_1_school_screening">Does the child sit without any support? <b>(GM)</b></string>
+    <string name="d4_2_school_screening">Does the child transfer object from hand to hand? <b>(FM)</b></string>
+    <string name="d4_3_school_screening">Does the child respond to his or her name? <b>(H&amp;C)</b></string>
+    <string name="d4_4_school_screening">Does the child babble example “ba”, “ba”, “da”, “ma”, “ma”? <b>(Sp)</b></string>
+    <string name="d4_5_school_screening">Does the child avoid bumping into objects while moving? <b>(V)</b></string>
+    <string name="d4_6_school_screening">Does the child enjoy playing hideandseek (peekaboo)? <b>(S)</b></string>
+
+    <string name="subhead_d5_school_screening">AS PER AGE : ( Over 12 months but less than 15 months )</string>
+    <string name="d5_1_school_screening">Does the child crawl on hands and knees? <b>(GM)</b></string>
+    <string name="d5_2_school_screening">Does the child pickup small objects using thumb and index finger like peas, raisins (kismis)? <b>(FM)</b></string>
+    <string name="d5_3_school_screening">Does the child stops activity in response to “No”? <b>(H&amp;C)</b></string>
+    <string name="d5_4_school_screening">Does the child say one meaningful word clearly like mama, dada? <b>(Sp)</b></string>
+    <string name="d5_5_school_screening">Does the child imitate action like byebye/clap/kiss? (wave good bye or greet you) <b>(S)</b></string>
+    <string name="d5_6_school_screening">Does the child cry when a stranger picks him up? Differentiates familiar faces from strangers <b>(S&amp;C)</b></string>
+    <string name="d5_7_school_screening">Does the child search for completely hidden objects? <b>(C)</b></string>
+
+    <string name="subhead_d6_school_screening">AS PER AGE : ( Over 15 months but less than 18 months )</string>
+    <string name="d6_1_school_screening">Does the child walk alone? <b>(GM)</b></string>
+    <string name="d6_2_school_screening">Does the child play by putting small things or objects into a container? (Cup or Katori) <b>(FM)</b></string>
+    <string name="d6_3_school_screening">Does the child make gestures on verbal request like pointing to objects? (pointing the index finger when asked “Where is the ball” <b>(FM)</b></string>
+    <string name="d6_4_school_screening">Does the child follow simple one step direction as for e.g. “sit down”? <b>(H&amp;C)</b></string>
+    <string name="d6_5_school_screening">Does the child say at least two words other than mama or dada like dog, cat, and ball even if it is not clear? <b>(Sp)</b></string>
+    <string name="d6_6_school_screening">Does the child manipulate or explore a toy with his/her finger like poking or pulling the toy? <b>(C)</b></string>
+
+    <string name="subhead_d7_school_screening">AS PER AGE : ( Over 18 months but less than 24 months )</string>
+    <string name="d7_1_school_screening">Does the child walk steadily even while pulling a toy? <b>(GM)</b></string>
+    <string name="d7_2_school_screening">Does the child scribble spontaneously? <b>(FM)</b></string>
+    <string name="d7_3_school_screening">Does the child say at least five words consistently even if not clear? <b>(Sp)</b></string>
+    <string name="d7_4_school_screening">Does the child imitate house hold tasks? (try to copy domestic chores like sweeping, washing clothes) <b>(C)</b></string>
+    <string name="d7_5_school_screening">Does the child point to 2 or more body parts? (e.g. show me your nose, child points to nose by using one finger)? <b>(H&amp;C)</b></string>
+
+    <string name="subhead_d8_school_screening">AS PER AGE : ( Over 24 months but less than 30 months )</string>
+    <string name="d8_1_school_screening">Does the child climb upstairs and downstairs? <b>(GM)</b></string>
+    <string name="d8_2_school_screening">Does the child feed self either with hand or spoon? <b>(FM)</b></string>
+    <string name="d8_3_school_screening">Does the child join 2 words together like mama-milk, car-go? (2 words phrases) <b>(Sp)</b></string>
+    <string name="d8_4_school_screening">Does the child play along with other children? <b>(S)</b></string>
+    <string name="d8_5_school_screening">Does the child enjoy simple pretend play like feeding a doll? <b>(C)</b></string>
+
+    <string name="d9_1_school_screening">Any Neuro-Motor abnormality?</string>
+
+    <string name="subhead_d10_school_screening">D. Autism Specific Questionnaire</string>
+    <string name="d10_1_school_screening">AS PER AGE : ( Over 15 months but less than 18 months )</string>
+    <string name="d10_1_1_school_screening">Does your child look in your eyes for more than a second or two (poor eye contact)?</string>
+    <string name="d10_1_2_school_screening">Does you child ever use his/her index finger to point to ask for something?</string>
+    <string name="d10_1_3_school_screening">Have you ever wondered that your child is deaf or is not responding to his/her name when you call (not communicating even through gestures)?</string>
+
+    <string name="d10_2_school_screening">AS PER AGE : ( Over 18 months but less than 24 months )</string>
+    <string name="d10_2_1_school_screening">Does your child take an interest in other children or play with other children?</string>
+    <string name="d10_2_2_school_screening">Does your child make unusual finger movements/ repetitive hand and body movements like finger Wriggling/ flapping/ spinning/ jumping? (Repeated purposeless motor activity)</string>
+    <string name="d10_2_3_school_screening">Does your child ever pretend play (talk on phone/take care of dolls)?</string>
+
+    <string name="subhead_d11_school_screening">AS PER AGE : ( Over 30 months but less than 6 years )</string>
+    <string name="d11_1_school_screening">Does your child have difficulty in seeing either during day/night? (without spectacles) <b>(V)</b></string>
+    <string name="d11_2_school_screening">Compared with other children of his/her age, did your child have ant delay in walking? <b>(GM)</b></string>
+    <string name="d11_3_school_screening">Does your child have stiffness or floppiness and/or reduced strength in his/her arms or legs? <b>(GM)</b></string>
+    <string name="d11_4_school_screening">From birth till date, has your child ever had fits, or became rigid, or had sudden jerks or spasms of arms, legs or whole body? <b>(Convulsive Disorder)</b></string>
+    <string name="d11_5_school_screening">From birth till date, has your child ever lost consciousness? <b>(Convulsive Disorder)</b></string>
+    <string name="d11_6_school_screening">Compared to children of his age, does your child find it difficult to read or write or do simple calculations? <b>(C)</b></string>
+    <string name="d11_7_school_screening">Does the child have difficulty in speaking (as compared to other children of his/her age)? <b>(Sp)</b></string>
+    <string name="d11_8_school_screening">Is your child’s speech in any way different from other children of his/her age? <b>(Sp)</b></string>
+    <string name="d11_9_school_screening">Does your child have difficulty in hearing? (without hearing aid)? <b>(H)</b></string>
+    <string name="d11_10_school_screening">Compared with other children of his/her age, does your child have difficulty in sustaining attention on activities at school, home or play? <b>(C)</b></string>
+    <string name="d11_11_school_screening">As compared with other children of his/her age, does your child have difficulty in learning new things? <b>(C)</b></string>
+
+    <string name="second_head_school_screening">SCREENING TOOL (FOR AGE: Over 6 to 18 yrs.)</string>
+    <string name="second_subhead_a_school_screening">A. Defects at Birth (Identified at 0 - 6 years of age)</string>
+    <string name="second_a1_school_screening">Any visible Defect at Birth in the Child like Cleft Lip/Palate/Club foot/Down’s syndrome/ Cataract etc?</string>
+
+    <string name="second_subhead_b_school_screening">B. Deficiencies</string>
+    <string name="second_b1_school_screening"><b>Severe anaemia:</b> Look for severe palmar pallor?</string>
+    <string name="second_b2_school_screening"><b>Vitamin A Deficiency:</b> Ask for night blindness/look for Bitot’s spot (white patches on sclera)?</string>
+    <string name="second_b3_school_screening"><b>Vitamin D Deficiency:</b> Look for Wrist Widening/Bowing of legs?</string>
+    <string name="second_b4_school_screening"><b>Goitre:</b> Any swelling in the neck region?</string>
+    <string name="second_b5_school_screening"><b>Oedema:</b> of both feet?</string>
+
+    <string name="second_subhead_c_school_screening">C. Diseases</string>
+    <string name="second_c1_school_screening"><b>Convulsive Disorders:</b> Did the child ever have had spells of unconsciousness and fits?</string>
+    <string name="second_c2_school_screening"><b>Otitis Media:</b> Did the child have more than 3 episodes of ear discharge in last 1 year? Look for Active discharge from ear</string>
+    <string name="second_c3_school_screening"><b>Dental Condition:</b> Look for white demineralised / brown tooth, Discolouration, cavitation, Swollen/bleeding/red gums, Visible Plaque/stains</string>
+    <string name="second_c4_school_screening"><b>Skin Condition:</b> Does the child c/o itching on skin (especially at night)? Look for round or oval scaly patches/pustules in finger webs. Any other lesion on the skin</string>
+    <string name="second_c5_school_screening"><b>Rheumatic Heart Disease:</b> Auscultate for Murmur</string>
+    <string name="second_c6_school_screening"><b>Others: Tuberculosis –</b> cough > 2 weeks,<b>Asthma –</b> More than 3 Episodes of increased shortness of breath and difficult breathing and wheezing in past 6 months</string>
+
+    <string name="second_subhead_d_school_screening">D. Developmental delay including disability</string>
+    <string name="second_subhead_d_desc">LOOK,ASK&amp;PERFORM (GM-Gross Motor, V-Vision, C-Cognition, H-Hearing, Sp-Speech, LD-Learning Disability, ADHD-Attention Deficit Hyperactivity Disorder)</string>
+    <string name="second_d1_school_screening">Does the child have difficulty in seeing, either during day or night? (without spectacles) <b>(V)</b></string>
+    <string name="second_d2_school_screening">Compared with other children of his/her age, did the child have any delay in walking? <b>(GM)</b></string>
+    <string name="second_d3_school_screening">Does the child have stiffness or floppiness and/or reduced strength in his/her arms or legs? <b>(GM, NMI)</b></string>
+    <string name="second_d4_school_screening">From birth till date, has the child ever had fits, or became rigid, or had sudden jerks or spasms of arms, legs or whole body? Refer if the fits are uncontrolled (Convulsive Disorder)</string>
+    <string name="second_d5_school_screening">Compared to his/her classmates, does the child find it difficult to read or write or to do simple calculations? <b>(LD)</b></string>
+    <string name="second_d6_school_screening">Does the child have any difficulty in speaking as compared to other children of his/her age? <b>(Sp)</b></string>
+    <string name="second_d7_school_screening">Does the child have difficulty in hearing? (without hearing aid) <b>(H)</b></string>
+    <string name="second_d8_school_screening">Compared with other children of his / her age, does the child have difficulty in learning new things? <b>(LD/C)</b></string>
+    <string name="second_d9_school_screening">As compared to children of his/her age, does the child have difficulty in sustaining attention on activities at school, home or play? <b>(ADHD)</b></string>
+
+    <string name="second_subhead_e_school_screening">E. Adolescent Specific Questionnaire (For Age: Over 10yrs to 18yrs.)</string>
+    <string name="second_e1_school_screening">Do you always find it difficult to handle things in your life that has resulted from changes occurring in your body?</string>
+    <string name="second_e2_school_screening">Are you able to say "NO" and leave the place when your friends pressurize you to smoke or drink with them?</string>
+    <string name="second_e3_school_screening">Do you feel unduly tired early in the morning or you feel depressed most of the time?</string>
+    <string name="second_e4_school_screening"><b>In case of females:</b> Have your menstrual cycles started yet?(If not started by 16 years)</string>
+    <string name="second_e5_school_screening">Do you have your periods every months (i.e.28 ± 7 days)?</string>
+    <string name="second_e6_school_screening">Do you experience any pain or burning sensation while urinating?</string>
+    <string name="second_e7_school_screening">Do you have any discharge/ foul smelling discharge from the genitorurinary area?</string>
+    <string name="second_e8_school_screening">Do you feel extreme pain during menstruation so much so that it stops you from doing routine activities/ attend schools?</string>
+
+    <string name="third_head_school_screening">Preliminary Findings</string>
+    <string name="third_subhead_a_school_screening">Defects at Birth</string>
+    <string name="third_subhead_b_school_screening">Deficiencies</string>
+    <string name="third_subhead_c_school_screening">Diseases</string>
+    <string name="third_subhead_d_school_screening">Developmental delay including disability</string>
+    <string name="third_subhead_e_school_screening">Adolescent Health concerns (10 - 18yrs.)</string>
+    <string name="third_subhead_code_school_screening"><b>CODE</b></string>
+    <string name="third_subhead_finding_school_screening"><b>Findings</b></string>
+    <string name="third_code_1_school_screening">1</string>
+    <string name="third_code_2_school_screening">2</string>
+    <string name="third_code_3_school_screening">3</string>
+    <string name="third_code_4_school_screening">4</string>
+    <string name="third_code_5_school_screening">5</string>
+    <string name="third_code_6_school_screening">6</string>
+    <string name="third_code_7_school_screening">7</string>
+    <string name="third_code_8_school_screening">8</string>
+    <string name="third_code_9_school_screening">9</string>
+    <string name="third_code_10_school_screening">10</string>
+    <string name="third_code_11_school_screening">11</string>
+    <string name="third_code_12_school_screening">12</string>
+    <string name="third_code_13_school_screening">13</string>
+    <string name="third_code_14_school_screening">14</string>
+    <string name="third_code_15_school_screening">15</string>
+    <string name="third_code_16_school_screening">16</string>
+    <string name="third_code_17_school_screening">17</string>
+    <string name="third_code_18_school_screening">18</string>
+    <string name="third_code_19_school_screening">19</string>
+    <string name="third_code_20_school_screening">20</string>
+    <string name="third_code_21_school_screening">21</string>
+    <string name="third_code_22_school_screening">22</string>
+    <string name="third_code_23_school_screening">23</string>
+    <string name="third_code_24_school_screening">24</string>
+    <string name="third_code_25_school_screening">25</string>
+    <string name="third_code_26_school_screening">26</string>
+    <string name="third_code_27_school_screening">27</string>
+    <string name="third_code_28_school_screening">28</string>
+    <string name="third_code_29_school_screening">29</string>
+    <string name="third_code_30_school_screening">30</string>
+    <string name="third_code_31_school_screening">31</string>
+    <string name="third_code_32_school_screening">32</string>
+    <string name="third_code_33_school_screening">33</string>
+    <string name="third_code_34_school_screening">34</string>
+    <string name="third_code_35_school_screening">35</string>
+    <string name="third_code_36_school_screening">36</string>
+    <string name="third_code_37_school_screening">37</string>
+    <string name="third_code_38_school_screening">38</string>
+    <string name="third_finding_1_school_screening">Neural Tube Defect</string>
+    <string name="third_finding_2_school_screening">Down’s Syndrome</string>
+    <string name="third_finding_3_school_screening">Cleft Lip &amp; Palate</string>
+    <string name="third_finding_4_school_screening">Talipes (club foot)</string>
+    <string name="third_finding_5_school_screening">Developmental Dysplasia of Hip</string>
+    <string name="third_finding_6_school_screening">Congenital Cataract</string>
+    <string name="third_finding_7_school_screening">Congenital Deafness</string>
+    <string name="third_finding_8_school_screening">Congenital Heart Disease</string>
+    <string name="third_finding_9_school_screening">Retinopathy of prematurity (only at DH)</string>
+    <string name="third_finding_10_school_screening">Severe Anaemia</string>
+    <string name="third_finding_11_school_screening">Vitamin A Deficiency (Bitot Spot)</string>
+    <string name="third_finding_12_school_screening">Vitamin D Deficiency, (Rickets)</string>
+    <string name="third_finding_13_school_screening">SAM</string>
+    <string name="third_finding_14_school_screening">Goiter</string>
+    <string name="third_finding_15_school_screening">Skin Conditions</string>
+    <string name="third_finding_16_school_screening">Otitis Media</string>
+    <string name="third_finding_17_school_screening">Rheumatic Heart Disease</string>
+    <string name="third_finding_18_school_screening">Reactive Airway Disease</string>
+    <string name="third_finding_19_school_screening">Dental Conditions</string>
+    <string name="third_finding_20_school_screening">Convulsive Disorders</string>
+    <string name="third_finding_21_school_screening">Vision Impairment</string>
+    <string name="third_finding_22_school_screening">Hearing Impairment</string>
+    <string name="third_finding_23_school_screening">Neuro-motor Impairment</string>
+    <string name="third_finding_24_school_screening">Motor delay</string>
+    <string name="third_finding_25_school_screening">Cognitive Delay</string>
+    <string name="third_finding_26_school_screening">Speech and Language Delay</string>
+    <string name="third_finding_27_school_screening">Behavioural Disorder (Autism)</string>
+    <string name="third_finding_28_school_screening">Learning Disorder</string>
+    <string name="third_finding_29_school_screening">Attention Deficit Hyperactivity Disorder</string>
+    <string name="third_finding_30_school_screening">30 Others (Specify)</string>
+    <string name="third_finding_31_school_screening">Growing up concerns</string>
+    <string name="third_finding_32_school_screening">Substance abuse</string>
+    <string name="third_finding_33_school_screening">Feel depressed</string>
+    <string name="third_finding_34_school_screening">Delay in menstrual cycles</string>
+    <string name="third_finding_35_school_screening">Irregular periods</string>
+    <string name="third_finding_36_school_screening">Pain or burning sensation while urinating</string>
+    <string name="third_finding_37_school_screening">Discharge / foul smelling discharge from the genitourinary area</string>
+    <string name="third_finding_38_school_screening">Pain during menstruation</string>
+    <!-- school healthscreen form end-->
+
+    <!--  general examination form start -->
+    <string name="title_activity_physical">General Physical Examination</string>
+    <string name="title_activity_general">General Examination</string>
+    <string name="title_activity_vital">Vital Signs</string>
+    <string name="title_activity_amthropometry">Amthropometry</string>
+    <!--  general examination form end -->
+
+    <!--  discharge sheet form start -->
+    <string name="title_activity_discharge">Discharge Sheet</string>
+    <string name="title_activity_admission">Admission Details</string>
+    <string name="title_activity_discharge_details">Discharge Details</string>
+    <string name="title_activity_clinic">Clinic Information</string>
+    <string name="title_activity_advice_plan">Advice,Recommendations and Future Plan</string>
+    <!--  discharge sheet form end -->
+
+    <string name="title_activity_investigation_biochemistry">Investigation-BioChemistry</string>
+    <string name="title_activity_investigation_microbiology">Investigation-Microbiology</string>
+    <string name="title_activity_investigation_pathology">Investigation-Pathology</string>
+
+    <!--  Investigation-Biochemistry form headings start-->
+    <string name="subhead_a_investigation_biochemistry">Investigations Required</string>
+    <string name="subhead_b_investigation_biochemistry">Profiles</string>
+    <string name="subhead_c_investigation_biochemistry">Immunoassays</string>
+    <string name="subhead_d_investigation_biochemistry">Fluids</string>
+    <string name="subhead_e_investigation_biochemistry">Urine Analysis</string>
+    <!--  Investigation-Biochemistry form headings end-->
+
+    <!-- Investigation-Biochemistry form  subhead a block start-->
+    <string name="investigation_required_1">Random Serum Glucose</string>
+    <string name="investigation_required_2">Fasting Serum Glucose </string>
+    <string name="investigation_required_3">Postprandial Serum Glucose</string>
+    <string name="investigation_required_4">Oral Glucose Tolerance Test</string>
+    <string name="investigation_required_5">Glucose Challenge Test</string>
+    <string name="investigation_required_6">Glycated Hemoglobin (HbA1C)</string>
+    <string name="investigation_required_7">Serum Urea</string>
+    <string name="investigation_required_8">Serum Creatinine</string>
+    <string name="investigation_required_9">Serum Cholesterol</string>
+    <string name="investigation_required_10">Serum Uric Acid</string>
+    <string name="investigation_required_11">Serum Total Protein</string>
+    <string name="investigation_required_12">Serum Albumin</string>
+    <string name="investigation_required_13">Serum Total Bilirubin</string>
+    <string name="investigation_required_14">Serum Direct Bilirubin</string>
+    <string name="investigation_required_15">AST (SGOT)</string>
+    <string name="investigation_required_16">ALT (SGPT)</string>
+    <string name="investigation_required_17">Alkaline Phosphatase</string>
+    <string name="investigation_required_18">Amulase</string>
+    <string name="investigation_required_19">Lipase</string>
+    <string name="investigation_required_20">Gamma Glutamyl Transferase ( GT)</string>
+    <string name="investigation_required_21">Lactate Dehydrogenase</string>
+    <string name="investigation_required_22">Creatine Kinase (CK)</string>
+    <string name="investigation_required_23">CK - MB</string>
+    <string name="investigation_required_24">Troponin - I</string>
+    <string name="investigation_required_25">Serum Electrolytes</string>
+    <string name="investigation_required_26">Prothrombin Time (PT) with INR</string>
+    <string name="investigation_required_27">APTT</string>
+    <string name="investigation_required_28">Serum Calcium</string>
+    <string name="investigation_required_29">Serum Phosphorus</string>
+    <string name="investigation_required_30">Serum Iron</string>
+    <string name="investigation_required_31">Total Iron Binding Capacity (TIBC)</string>
+    <!-- Investigation-Biochemistry form subhead a block end-->
+
+    <!--Investigation-Biochemistry form  subhead b block start-->
+    <string name="investigation_profiles_1">Lipid Profile (T Chol, TG, HDL-C, LDL-C, VLDL-C)</string>
+    <string name="investigation_profiles_2">Liver Profile (AST, ALT, ALP, T.Bill, D.Bill, TP, Alb)</string>
+    <string name="investigation_profiles_3">Renal Profile (S.Urea, S.Crt, S.Na+k+)</string>
+    <string name="investigation_profiles_4">Thyroid Profile (T3, T4, TSH)</string>
+    <string name="investigation_profiles_5">Thyroid Mini Profile (FT4, TSH)</string>
+    <string name="investigation_profiles_6">Thyroid Extended Profile (FT3, FT4, TSH, ANTI TPO)</string>
+    <string name="investigation_profiles_7">Anemia Capsule (Serum Iron, TIBC, Ferritin)</string>
+    <string name="investigation_profiles_8">Diabetes Capsule (FSG, PPSG, S.Crt, Lipid, Profile, HbAIC, Micro Alb)</string>
+    <string name="investigation_profiles_9">Diabetes Mini Capsule (S Glucose, HBAIC, Micro Alb)</string>
+    <string name="investigation_profiles_10">Urobilinogen</string>
+    <string name="investigation_profiles_11">Microscopy</string>
+    <!--Investigation-Biochemistry form  subhead b  block end-->
+
+    <!--Investigation-Biochemistry form  subhead c block start-->
+    <string name="investigation_immunoassays_1">Total T3</string>
+    <string name="investigation_immunoassays_2">Total T4</string>
+    <string name="investigation_immunoassays_3">TSH</string>
+    <string name="investigation_immunoassays_4">Free T3</string>
+    <string name="investigation_immunoassays_5">Free T4 </string>
+    <string name="investigation_immunoassays_6">Anti-TPO</string>
+    <string name="investigation_immunoassays_7">LH</string>
+    <string name="investigation_immunoassays_8">FHS</string>
+    <string name="investigation_immunoassays_9">Prolactin</string>
+    <string name="investigation_immunoassays_10">Testosterone</string>
+    <string name="investigation_immunoassays_11">PSA</string>
+    <string name="investigation_immunoassays_12">Ferritin</string>
+    <!--Investigation-Biochemistry form  subhead c  block end-->
+
+    <!--Investigation-Biochemistry form  subhead d block start-->
+    <string name="investigation_fluids_1">CSF Analysis</string>
+    <string name="investigation_fluids_2">Pleural Fluid Analysis</string>
+    <string name="investigation_fluids_3">Renal Profile (S.Urea, S.Crt, S.Na+k+)</string>
+    <string name="investigation_fluids_4"> Ascitic Fluids:</string>
+    <string name="investigation_fluids_4a">Proteins</string>
+    <string name="investigation_fluids_4b">Glucose</string>
+    <string name="investigation_fluids_4c">Albumin</string>
+    <string name="investigation_fluids_4d">Amylase</string>
+
+
+    <!--Investigation-Biochemistry form subhead d  block end-->
+
+    <!--Investigation-Biochemistry form subhead e block start-->
+    <string name="investigation_urine_analysis_1">Electrolytes</string>
+    <string name="investigation_urine_analysis_2">U. Micro Albumin </string>
+    <string name="investigation_urine_analysis_3">U. Phosphates</string>
+    <string name="investigation_urine_analysis_4">U. Uric Acid</string>
+    <string name="investigation_urine_analysis_5">24 hrs.Urinary Proteins</string>
+    <string name="investigation_urine_analysis_6">U. Creatinine</string>
+    <string name="investigation_urine_analysis_7">U.Calcium </string>
+    <!--Investigation-Biochemistry form subhead e block end-->
+
+    <!--Investigation-Microbiology form strats-->
+    <string name="investigation_micro_required_1">Gram\'s Staining</string>
+    <string name="investigation_mirco_required_2">Z.N Staining</string>
+    <string name="investigation_mirco_required_3">Alberts Staining</string>
+    <string name="investigation_mirco_required_4">Saline smear</string>
+    <string name="investigation_mirco_required_5">KOH smear</string>
+    <string name="investigation_mirco_required_6">Lactophenol smear</string>
+    <string name="investigation_mirco_required_7">India ink Staining</string>
+    <string name="investigation_mirco_required_8">Stool for parasites</string>
+    <string name="investigation_mirco_required_9">Smear of Gonococci</string>
+    <string name="investigation_mirco_required_10">Smear of Fungi</string>
+    <string name="investigation_mirco_required_11">Blood smear Parasites</string>
+    <string name="investigation_mirco_required_12">Smear of Hansena\'s</string>
+    <string name="investigation_mirco_required_13">Widal test</string>
+    <string name="investigation_mirco_required_14">RF</string>
+    <string name="investigation_mirco_required_15">ASO</string>
+    <string name="investigation_mirco_required_16">CRP</string>
+    <string name="investigation_mirco_required_17">VDRL</string>
+    <string name="investigation_mirco_required_18">HBs ag</string>
+    <string name="investigation_mirco_required_19">HCV</string>
+    <string name="investigation_mirco_required_20">HIV</string>
+    <string name="investigation_mirco_required_21">ANA</string>
+    <string name="investigation_mirco_required_22">Anti TB IgA</string>
+    <string name="investigation_mirco_required_23">Anti TB IgM</string>
+    <string name="investigation_mirco_required_24">Anti TB IgG</string>
+    <string name="investigation_mirco_required_25">Anti Leptospira IgM</string>
+    <string name="investigation_mirco_required_26">Fungal Culture</string>
+    <string name="investigation_mirco_required_27">Bacterial Culture</string>
+    <string name="investigation_mirco_required_28">Blood Culture</string>
+    <string name="investigation_mirco_required_29">Blood Culture (entric fever)</string>
+    <string name="investigation_mirco_required_30">Tuberculosis culture</string>
+    <!--Investigation-Microbiology form end-->
+
+    <!--  Investigation-Pathology form headings start-->
+    <string name="subhead_a_investigation_pathology"> Haematology</string>
+    <string name="subhead_b_investigation_pathology">Clinical Pathology</string>
+    <!--  Investigation-Pathology form headings End-->
+
+    <!--  Investigation-Pathology form subhead a-block start-->
+    <string name="investigation_pathology_Hamatology_1">Haemogram</string>
+    <string name="investigation_pathology_Hamatology_2">C.B.C(Complete Blood Count)</string>
+    <string name="investigation_pathology_Hamatology_3">C.B.P(Complete Blood Picture)</string>
+    <string name="investigation_pathology_Hamatology_4">Haemoglobin</string>
+    <string name="investigation_pathology_Hamatology_5">P.C.V</string>
+    <string name="investigation_pathology_Hamatology_6">Total W.B.C count</string>
+    <string name="investigation_pathology_Hamatology_7">Differential Count</string>
+    <string name="investigation_pathology_Hamatology_8">ESR</string>
+    <string name="investigation_pathology_Hamatology_9">Abnormal Cells</string>
+    <string name="investigation_pathology_Hamatology_10">R.B.C Count</string>
+    <string name="investigation_pathology_Hamatology_11">R.D.W(Red cell distibution width)</string>
+    <string name="investigation_pathology_Hamatology_12">Platelet count</string>
+    <string name="investigation_pathology_Hamatology_13">P.D.W(Platelet  distibution width)</string>
+    <string name="investigation_pathology_Hamatology_14">P.M.W(Platelet mean Volume)</string>
+    <string name="investigation_pathology_Hamatology_15">Bleeding time</string>
+    <string name="investigation_pathology_Hamatology_16">Clotting time</string>
+    <string name="investigation_pathology_Hamatology_17">Reticulocyte count</string>
+    <string name="investigation_pathology_Hamatology_18">Peripheral smear</string>
+    <string name="investigation_pathology_Hamatology_19">Sickle cell test</string>
+    <string name="investigation_pathology_Hamatology_20">Osmotic fragility test</string>
+    <string name="investigation_pathology_Hamatology_21">L.E cell test</string>
+    <string name="investigation_pathology_Hamatology_22">A.E.C(Absolute Eosinophil count)</string>
+    <string name="investigation_pathology_Hamatology_23">Absoulute indices</string>
+    <string name="investigation_pathology_Hamatology_24">M.C.V</string>
+    <string name="investigation_pathology_Hamatology_25">M.C.H</string>
+    <string name="investigation_pathology_Hamatology_26">M.C.H.C</string>
+    <string name="investigation_pathology_Hamatology_27">Smear for M.P</string>
+    <string name="investigation_pathology_Hamatology_28">Rapid Test M.P (Card Test)</string>
+    <string name="investigation_pathology_Hamatology_29">Other Investigations :</string>
+    <!--  Investigation-Pathology form subhead a-block End-->
+
+    <!--  Investigation-Pathology form subhead b-block start-->
+    <string name="investigation_pathology_Clinical_1">Routine Urine Analysis</string>
+    <string name="investigation_pathology_Clinical_2">Complete Urine Examination</string>
+    <string name="investigation_pathology_Clinical_3">PH (Reaction)</string>
+    <string name="investigation_pathology_Clinical_4">Specific Gravity</string>
+    <string name="investigation_pathology_Clinical_5">Proteins / Albumin</string>
+    <string name="investigation_pathology_Clinical_6">Sugar</string>
+    <string name="investigation_pathology_Clinical_7">Ketone Bodies</string>
+    <string name="investigation_pathology_Clinical_8">Bile salts</string>
+    <string name="investigation_pathology_Clinical_9">Bile pigments</string>
+    <string name="investigation_pathology_Clinical_10">Urobilinogen</string>
+    <string name="investigation_pathology_Clinical_11">Microscopy</string>
+    <string name="investigation_pathology_Clinical_12"><u><b>Urine Special Tests:</b></u></string>
+    <string name="investigation_pathology_Clinical_13">Bence jones protein</string>
+    <string name="investigation_pathology_Clinical_14"> Hemosiderin pigment</string>
+    <string name="investigation_pathology_Clinical_15"><b><u>Semen Analysis</u></b>:</string>
+    <string name="investigation_pathology_Clinical_16"><b><u>Cytology</u></b></string>
+    <string name="investigation_pathology_Clinical_17"><b><u>Body fluids</u></b></string>
+    <string name="investigation_pathology_Clinical_18">C.S.F</string>
+    <string name="investigation_pathology_Clinical_19">Ascitic Fluid</string>
+    <string name="investigation_pathology_Clinical_20">Pleural Fluid</string>
+    <string name="investigation_pathology_Clinical_21">Synovial Fluid</string>
+    <string name="investigation_pathology_Clinical_22">Pericardial Fluid</string>
+    <string name="investigation_pathology_Clinical_23"><b><u>Bone marrow Aspiration / Biopsy</u></b></string>
+    <!--  Investigation-Pathology form subhead b-block end-->
+
+</resources>

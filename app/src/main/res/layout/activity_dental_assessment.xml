@@ -1,0 +1,332 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DentalAssessment">
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:orientation="vertical">
+            <TextView android:text="@string/dent_ass_1" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold" android:textColor="#000000" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/ques1" android:visibility="gone" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+            <RadioGroup
+                android:id="@+id/denradiogroup1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:textColorHighlight="#FFFFFF"
+                    android:shadowColor="#FFFFFF"
+                    android:text="Yes"
+                    android:buttonTint="#000000"
+                    android:textColor="#000000"
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="No"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:id="@+id/radio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <TextView android:text="@string/dent_ass_2" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/ques2" android:visibility="gone" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+            <RadioGroup android:id="@+id/denradiogroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:text="Yes"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/radio4"
+                    android:text="No"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <TextView android:text="@string/dent_ass_3" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/ques3" android:visibility="gone" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+            <RadioGroup android:id="@+id/denradiogroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="Yes"
+                    android:id="@+id/radio5"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="No"
+                    android:id="@+id/radio6"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <TextView android:text="@string/dent_ass_4" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/ques4" android:visibility="gone" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+            <RadioGroup
+                android:id="@+id/denradiogroup4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="Yes"
+                    android:id="@+id/radio7"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="No"
+                    android:textColor="#000000"
+                    android:id="@+id/radio8"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <TextView android:text="@string/dent_ass_5" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/ques5" android:visibility="gone" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+            <RadioGroup
+                android:id="@+id/denradiogroup5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="Yes"
+                    android:id="@+id/radio9"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="No"
+                    android:id="@+id/radio10"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <TextView android:text="@string/dent_ass_6" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/ques6" android:visibility="gone" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+            <RadioGroup
+                android:id="@+id/denradiogroup6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="Yes"
+                    android:id="@+id/radio11"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:text="No"
+                    android:id="@+id/radio12"
+                    android:textColor="#000000"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+            <TextView android:text="@string/dent_ass_7" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/ques7" android:visibility="gone" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+            <RadioGroup
+                android:id="@+id/denradiogroup7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="Yes"
+                    android:id="@+id/radio13"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"/>
+                <RadioButton
+                    android:text="No"
+                    android:id="@+id/radio14"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"/>
+            </RadioGroup>
+            <TextView android:text="@string/dent_ass_8" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/ques8" android:visibility="gone" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+            <RadioGroup
+                android:id="@+id/denradiogroup8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="Yes"
+                    android:id="@+id/radio15"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"/>
+                <RadioButton
+                    android:text="No"
+                    android:id="@+id/radio16"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"/>
+            </RadioGroup>
+            <TextView android:text="@string/dent_ass_9" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/ques9" android:visibility="gone" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+            <RadioGroup
+                android:id="@+id/denradiogroup9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="Yes"
+                    android:id="@+id/radio17"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"/>
+                <RadioButton
+                    android:text="No"
+                    android:id="@+id/radio18"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"/>
+            </RadioGroup>
+            <TextView android:text="@string/dent_ass_10" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/ques10" android:visibility="gone" android:textStyle="bold" android:layout_marginLeft="10dp"/>
+            <RadioGroup
+                android:id="@+id/denradiogroup10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:text="Yes"
+                    android:id="@+id/radio19"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"/>
+                <RadioButton
+                    android:text="No"
+                    android:id="@+id/radio20"
+                    android:buttonTint="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"/>
+            </RadioGroup>
+<!--            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="@string/common_form_field_1"/>
+            <EditText
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:minLines="5"
+                android:id="@+id/provisionalDiagnosis"
+                android:gravity="top|left"
+                android:maxLines="11"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:scrollbars="vertical"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:text="@string/common_form_field_2"/>
+            <EditText
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:minLines="5"
+                android:id="@+id/finalDiagnosis"
+                android:gravity="top|left"
+                android:maxLines="11"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:scrollbars="vertical"
+                />-->
+<!--            <LinearLayout
+                android:id="@+id/upload_block"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/file_path"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:minLines="1"
+                    android:layout_weight="0.5"
+                    android:hint="File Name"/>
+
+                <Button android:id="@+id/upload_button"
+                    android:text="Upload"
+                    android:background="#3cb5c0"
+                    android:textColor="#fff"
+                    android:layout_weight="0.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>-->
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/agree" android:text="Save"
+                android:shadowColor="#EBEBEB"
+                android:textColor="#FFFFFF"
+                android:background="#3cb5c0"
+                android:id="@+id/dentalsave"
+                android:onClick=""
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

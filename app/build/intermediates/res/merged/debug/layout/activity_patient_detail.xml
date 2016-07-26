@@ -1,0 +1,128 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".PatientDetail" >
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:id="@+id/maindata" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/namelabel1"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:text="Name :"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:id="@+id/name1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone /Email :"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/phone_email_label1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:id="@+id/phone_email1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ProofDetails :"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:id="@+id/proof_label1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:id="@+id/proof1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Date of Birth /Gender :"
+                android:textColor="#000000"
+                android:id="@+id/dobgender_label1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:id="@+id/dobgender1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+ New CaseRecord"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                android:id="@+id/addfrm1"
+                android:textAllCaps="false"
+                android:textAlignment="center"
+                android:shadowColor="@color/white"
+                android:shadowRadius="2.0"
+                android:background="@color/button_background"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:id="@+id/caserecordsttl"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/maindata"
+            android:layout_marginTop="10dp"
+            android:text="@string/caseRecordsTitle" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/noCaseRecords"
+            android:layout_below="@id/caserecordsttl"
+            android:textColor="#50000000"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="22dp"
+            android:text="No Case Records Found" />
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/caseidlist"
+            android:divider="#000000"
+            android:dividerHeight="1px"
+            android:layout_marginBottom="2dp"
+            android:layout_below="@+id/caserecordsttl"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

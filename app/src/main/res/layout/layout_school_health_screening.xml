@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/parent">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/head_school_screening" android:gravity="center"
+            android:textStyle="bold" android:textColor="#000"
+            android:background="#FFF" android:textSize="17dp"
+            android:visibility="gone" android:id="@+id/head0to6"/>
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/second_head_school_screening" android:gravity="center"
+            android:textStyle="bold" android:textColor="#000"
+            android:background="#FFF" android:textSize="17dp"
+            android:visibility="gone" android:id="@+id/head6to18"/>
+
+        <ExpandableListView
+            android:id="@+id/shsFormExp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textStyle="bold"
+            android:shadowColor="#EBEBEB"
+            android:textColor="#FFFFFF"
+            android:background="#3cb5c0"
+            android:id="@+id/shssave"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

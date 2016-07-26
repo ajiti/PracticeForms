@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:id="@+id/preliminaryFindings"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical"
+        android:layout_height="wrap_content" android:id="@+id/thd_a_block" android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/third_subhead_a_school_screening" android:gravity="center"
+            android:textStyle="bold" android:background="#E2E2E2"
+            android:textColor="#000" android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_a"
+                android:text="@string/third_subhead_code_school_screening" android:textSize="15dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_a"
+                android:text="@string/third_subhead_finding_school_screening" android:layout_toRightOf="@id/code_a"
+                android:layout_marginLeft="10dp" android:textSize="15dp" android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/check" android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp" android:paddingTop="4dp"/>
+<!--            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_a" android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp" android:checked="true"
+                android:clickable="false" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_1"
+                android:text="@string/third_code_1_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_1" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_1"
+                android:text="@string/third_finding_1_school_screening" android:layout_toRightOf="@id/code_1"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_2"
+                android:text="@string/third_code_2_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_2" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_2"
+                android:text="@string/third_finding_2_school_screening" android:layout_toRightOf="@id/code_2"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_2"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_3"
+                android:text="@string/third_code_3_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_3" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_3"
+                android:text="@string/third_finding_3_school_screening" android:layout_toRightOf="@id/code_3"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_3"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_4"
+                android:text="@string/third_code_4_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_4" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_4"
+                android:text="@string/third_finding_4_school_screening" android:layout_toRightOf="@id/code_4"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_4"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_5"
+                android:text="@string/third_code_5_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_5" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_5"
+                android:text="@string/third_finding_5_school_screening" android:layout_toRightOf="@id/code_5"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_5"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_6"
+                android:text="@string/third_code_6_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_6" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_6"
+                android:text="@string/third_finding_6_school_screening" android:layout_toRightOf="@id/code_6"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_6"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_7"
+                android:text="@string/third_code_7_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_7" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_7"
+                android:text="@string/third_finding_7_school_screening" android:layout_toRightOf="@id/code_7"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_7"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_8"
+                android:text="@string/third_code_8_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_8" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_8"
+                android:text="@string/third_finding_8_school_screening" android:layout_toRightOf="@id/code_8"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_8"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_9"
+                android:text="@string/third_code_9_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_9" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_9"
+                android:text="@string/third_finding_9_school_screening" android:layout_toRightOf="@id/code_9"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_9"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical" android:visibility="gone"
+        android:layout_height="wrap_content" android:id="@+id/thd_b_block">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/third_subhead_b_school_screening" android:gravity="center"
+            android:textStyle="bold" android:background="#E2E2E2"
+            android:textColor="#000" android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_b"
+                android:text="@string/third_subhead_code_school_screening" android:textSize="15dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_b"
+                android:text="@string/third_subhead_finding_school_screening" android:layout_toRightOf="@id/code_b"
+                android:layout_marginLeft="10dp" android:textSize="15dp" android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/check" android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp" android:paddingTop="4dp"/>
+<!--            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_b" android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp" android:checked="true"
+                android:clickable="false" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_10"
+                android:text="@string/third_code_10_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_10" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_10"
+                android:text="@string/third_finding_10_school_screening" android:layout_toRightOf="@id/code_10"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_10"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_11"
+                android:text="@string/third_code_11_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_11" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_11"
+                android:text="@string/third_finding_11_school_screening" android:layout_toRightOf="@id/code_11"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_11"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_12"
+                android:text="@string/third_code_12_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_12" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_12"
+                android:text="@string/third_finding_12_school_screening" android:layout_toRightOf="@id/code_12"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_12"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_13"
+                android:text="@string/third_code_13_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_13" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_13"
+                android:text="@string/third_finding_13_school_screening" android:layout_toRightOf="@id/code_13"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_13"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp" android:visibility="gone"
+            android:layout_height="20dp" android:layout_marginLeft="10dp" android:id="@+id/b_14">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_14"
+                android:text="@string/third_code_14_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_14" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_14"
+                android:text="@string/third_finding_14_school_screening" android:layout_toRightOf="@id/code_14"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_14"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical" android:visibility="gone"
+        android:layout_height="wrap_content" android:id="@+id/thd_c_block">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/third_subhead_c_school_screening" android:gravity="center"
+            android:textStyle="bold" android:background="#E2E2E2"
+            android:textColor="#000" android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_c"
+                android:text="@string/third_subhead_code_school_screening" android:textSize="15dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_c"
+                android:text="@string/third_subhead_finding_school_screening" android:layout_toRightOf="@id/code_c"
+                android:layout_marginLeft="10dp" android:textSize="15dp" android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/check" android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp" android:paddingTop="4dp"/>
+<!--            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_c" android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp" android:checked="true"
+                android:clickable="false" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_15"
+                android:text="@string/third_code_15_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_15" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_15"
+                android:text="@string/third_finding_15_school_screening" android:layout_toRightOf="@id/code_15"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_15"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_16"
+                android:text="@string/third_code_16_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_16" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_16"
+                android:text="@string/third_finding_16_school_screening" android:layout_toRightOf="@id/code_16"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_16"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_17"
+                android:text="@string/third_code_17_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_17" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_17"
+                android:text="@string/third_finding_17_school_screening" android:layout_toRightOf="@id/code_17"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_17"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_18"
+                android:text="@string/third_code_18_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_18" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_18"
+                android:text="@string/third_finding_18_school_screening" android:layout_toRightOf="@id/code_18"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_18"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_19"
+                android:text="@string/third_code_19_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_19" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_19"
+                android:text="@string/third_finding_19_school_screening" android:layout_toRightOf="@id/code_19"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_19"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_20"
+                android:text="@string/third_code_20_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_20" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_20"
+                android:text="@string/third_finding_20_school_screening" android:layout_toRightOf="@id/code_20"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_20"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical" android:visibility="gone"
+        android:layout_height="wrap_content" android:id="@+id/thd_d_block">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/third_subhead_d_school_screening" android:gravity="center"
+            android:textStyle="bold" android:background="#E2E2E2"
+            android:textColor="#000" android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_d"
+                android:text="@string/third_subhead_code_school_screening" android:textSize="15dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_d"
+                android:text="@string/third_subhead_finding_school_screening" android:layout_toRightOf="@id/code_d"
+                android:layout_marginLeft="10dp" android:textSize="15dp" android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/check" android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp" android:paddingTop="4dp"/>
+<!--            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_d" android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp" android:checked="true"
+                android:clickable="false" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_21"
+                android:text="@string/third_code_21_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_21" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_21"
+                android:text="@string/third_finding_21_school_screening" android:layout_toRightOf="@id/code_21"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_21"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_22"
+                android:text="@string/third_code_22_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_22" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_22"
+                android:text="@string/third_finding_22_school_screening" android:layout_toRightOf="@id/code_22"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_22"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_23"
+                android:text="@string/third_code_23_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_23" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_23"
+                android:text="@string/third_finding_23_school_screening" android:layout_toRightOf="@id/code_23"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_23"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_24"
+                android:text="@string/third_code_24_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_24" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_24"
+                android:text="@string/third_finding_24_school_screening" android:layout_toRightOf="@id/code_24"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_24"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_25"
+                android:text="@string/third_code_25_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_25" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_25"
+                android:text="@string/third_finding_25_school_screening" android:layout_toRightOf="@id/code_25"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_25"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_26"
+                android:text="@string/third_code_26_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_26" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_26"
+                android:text="@string/third_finding_26_school_screening" android:layout_toRightOf="@id/code_26"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_26"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_27"
+                android:text="@string/third_code_27_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_27" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_27"
+                android:text="@string/third_finding_27_school_screening" android:layout_toRightOf="@id/code_27"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_27"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_28"
+                android:text="@string/third_code_28_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_28" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_28"
+                android:text="@string/third_finding_28_school_screening" android:layout_toRightOf="@id/code_28"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_28"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_29"
+                android:text="@string/third_code_29_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_29" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_29"
+                android:text="@string/third_finding_29_school_screening" android:layout_toRightOf="@id/code_29"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_29"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:minLines="1" android:text="" android:layout_marginLeft="20dp"
+        android:textSize="14dp" android:hint="@string/third_finding_30_school_screening"
+        android:layout_marginRight="25dp" android:id="@+id/othersText"/>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical" android:visibility="gone"
+        android:layout_height="wrap_content" android:id="@+id/thd_e_block">
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/third_subhead_e_school_screening" android:gravity="center"
+            android:textStyle="bold" android:background="#E2E2E2"
+            android:textColor="#000" android:textSize="16dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_e"
+                android:text="@string/third_subhead_code_school_screening" android:textSize="15dp"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_e"
+                android:text="@string/third_subhead_finding_school_screening" android:layout_toRightOf="@id/code_e"
+                android:layout_marginLeft="10dp" android:textSize="15dp" android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:src="@drawable/check" android:layout_alignParentRight="true"
+                android:layout_marginRight="45dp" android:paddingTop="4dp"/>
+<!--            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_e" android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp" android:checked="true"
+                android:clickable="false" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_31"
+                android:text="@string/third_code_31_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_31" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_31"
+                android:text="@string/third_finding_31_school_screening" android:layout_toRightOf="@id/code_31"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_31"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_32"
+                android:text="@string/third_code_32_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_32" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_32"
+                android:text="@string/third_finding_32_school_screening" android:layout_toRightOf="@id/code_32"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_32"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_33"
+                android:text="@string/third_code_33_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_33" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_33"
+                android:text="@string/third_finding_33_school_screening" android:layout_toRightOf="@id/code_33"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_33"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_34"
+                android:text="@string/third_code_34_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_34" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_34"
+                android:text="@string/third_finding_34_school_screening" android:layout_toRightOf="@id/code_34"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_34"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_35"
+                android:text="@string/third_code_35_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_35" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_35"
+                android:text="@string/third_finding_35_school_screening" android:layout_toRightOf="@id/code_35"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_35"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_36"
+                android:text="@string/third_code_36_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_36" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_36"
+                android:text="@string/third_finding_36_school_screening" android:layout_toRightOf="@id/code_36"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_36"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_37"
+                android:text="@string/third_code_37_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_37" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_37"
+                android:text="@string/third_finding_37_school_screening" android:layout_toRightOf="@id/code_37"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@+id/check_37" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:layout_marginBottom="5dp"
+            android:layout_height="20dp" android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="40dp" android:layout_height="wrap_content" android:id="@+id/code_38"
+                android:text="@string/third_code_38_school_screening" android:gravity="center"
+                android:textSize="14dp"/>
+            <CheckBox
+                android:layout_width="30dp" android:layout_height="wrap_content"
+                android:id="@+id/check_38" android:layout_alignParentRight="true"
+                android:layout_marginRight="38dp" android:clickable="false"
+                android:scaleX="0.85" android:scaleY="0.85" android:buttonTint="#000"
+                android:shadowColor="#FFF"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/finding_38"
+                android:text="@string/third_finding_38_school_screening" android:layout_toRightOf="@id/code_38"
+                android:layout_marginLeft="10dp" android:textSize="14dp" android:layout_toLeftOf="@id/check_38"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

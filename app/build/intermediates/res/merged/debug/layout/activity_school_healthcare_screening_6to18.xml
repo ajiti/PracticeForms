@@ -1,0 +1,1841 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    <TextView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/second_head_school_screening" android:gravity="center"
+        android:textStyle="bold" android:textColor="#000"
+        android:background="#abe002" android:textSize="17dp" />-->
+
+<!--    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical" android:visibility="gone"
+        android:layout_height="wrap_content" android:id="@+id/sec_a_block">
+
+&lt;!&ndash;        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/second_subhead_a_school_screening" android:gravity="center"
+            android:textStyle="bold" android:background="#aa00cc"
+            android:textColor="#000" android:textSize="15dp" />&ndash;&gt;
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_al_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_a1"
+                android:text="A1" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <TextView
+                android:id="@+id/sec_a1_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_a1" android:layout_height="wrap_content"
+                android:text="@string/second_a1_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_a1_rg"
+                android:layout_toRightOf="@id/sec_a1" android:orientation="horizontal"
+                android:layout_below="@id/sec_a1_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_a1_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_a1_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_a1_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical" android:visibility="gone"
+        android:layout_height="wrap_content" android:id="@+id/sec_a_block">
+
+<!--        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/second_a1_school_screening" android:gravity="center"
+            android:textStyle="bold" android:textColor="#000" android:textSize="15dp" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/al_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a1"
+                android:text="A1" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a1_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a1" android:layout_height="wrap_content"
+                android:text="@string/a1_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a1_rg"
+                android:layout_toRightOf="@id/a1" android:orientation="horizontal"
+                android:layout_below="@id/a1_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a1_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content" android:textColorHighlight="#FFFFFF"
+                    android:shadowColor="#FFFFFF" android:buttonTint="#000000"
+                    android:textColor="#000000" android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a1_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content" android:textColorHighlight="#FFFFFF"
+                    android:shadowColor="#FFFFFF" android:buttonTint="#000000"
+                    android:textColor="#000000" android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a1_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a2_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a2"
+                android:text="A2" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a2_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a2" android:layout_height="wrap_content"
+                android:text="@string/a2_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a2_rg"
+                android:layout_toRightOf="@id/a2" android:orientation="horizontal"
+                android:layout_below="@id/a2_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a2_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a2_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a2_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a3_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a3"
+                android:text="A3" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a3_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a3" android:layout_height="wrap_content"
+                android:text="@string/a3_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a3_rg"
+                android:layout_toRightOf="@id/a3" android:orientation="horizontal"
+                android:layout_below="@id/a3_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a3_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a3_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a3_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a4_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a4"
+                android:text="A4" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a4_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a4" android:layout_height="wrap_content"
+                android:text="@string/a4_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a4_rg"
+                android:layout_toRightOf="@id/a4" android:orientation="horizontal"
+                android:layout_below="@id/a4_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a4_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a4_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a4_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a5_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a5"
+                android:text="A5" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a5_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a5" android:layout_height="wrap_content"
+                android:text="@string/a5_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a5_rg"
+                android:layout_toRightOf="@id/a5" android:orientation="horizontal"
+                android:layout_below="@id/a5_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a5_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a5_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a5_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a6_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a6"
+                android:text="A6" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a6_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a6" android:layout_height="wrap_content"
+                android:text="@string/a6_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a6_rg"
+                android:layout_toRightOf="@id/a6" android:orientation="horizontal"
+                android:layout_below="@id/a6_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a6_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a6_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a6_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a7_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a7"
+                android:text="A7" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a7_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a7" android:layout_height="wrap_content"
+                android:text="@string/a7_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a7_rg"
+                android:layout_toRightOf="@id/a7" android:orientation="horizontal"
+                android:layout_below="@id/a7_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a7_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a7_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a7_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a8_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a8"
+                android:text="A8" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a8_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a8" android:layout_height="wrap_content"
+                android:text="@string/a8_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a8_rg"
+                android:layout_toRightOf="@id/a8" android:orientation="horizontal"
+                android:layout_below="@id/a8_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a8_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a8_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a8_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a9_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a9"
+                android:text="A9" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a9_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a9" android:layout_height="wrap_content"
+                android:text="@string/a9_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a9_rg"
+                android:layout_toRightOf="@id/a9" android:orientation="horizontal"
+                android:layout_below="@id/a9_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a9_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a9_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a9_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a10_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/a10_subhead" android:layout_width="wrap_content" android:layout_marginLeft="5dp"
+                android:layout_height="wrap_content" android:text="@string/subhead_a10_school_screening"
+                android:textColor="#000" android:textSize="14dp" android:layout_marginBottom="2dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a10a"
+                android:text="(a)" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"
+                android:layout_below="@id/a10_subhead"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a10a_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a10a" android:layout_height="wrap_content"
+                android:text="@string/a10a_school_screening" android:textColor="#000"
+                android:textSize="14dp" android:layout_below="@id/a10_subhead" />
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a10a_rg"
+                android:layout_toRightOf="@id/a10a" android:orientation="horizontal"
+                android:layout_below="@id/a10a_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10a_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10a_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10a_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a10b_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a10b"
+                android:text="(b)" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp" />
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a10b_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a10b" android:layout_height="wrap_content"
+                android:text="@string/a10b_school_screening" android:textColor="#000"
+                android:textSize="14dp" />
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a10b_rg"
+                android:layout_toRightOf="@id/a10b" android:orientation="horizontal"
+                android:layout_below="@id/a10b_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10b_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10b_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10b_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a10c_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a10c"
+                android:text="(c)" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp" />
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a10c_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a10c" android:layout_height="wrap_content"
+                android:text="@string/a10c_school_screening" android:textColor="#000"
+                android:textSize="14dp" />
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a10c_rg"
+                android:layout_toRightOf="@id/a10c" android:orientation="horizontal"
+                android:layout_below="@id/a10c_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10c_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10c_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10c_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a10d_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a10d"
+                android:text="(d)" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp" />
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a10d_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a10d" android:layout_height="wrap_content"
+                android:text="@string/a10d_school_screening" android:textColor="#000"
+                android:textSize="14dp" />
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a10d_rg"
+                android:layout_toRightOf="@id/a10d" android:orientation="horizontal"
+                android:layout_below="@id/a10d_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10d_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10d_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10d_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a10e_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a10e"
+                android:text="(e)" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp" />
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a10e_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a10e" android:layout_height="wrap_content"
+                android:text="@string/a10e_school_screening" android:textColor="#000"
+                android:textSize="14dp" />
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a10e_rg"
+                android:layout_toRightOf="@id/a10e" android:orientation="horizontal"
+                android:layout_below="@id/a10e_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10e_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10e_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a10e_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/a11_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/a11"
+                android:text="A11" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp" />
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/a11_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/a11" android:layout_height="wrap_content"
+                android:text="@string/a11_school_screening" android:textColor="#000"
+                android:textSize="14dp" />
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/a11_rg"
+                android:layout_toRightOf="@id/a11" android:orientation="horizontal"
+                android:layout_below="@id/a11_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a11_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a11_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/a11_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical" android:visibility="gone"
+        android:layout_height="wrap_content" android:id="@+id/sec_b_block">
+
+<!--        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/second_subhead_b_school_screening" android:gravity="center"
+            android:textStyle="bold" android:background="#aa00cc"
+            android:textColor="#000" android:textSize="15dp" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_b1_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_b1"
+                android:text="B1" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_b1_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_b1" android:layout_height="wrap_content"
+                android:text="@string/second_b1_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_b1_rg"
+                android:layout_toRightOf="@id/sec_b1" android:orientation="horizontal"
+                android:layout_below="@id/sec_b1_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b1_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b1_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b1_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_b2_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_b2"
+                android:text="B2" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_b2_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_b2" android:layout_height="wrap_content"
+                android:text="@string/second_b2_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_b2_rg"
+                android:layout_toRightOf="@id/sec_b2" android:orientation="horizontal"
+                android:layout_below="@id/sec_b2_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b2_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b2_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b2_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_b3_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_b3"
+                android:text="B3" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_b3_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_b3" android:layout_height="wrap_content"
+                android:text="@string/second_b3_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_b3_rg"
+                android:layout_toRightOf="@id/sec_b3" android:orientation="horizontal"
+                android:layout_below="@id/sec_b3_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b3_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b3_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b3_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_b4_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_b4"
+                android:text="B4" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_b4_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_b4" android:layout_height="wrap_content"
+                android:text="@string/second_b4_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_b4_rg"
+                android:layout_toRightOf="@id/sec_b4" android:orientation="horizontal"
+                android:layout_below="@id/sec_b4_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b4_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b4_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b4_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_b5_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_b5"
+                android:text="B5" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_b5_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_b5" android:layout_height="wrap_content"
+                android:text="@string/second_b5_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_b5_rg"
+                android:layout_toRightOf="@id/sec_b5" android:orientation="horizontal"
+                android:layout_below="@id/sec_b5_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b5_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b5_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_b5_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical" android:visibility="gone"
+        android:layout_height="wrap_content" android:id="@+id/sec_c_block">
+
+<!--        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/second_subhead_c_school_screening" android:gravity="center"
+            android:textStyle="bold" android:background="#aa00cc"
+            android:textColor="#000" android:textSize="15dp" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_c1_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_c1"
+                android:text="C1" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_c1_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_c1" android:layout_height="wrap_content"
+                android:text="@string/second_c1_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_c1_rg"
+                android:layout_toRightOf="@id/sec_c1" android:orientation="horizontal"
+                android:layout_below="@id/sec_c1_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c1_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c1_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c1_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_c2_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_c2"
+                android:text="C2" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_c2_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_c2" android:layout_height="wrap_content"
+                android:text="@string/second_c2_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_c2_rg"
+                android:layout_toRightOf="@id/sec_c2" android:orientation="horizontal"
+                android:layout_below="@id/sec_c2_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c2_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c2_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c2_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_c3_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_c3"
+                android:text="C3" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_c3_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_c3" android:layout_height="wrap_content"
+                android:text="@string/second_c3_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_c3_rg"
+                android:layout_toRightOf="@id/sec_c3" android:orientation="horizontal"
+                android:layout_below="@id/sec_c3_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c3_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c3_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c3_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_c4_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_c4"
+                android:text="C4" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_c4_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_c4" android:layout_height="wrap_content"
+                android:text="@string/second_c4_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_c4_rg"
+                android:layout_toRightOf="@id/sec_c4" android:orientation="horizontal"
+                android:layout_below="@id/sec_c4_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c4_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c4_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c4_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_c5_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_c5"
+                android:text="C5" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_c5_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_c5" android:layout_height="wrap_content"
+                android:text="@string/second_c5_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_c5_rg"
+                android:layout_toRightOf="@id/sec_c5" android:orientation="horizontal"
+                android:layout_below="@id/sec_c5_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c5_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c5_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c5_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_c6_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_c6"
+                android:text="C6" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_c6_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_c6" android:layout_height="wrap_content"
+                android:text="@string/second_c6_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_c6_rg"
+                android:layout_toRightOf="@id/sec_c6" android:orientation="horizontal"
+                android:layout_below="@id/sec_c6_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c6_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c6_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_c6_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical" android:visibility="gone"
+        android:layout_height="wrap_content" android:id="@+id/sec_d_block">
+
+<!--        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/second_subhead_d_school_screening" android:gravity="center"
+            android:textStyle="bold" android:background="#aa00cc"
+            android:textColor="#000" android:textSize="15dp" />-->
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/second_subhead_d_desc" android:gravity="center"
+            android:textColor="#000" android:textSize="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_d1_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_d1"
+                android:text="D1" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_d1_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_d1" android:layout_height="wrap_content"
+                android:text="@string/second_d1_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_d1_rg"
+                android:layout_toRightOf="@id/sec_d1" android:orientation="horizontal"
+                android:layout_below="@id/sec_d1_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d1_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d1_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d1_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_d2_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_d2"
+                android:text="D2" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_d2_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_d2" android:layout_height="wrap_content"
+                android:text="@string/second_d2_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_d2_rg"
+                android:layout_toRightOf="@id/sec_d2" android:orientation="horizontal"
+                android:layout_below="@id/sec_d2_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d2_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d2_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d2_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_d3_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_d3"
+                android:text="D3" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_d3_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_d3" android:layout_height="wrap_content"
+                android:text="@string/second_d3_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_d3_rg"
+                android:layout_toRightOf="@id/sec_d3" android:orientation="horizontal"
+                android:layout_below="@id/sec_d3_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d3_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d3_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d3_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_d4_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_d4"
+                android:text="D4" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_d4_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_d4" android:layout_height="wrap_content"
+                android:text="@string/second_d4_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_d4_rg"
+                android:layout_toRightOf="@id/sec_d4" android:orientation="horizontal"
+                android:layout_below="@id/sec_d4_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d4_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d4_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d4_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_d5_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_d5"
+                android:text="D5" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_d5_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_d5" android:layout_height="wrap_content"
+                android:text="@string/second_d5_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_d5_rg"
+                android:layout_toRightOf="@id/sec_d5" android:orientation="horizontal"
+                android:layout_below="@id/sec_d5_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d5_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d5_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d5_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_d6_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_d6"
+                android:text="D6" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_d6_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_d6" android:layout_height="wrap_content"
+                android:text="@string/second_d6_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_d6_rg"
+                android:layout_toRightOf="@id/sec_d6" android:orientation="horizontal"
+                android:layout_below="@id/sec_d6_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d6_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d6_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d6_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_d7_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_d7"
+                android:text="D7" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_d7_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_d7" android:layout_height="wrap_content"
+                android:text="@string/second_d7_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_d7_rg"
+                android:layout_toRightOf="@id/sec_d7" android:orientation="horizontal"
+                android:layout_below="@id/sec_d7_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d7_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d7_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d7_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_d8_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_d8"
+                android:text="D8" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_d8_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_d8" android:layout_height="wrap_content"
+                android:text="@string/second_d8_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_d8_rg"
+                android:layout_toRightOf="@id/sec_d8" android:orientation="horizontal"
+                android:layout_below="@id/sec_d8_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d8_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d8_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d8_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_d9_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_d9"
+                android:text="D9" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_d9_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_d9" android:layout_height="wrap_content"
+                android:text="@string/second_d9_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_d9_rg"
+                android:layout_toRightOf="@id/sec_d9" android:orientation="horizontal"
+                android:layout_below="@id/sec_d9_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d9_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d9_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_d9_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:orientation="vertical" android:visibility="gone"
+        android:layout_height="wrap_content" android:id="@+id/sec_e_block">
+
+<!--        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/second_subhead_e_school_screening" android:gravity="center"
+            android:textStyle="bold" android:background="#aa00cc"
+            android:textColor="#000" android:textSize="15dp" />-->
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_e1_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_e1"
+                android:text="E1" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_e1_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_e1" android:layout_height="wrap_content"
+                android:text="@string/second_e1_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_e1_rg"
+                android:layout_toRightOf="@id/sec_e1" android:orientation="horizontal"
+                android:layout_below="@id/sec_e1_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e1_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e1_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e1_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_e2_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_e2"
+                android:text="E2" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_e2_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_e2" android:layout_height="wrap_content"
+                android:text="@string/second_e2_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_e2_rg"
+                android:layout_toRightOf="@id/sec_e2" android:orientation="horizontal"
+                android:layout_below="@id/sec_e2_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e2_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e2_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e2_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_e3_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_e3"
+                android:text="E3" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_e3_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_e3" android:layout_height="wrap_content"
+                android:text="@string/second_e3_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_e3_rg"
+                android:layout_toRightOf="@id/sec_e3" android:orientation="horizontal"
+                android:layout_below="@id/sec_e3_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e3_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e3_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e3_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_e4_block" android:visibility="gone"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_e4"
+                android:text="E4" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_e4_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_e4" android:layout_height="wrap_content"
+                android:text="@string/second_e4_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_e4_rg"
+                android:layout_toRightOf="@id/sec_e4" android:orientation="horizontal"
+                android:layout_below="@id/sec_e4_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e4_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e4_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e4_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_e5_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_e5"
+                android:text="E5" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_e5_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_e5" android:layout_height="wrap_content"
+                android:text="@string/second_e5_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_e5_rg"
+                android:layout_toRightOf="@id/sec_e5" android:orientation="horizontal"
+                android:layout_below="@id/sec_e5_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e5_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e5_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e5_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_e6_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_e6"
+                android:text="E6" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_e6_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_e6" android:layout_height="wrap_content"
+                android:text="@string/second_e6_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_e6_rg"
+                android:layout_toRightOf="@id/sec_e6" android:orientation="horizontal"
+                android:layout_below="@id/sec_e6_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e6_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e6_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e6_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_e7_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_e7"
+                android:text="E7" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_e7_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_e7" android:layout_height="wrap_content"
+                android:text="@string/second_e7_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_e7_rg"
+                android:layout_toRightOf="@id/sec_e7" android:orientation="horizontal"
+                android:layout_below="@id/sec_e7_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e7_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e7_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e7_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent" android:id="@+id/sec_e8_block"
+            android:layout_marginBottom="5dp" android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" android:id="@+id/sec_e8"
+                android:text="E8" android:layout_marginRight="5dp"
+                android:textColor="#000" android:textSize="15dp"/>
+            <com.virtucure.practiceforms.JustifiedTextView
+                android:id="@+id/sec_e8_ques" android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/sec_e8" android:layout_height="wrap_content"
+                android:text="@string/second_e8_school_screening" android:textColor="#000"
+                android:textSize="14dp"/>
+            <RadioGroup
+                android:layout_width="match_parent" android:id="@+id/sec_e8_rg"
+                android:layout_toRightOf="@id/sec_e8" android:orientation="horizontal"
+                android:layout_below="@id/sec_e8_ques" android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e8_rg_rb1"
+                    android:text="Yes" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e8_rg_rb2"
+                    android:text="No" android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioButton
+                    android:layout_width="wrap_content" android:id="@+id/sec_e8_rg_rb3"
+                    android:text="Not Sure" android:layout_height="wrap_content"
+                    android:textColorHighlight="#FFFFFF" android:shadowColor="#FFFFFF"
+                    android:buttonTint="#000000" android:textColor="#000000"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/activity_school_healthcare_screening_preliminary_findings" />
+
+</LinearLayout>

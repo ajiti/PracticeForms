@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar"/>
+
+    <ExpandableListView
+        android:id="@+id/discharge_block"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_marginRight="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textStyle="bold"
+        android:shadowColor="#EBEBEB"
+        android:textColor="#FFFFFF"
+        android:background="#3cb5c0"
+        android:id="@+id/save_dischargesheet"
+        android:layout_margin="10dp" />
+
+</LinearLayout>
