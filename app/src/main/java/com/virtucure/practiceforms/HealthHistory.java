@@ -86,90 +86,91 @@ public class HealthHistory extends AppCompatActivity {
         }
 
         Button saveBtn = (Button) findViewById(R.id.button);
-        saveBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        if(saveBtn != null){
+            saveBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    previousIlliness = ((EditText) findViewById(R.id.previousIlliness)).getText().toString().trim();
+                    presentIlliness = ((EditText) findViewById(R.id.presentIllness)).getText().toString().trim();
+                    familyHistory = ((EditText) findViewById(R.id.familyhistory)).getText().toString().trim();
+                    socialHistory = ((EditText) findViewById(R.id.socialhistory)).getText().toString().trim();
+                    drugHistory = ((EditText) findViewById(R.id.drugHistory)).getText().toString().trim();
+                    allergies = ((EditText) findViewById(R.id.allergies)).getText().toString().trim();
+                    personalHistory = ((EditText) findViewById(R.id.personalHistory)).getText().toString().trim();
+                    menstrualHistory = ((EditText) findViewById(R.id.menstrualhistory)).getText().toString().trim();
+                    systemreview = ((EditText) findViewById(R.id.systemreview)).getText().toString().trim();
+                    summary = ((EditText) findViewById(R.id.summary)).getText().toString().trim();
+                    finalDiagnosis = ((EditText) findViewById(R.id.finalDiagnosis)).getText().toString().trim();
+                    provisionalDiagnosis = ((EditText) findViewById(R.id.provisionalDiagnosis)).getText().toString().trim();
 
-                previousIlliness = ((EditText) findViewById(R.id.previousIlliness)).getText().toString().trim();
-                presentIlliness = ((EditText) findViewById(R.id.presentIllness)).getText().toString().trim();
-                familyHistory = ((EditText) findViewById(R.id.familyhistory)).getText().toString().trim();
-                socialHistory = ((EditText) findViewById(R.id.socialhistory)).getText().toString().trim();
-                drugHistory = ((EditText) findViewById(R.id.drugHistory)).getText().toString().trim();
-                allergies = ((EditText) findViewById(R.id.allergies)).getText().toString().trim();
-                personalHistory = ((EditText) findViewById(R.id.personalHistory)).getText().toString().trim();
-                menstrualHistory = ((EditText) findViewById(R.id.menstrualhistory)).getText().toString().trim();
-                systemreview = ((EditText) findViewById(R.id.systemreview)).getText().toString().trim();
-                summary = ((EditText) findViewById(R.id.summary)).getText().toString().trim();
-                finalDiagnosis = ((EditText) findViewById(R.id.finalDiagnosis)).getText().toString().trim();
-                provisionalDiagnosis = ((EditText) findViewById(R.id.provisionalDiagnosis)).getText().toString().trim();
-
-                isEmptyForm = true;
-                formFieldData = new String[]{previousIlliness, presentIlliness, familyHistory, socialHistory, drugHistory, allergies, personalHistory, menstrualHistory, systemreview, summary, provisionalDiagnosis, finalDiagnosis};
-                for (String field : formFieldData) {
-                    if (!field.isEmpty()) {
-                        isEmptyForm = false;
-                        break;
+                    isEmptyForm = true;
+                    formFieldData = new String[]{previousIlliness, presentIlliness, familyHistory, socialHistory, drugHistory, allergies, personalHistory, menstrualHistory, systemreview, summary, provisionalDiagnosis, finalDiagnosis};
+                    for (String field : formFieldData) {
+                        if (!field.isEmpty()) {
+                            isEmptyForm = false;
+                            break;
+                        }
                     }
-                }
 
-                if (isEmptyForm) {
-                    Toast.makeText(context, "Please Fill The Form", Toast.LENGTH_SHORT).show();
-                    return;
-                }
+                    if (isEmptyForm) {
+                        Toast.makeText(context, R.string.fill_form_msg, Toast.LENGTH_SHORT).show();
+                        return;
+                    }
 
-                healthRegistrationId = getIntent().getExtras().getString("regid");
-                regLinkId = getIntent().getExtras().getString("regLinkId");
-                patientName = getIntent().getExtras().getString("name");
-                caseid = getIntent().getExtras().getString("caseid");
-                phone = getIntent().getExtras().getString("phone");
-                proofType = getIntent().getExtras().getString("proofType");
-                proofNumber = getIntent().getExtras().getString("proofNumber");
-                email = getIntent().getExtras().getString("email");
-                gender = getIntent().getExtras().getString("gender");
-                dob = getIntent().getExtras().getString("dob");
+                    healthRegistrationId = getIntent().getExtras().getString("regid");
+                    regLinkId = getIntent().getExtras().getString("regLinkId");
+                    patientName = getIntent().getExtras().getString("name");
+                    caseid = getIntent().getExtras().getString("caseid");
+                    phone = getIntent().getExtras().getString("phone");
+                    proofType = getIntent().getExtras().getString("proofType");
+                    proofNumber = getIntent().getExtras().getString("proofNumber");
+                    email = getIntent().getExtras().getString("email");
+                    gender = getIntent().getExtras().getString("gender");
+                    dob = getIntent().getExtras().getString("dob");
 
-                ArrayList<String> formsList = new ArrayList<>();
-                formsList.add(getIntent().getExtras().getString("formName"));
+                    ArrayList<String> formsList = new ArrayList<>();
+                    formsList.add(getIntent().getExtras().getString("formName"));
 
-                final Map<String, Object> insertparams = new HashMap<>();
-                insertparams.put("histFormPresentIllNess", presentIlliness);
-                insertparams.put("histFormPreviousIllness", previousIlliness);
-                insertparams.put("histFormDrug", drugHistory);
-                insertparams.put("histFormAllergiesandReactions", allergies);
-                insertparams.put("histFormPersonal", personalHistory);
-                insertparams.put("histFormMenstrual", menstrualHistory);
-                insertparams.put("histFormFamily", familyHistory);
-                insertparams.put("histFormSocial", socialHistory);
-                insertparams.put("histFormSystemsReview", systemreview);
-                insertparams.put("histFormSummary", summary);
-                insertparams.put("practiceFormNameDataIndex", "1");
-                insertparams.put("practiceFormNames", formsList);
-                insertparams.put("actionType", "save");
-                insertparams.put("healthRegistrationId", healthRegistrationId);
-                insertparams.put("patientName", patientName);
-                insertparams.put("regnLinkId", regLinkId);
-                insertparams.put("provisionalDiagnosis", provisionalDiagnosis);
-                insertparams.put("finalDiagnosis", finalDiagnosis);
+                    final Map<String, Object> insertparams = new HashMap<>();
+                    insertparams.put("histFormPresentIllNess", presentIlliness);
+                    insertparams.put("histFormPreviousIllness", previousIlliness);
+                    insertparams.put("histFormDrug", drugHistory);
+                    insertparams.put("histFormAllergiesandReactions", allergies);
+                    insertparams.put("histFormPersonal", personalHistory);
+                    insertparams.put("histFormMenstrual", menstrualHistory);
+                    insertparams.put("histFormFamily", familyHistory);
+                    insertparams.put("histFormSocial", socialHistory);
+                    insertparams.put("histFormSystemsReview", systemreview);
+                    insertparams.put("histFormSummary", summary);
+                    insertparams.put("practiceFormNameDataIndex", "1");
+                    insertparams.put("practiceFormNames", formsList);
+                    insertparams.put("actionType", "save");
+                    insertparams.put("healthRegistrationId", healthRegistrationId);
+                    insertparams.put("patientName", patientName);
+                    insertparams.put("regnLinkId", regLinkId);
+                    insertparams.put("provisionalDiagnosis", provisionalDiagnosis);
+                    insertparams.put("finalDiagnosis", finalDiagnosis);
 
-                if (caseid != null) {
-                    insertparams.put("caseRecordNo", caseid);
-                } else {
-                    insertparams.put("caseRecordNo", "");
-                }
-                jsonparams = new Gson().toJson(insertparams);
+                    if (caseid != null) {
+                        insertparams.put("caseRecordNo", caseid);
+                    } else {
+                        insertparams.put("caseRecordNo", "");
+                    }
+                    jsonparams = new Gson().toJson(insertparams);
 
-                new AlertDialog.Builder(context).setTitle("Alert")
-                        .setMessage("Do you want to save record").setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
+                    new AlertDialog.Builder(context).setTitle("Alert")
+                            .setMessage(R.string.save_record_msg).setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
                             saveCaseRecord(jsonparams, context);
-                    }
-                }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                }).show();
-            }
-        });
+                        }
+                    }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    }).show();
+                }
+            });
+        }
     }
 
     private void saveCaseRecord(String jsonparams, final Context ctx)
@@ -199,7 +200,7 @@ public class HealthHistory extends AppCompatActivity {
                                 public void onClick(DialogInterface dialog, int id) {
                                     Intent caseRecordsActivity = new Intent(
                                             getApplicationContext(),
-                                            CaseRecordFormsActivity.class);
+                                            CaseRecordFormsMainActivity.class);
                                     caseRecordsActivity.putExtra("regid", healthRegistrationId);
                                     caseRecordsActivity.putExtra("name", patientName);
                                     caseRecordsActivity.putExtra("phone", phone);
@@ -208,7 +209,7 @@ public class HealthHistory extends AppCompatActivity {
                                     caseRecordsActivity.putExtra("proofType", proofType);
                                     caseRecordsActivity.putExtra("proofNumber", proofNumber);
                                     caseRecordsActivity.putExtra("gender", gender);
-                                    caseRecordsActivity.putExtra("reqLinkId", regLinkId);
+                                    caseRecordsActivity.putExtra("regLinkId", regLinkId);
                                     caseRecordsActivity.putExtra("caserecordno", caseid);
                                     caseRecordsActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     startActivity(caseRecordsActivity);

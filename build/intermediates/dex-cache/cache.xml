@@ -1,3 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\exploded-aar\com.miguelcatalan\materialsearchview\1.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="918e3e9514d90e54421b674cf0c95044f4e155ad">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\com.miguelcatalan-materialsearchview-1.4.0_d9267797f3d884ef2c84bd1d5f17f6716ef56518.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-23.4.0_c166cd46c296871ab97d62b42ec3e8a67d4a342a.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_557b7f7416cf0af445f4082e4d52f2eaf3cd0264.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\exploded-aar\com.android.support\palette-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="51518e8e8f97c314a243d9def0ded91d385b6a1e">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\com.android.support-palette-v7-23.4.0_8ee35964587e1e6d0f9cacd4e2f45d8afdb334c8.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_92a503b2962ea5a29a118aae27a36bd921db5831.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\gson-2.6.2_cf417c79376981f1d84bf0367779d4b181d76b74.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\annotations-13.0_f062332e9575a1d7ed5fd7b13d57f2b653866c03.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="78c9d9e5d3e300997d7ec161283ebae50208323e">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\instant-run_444da1cfbf207b21ff6eb6760c7e5bf96997f635.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_9e20ff4747b6e367447b036de6509d544f743d00.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_fe1431a13be4f17a4d9f1bb560f82e2a8090c1c1.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\com.android.support-design-23.4.0_151455a4f2aceb93d90188d767d5a85810f3bf98.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_f888ae7eed7bd1aa5e3a6b1cc58041efbff08e72.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_2606f4347dde04dd321cbfc86b0db083cc0dc273.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_9b0dfcd8e6484d2591f8109eb305dd95c07c5fa2.jar" />
+    </item>
+    <item
+        jar="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7d9034e498f7bc9252257f4e4782a176dc96c841">
+        <dex dex="C:\Users\AJITI\AndroidStudioProjects\PracticeForms\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_be4e030098133dedcaa35e4efefcfaf45c38d996.jar" />
+    </item>
+
+</items>

@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
     <LinearLayout
         android:layout_width="match_parent" android:orientation="vertical"
         android:layout_height="wrap_content" android:id="@+id/hamatology_block"
-        android:layout_marginLeft="10dp">
+        android:layout_marginLeft="10dp" android:layout_marginBottom="10dp">
 
         <CheckBox
             android:id="@+id/hch1"
@@ -120,12 +122,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="8dp"
             android:id="@+id/h23"
             android:text="@string/investigation_pathology_Hamatology_23"
             android:layout_marginRight="5dp"
-            android:textColor="#000" android:textSize="15dp"/>
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
         <CheckBox
             android:id="@+id/hch24"
             android:layout_width="wrap_content"
@@ -224,7 +227,8 @@
                 android:id="@+id/c12"
                 android:text="@string/investigation_pathology_Clinical_12"
                 android:layout_marginRight="5dp"
-                android:textColor="#000" android:textSize="15dp"/>
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
             <CheckBox
                 android:id="@+id/cch13"
                 android:text="@string/investigation_pathology_Clinical_13"
@@ -242,7 +246,8 @@
                 android:id="@+id/c15"
                 android:text="@string/investigation_pathology_Clinical_15"
                 android:layout_marginRight="5dp"
-                android:textColor="#000" android:textSize="15dp"/>
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -250,7 +255,8 @@
                 android:id="@+id/c16"
                 android:text="@string/investigation_pathology_Clinical_16"
                 android:layout_marginRight="5dp"
-                android:textColor="#000" android:textSize="15dp"/>
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -258,7 +264,8 @@
                 android:id="@+id/c17"
                 android:text="@string/investigation_pathology_Clinical_17"
                 android:layout_marginRight="5dp"
-                android:textColor="#000" android:textSize="15dp"/>
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
             <CheckBox
                 android:id="@+id/cch18"
                 android:text="@string/investigation_pathology_Clinical_18"
@@ -291,6 +298,7 @@
                 android:id="@+id/c23"
                 android:text="@string/investigation_pathology_Clinical_23"
                 android:layout_marginRight="5dp"
-                android:textColor="#000" android:textSize="15dp"/>
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
         </LinearLayout>
 </LinearLayout>

@@ -63,11 +63,6 @@
             android:launchMode="singleTask">
         </activity>
         <activity
-            android:name=".CaseRecordFormsActivity"
-            android:label="@string/title_activity_caserecord_forms"
-            android:launchMode="singleTask">
-        </activity>
-        <activity
             android:name=".SchoolHealthcareScreening"
             android:label="@string/title_activity_school_healthcare_screening"
             android:launchMode="singleTask">
@@ -105,6 +100,7 @@
             android:label="@string/title_activity_physical"
             android:launchMode="singleTask" />
         <activity android:name=".CaseRecordFormsMainActivity"
+            android:label="@string/title_activity_caserecord_forms"
             android:launchMode="singleTask"/>
         <activity
             android:name="com.virtucure.practiceforms.InvestigationBioChemistry"

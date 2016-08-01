@@ -1,18 +1,12 @@
 package com.virtucure.practiceforms;
 
-import android.app.Activity;
 import android.content.Context;
-import android.graphics.drawable.ColorDrawable;
-import android.os.Build;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SwitchCompat;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -23,7 +17,6 @@ import com.virtucare.practiceforms.dto.SharedCaseRecordsDTO;
 import com.virtucare.practiceforms.dto.SharedIdDTO;
 import com.virtucare.practiceforms.dto.SharedToMemberDetailsDTO;
 
-import java.util.EmptyStackException;
 import java.util.List;
 
 public class SharedRecordDetailsAdapter extends RecyclerView.Adapter<SharedRecordDetailsAdapter.ViewHolder> {
@@ -40,7 +33,7 @@ public class SharedRecordDetailsAdapter extends RecyclerView.Adapter<SharedRecor
     private SharedMembersListAdapter adapter;
     private List<SharedIdDTO> sharedMembers;
 
-    public SharedRecordDetailsAdapter(Context context, List<SharedCaseRecordsDTO> sharedRecords){
+    public SharedRecordDetailsAdapter(Context context, List<SharedCaseRecordsDTO> sharedRecords) {
         this.context = context;
         this.sharedRecords = sharedRecords;
         initPopupWindow();
@@ -67,14 +60,18 @@ public class SharedRecordDetailsAdapter extends RecyclerView.Adapter<SharedRecor
 
         public ViewHolder(View itemView) {
             super(itemView);
-            if(itemView != null){
+            if(itemView != null) {
                 caseRecordView = (TextView) itemView.findViewById(R.id.caseRecordNo);
             }
         }
 
         public void bind(final SharedCaseRecordsDTO sharedCaseRecordsDTO) {
             final String caseId = sharedCaseRecordsDTO.getCaseRecordNo();
-            caseRecordView.setText(caseId);
+
+            if(caseRecordView != null) {
+                caseRecordView.setText(caseId);
+            }
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -94,7 +91,7 @@ public class SharedRecordDetailsAdapter extends RecyclerView.Adapter<SharedRecor
                                 popupWindow.dismiss();
                             }
                         });
-                    }catch (Exception e){
+                    } catch (Exception e) {
                         Log.e(TAG, e.getLocalizedMessage(), e);
                     }
                 }
@@ -104,12 +101,12 @@ public class SharedRecordDetailsAdapter extends RecyclerView.Adapter<SharedRecor
 
     private void initPopupWindow() {
         LayoutInflater inflater = null;
-        if(context != null){
+        if(context != null) {
             inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         }
-        if(inflater != null){
+        if(inflater != null) {
             popupView = inflater.inflate(R.layout.shared_record_popup, null);
-            if(popupView != null){
+            if(popupView != null) {
                 popupCaseRecordView = (TextView) popupView.findViewById(R.id.caseRecordNo);
                 popupPatientView = (TextView) popupView.findViewById(R.id.patientId);
                 popupClose = (ImageButton) popupView.findViewById(R.id.close);
@@ -117,7 +114,7 @@ public class SharedRecordDetailsAdapter extends RecyclerView.Adapter<SharedRecor
 
                 popupWindow = new PopupWindow(popupView, LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT, true);
 //                popupWindow = new PopupWindow(popupView, LinearLayout.LayoutParams.WRAP_CONTENT, 700, true);
-                if(popupWindow != null){
+                if(popupWindow != null) {
                     popupWindow.setTouchable(true);
                     popupWindow.setFocusable(false);
                     popupWindow.setAnimationStyle(R.style.Animation);

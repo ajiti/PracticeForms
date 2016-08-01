@@ -19,7 +19,7 @@
         <item name="android:windowEnterAnimation">@anim/bottom_up</item>
         <item name="android:windowExitAnimation">@anim/bottom_down</item>
     </style>
-
+    
     <style name="MaterialSearchViewStyle">
         <!-- Background for the search bar -->
 <!--        <item name="searchBackground">@color/theme_primary</item>-->

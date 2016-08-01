@@ -251,7 +251,7 @@ public class FormShareActivity extends AppCompatActivity {
                                 public void onClick(DialogInterface dialog, int id) {
                                     Intent caseRecordsActivity = new Intent(
                                             getApplicationContext(),
-                                            CaseRecordFormsActivity.class);
+                                            CaseRecordFormsMainActivity.class);
                                     caseRecordsActivity.putExtra("regid", healthRegistrationId);
                                     caseRecordsActivity.putExtra("name", patientName);
                                     caseRecordsActivity.putExtra("phone", getIntent().getExtras().getString("phone"));
@@ -260,7 +260,7 @@ public class FormShareActivity extends AppCompatActivity {
                                     caseRecordsActivity.putExtra("proofNumber", proofNumber);
                                     caseRecordsActivity.putExtra("gender", getIntent().getExtras().getString("gender"));
                                     caseRecordsActivity.putExtra("dob", getIntent().getExtras().getString("dob"));
-                                    caseRecordsActivity.putExtra("reqLinkId", regLinkId);
+                                    caseRecordsActivity.putExtra("regLinkId", regLinkId);
                                     caseRecordsActivity.putExtra("caserecordno", caseRecordNo);
                                     caseRecordsActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     startActivity(caseRecordsActivity);

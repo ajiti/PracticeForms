@@ -12,29 +12,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.AnimationSet;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
-import com.virtucare.practiceforms.dto.CaseIdDTO;
-import com.virtucare.practiceforms.dto.FormFieldsDTO;
-import com.virtucare.practiceforms.dto.FormNamesDTO;
 import com.virtucare.practiceforms.dto.PatientDTO;
 import com.virtucare.practiceforms.dto.PatientsListDTO;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 import javax.microedition.khronos.egl.EGLConfig;
@@ -43,6 +32,7 @@ import javax.microedition.khronos.opengles.GL10;
 public class PatientDetail extends AppCompatActivity implements GLSurfaceView.Renderer {
 
     private Toolbar toolbar;
+    private static final String TAG = PatientDetail.class.getSimpleName();
     private ListView listView;
     private CaseIdAdaptor adapter;
     private String serverUrl = ServerUtil.serverUrl+"VCRegionalAPP/rest/viewhridinfo";
@@ -76,46 +66,42 @@ public class PatientDetail extends AppCompatActivity implements GLSurfaceView.Re
         TextView name = (TextView) findViewById(R.id.name1);
         name.setText(getIntent().getExtras().getString("name"));
         TextView mobile_email = (TextView) findViewById(R.id.phone_email1);
-        mobile_email.setText(getIntent().getExtras().getString("phone")+"/"+getIntent().getExtras().getString("email"));
+        mobile_email.setText(getIntent().getExtras().getString("phone") + "/" + getIntent().getExtras().getString("email"));
         TextView dob_gender = (TextView) findViewById(R.id.dobgender1);
         patientDob = getIntent().getExtras().getString("dob");
         patientGender = getIntent().getExtras().getString("gender");
         dob_gender.setText(patientDob + "/" + patientGender);
         TextView proof = (TextView) findViewById(R.id.proof1);
-        proof.setText(getIntent().getExtras().getString("proofType")+":"+getIntent().getExtras().getString("proofNumber"));
-        Button b = (Button) findViewById(R.id.addfrm1);
+        proof.setText(getIntent().getExtras().getString("proofType") + ":" + getIntent().getExtras().getString("proofNumber"));
+        Button newCaseRecordBtn = (Button) findViewById(R.id.addfrm1);
         listView = (ListView) findViewById(R.id.caseidlist);
         TextView caseRecordTitle = (TextView) findViewById(R.id.caserecordsttl);
         caseRecordTitle.setPaintFlags(caseRecordTitle.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
         getPatientsData();
 
-        b.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent newcase = new Intent(
-                        getApplicationContext(),
-                        HealthHistory.class);
-                newcase.putExtra("caseid","");
-                newcase.putExtra("formName","historytaking");
-                newcase.putExtra("regid",getIntent().getExtras().getString("regid"));
-                newcase.putExtra("name" ,getIntent().getExtras().getString("name"));
-                newcase.putExtra("regLinkId", getIntent().getExtras().getString("regLinkId"));
-                newcase.putExtra("proofType", getIntent().getExtras().getString("proofType"));
-                newcase.putExtra("proofNumber", getIntent().getExtras().getString("proofNumber"));
-                newcase.putExtra("dob", getIntent().getExtras().getString("dob"));
-                newcase.putExtra("gender", getIntent().getExtras().getString("gender"));
-                newcase.putExtra("phone", getIntent().getExtras().getString("phone"));
-                newcase.putExtra("email", getIntent().getExtras().getString("email"));
-                startActivity(newcase);
-            }
-        });
-
+        if(newCaseRecordBtn != null){
+            newCaseRecordBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent newcase = new Intent(
+                            getApplicationContext(),
+                            HealthHistory.class);
+                    newcase.putExtra("caseid","");
+                    newcase.putExtra("formName","historytaking");
+                    newcase.putExtra("regid",getIntent().getExtras().getString("regid"));
+                    newcase.putExtra("name" ,getIntent().getExtras().getString("name"));
+                    newcase.putExtra("regLinkId", getIntent().getExtras().getString("regLinkId"));
+                    newcase.putExtra("proofType", getIntent().getExtras().getString("proofType"));
+                    newcase.putExtra("proofNumber", getIntent().getExtras().getString("proofNumber"));
+                    newcase.putExtra("dob", getIntent().getExtras().getString("dob"));
+                    newcase.putExtra("gender", getIntent().getExtras().getString("gender"));
+                    newcase.putExtra("phone", getIntent().getExtras().getString("phone"));
+                    newcase.putExtra("email", getIntent().getExtras().getString("email"));
+                    startActivity(newcase);
+                }
+            });
+        }
     }
-
-/*    @Override
-    protected void onStop(){
-        super.onStop();
-    }*/
 
     @Override
     protected void onDestroy(){
@@ -158,9 +144,7 @@ public class PatientDetail extends AppCompatActivity implements GLSurfaceView.Re
                     broadcastIntent.setAction("com.package.ACTION_LOGOUT");
                     sendBroadcast(broadcastIntent);
                 }
-
             }, "Logging off");
-
             worker.execute(nameValues);
         }
         return super.onOptionsItemSelected(item);
@@ -186,15 +170,14 @@ public class PatientDetail extends AppCompatActivity implements GLSurfaceView.Re
                                 emptyTxtView.setVisibility(View.GONE);
                                 PatientDTO patientDTO = patientsListDTO.getHealthRegistrationList().get(0);
                                 patientDTO.setRegId(getIntent().getExtras().getString("regid"));
-                                //adapter = new CaseIdAdaptor(PatientDetail.this, patientsListDTO.getHealthRegistrationList().get(0).getCaseIdsLIst());
                                 adapter = new CaseIdAdaptor(PatientDetail.this, patientDTO);
+                                listView.setAdapter(adapter);
+                            } else {
+                                emptyTxtView.setVisibility(View.VISIBLE);
                             }
-                            else emptyTxtView.setVisibility(View.VISIBLE);
-                            listView.setAdapter(adapter);
                         }
-                    }
-                    catch (Exception e){
-
+                    } catch (Exception e){
+                        Log.e(TAG, e.getLocalizedMessage(), e);
                     }
                 } else {
                     new AlertDialog.Builder(PatientDetail.this)
@@ -202,7 +185,6 @@ public class PatientDetail extends AppCompatActivity implements GLSurfaceView.Re
                             .setMessage(result.get("error"))
                             .show();
                 }
-
             }
         }, "Retrieving Case Records");
         worker.execute(nameValues);

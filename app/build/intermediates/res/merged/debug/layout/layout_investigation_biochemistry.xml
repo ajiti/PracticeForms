@@ -2,7 +2,8 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
 
     <include layout="@layout/toolbar"/>
 
@@ -17,13 +18,15 @@
             android:textStyle="bold" android:textColor="#000"
             android:background="#FFF" android:textSize="17dp"
             android:visibility="gone" android:id="@+id/head1"/>
+
         <ExpandableListView
             android:id="@+id/in_bioch"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_marginRight="10dp"/>
-        <android.support.v7.widget.AppCompatButton
+
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Save"
@@ -32,8 +35,7 @@
             android:textColor="#FFFFFF"
             android:background="#3cb5c0"
             android:id="@+id/inbsave"
-            android:layout_margin="10dp"
-            style="@style/Widget.AppCompat.Button.Colored"/>
+            android:layout_margin="10dp"/>
 
     </LinearLayout>
 

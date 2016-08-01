@@ -87,118 +87,120 @@ public class DentalAssessment extends AppCompatActivity {
         }
 
         final Button saveBtn = (Button) findViewById(R.id.dentalsave);
-        saveBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        if(saveBtn != null){
+            saveBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
-                try {
-                    healthRegistrationId = getIntent().getExtras().getString("regid");
-                    regLinkId = getIntent().getExtras().getString("regLinkId");
-                    patientName = getIntent().getExtras().getString("name");
-                    phone = getIntent().getExtras().getString("phone");
-                    proofType = getIntent().getExtras().getString("proofType");
-                    proofNumber = getIntent().getExtras().getString("proofNumber");
-                    email = getIntent().getExtras().getString("email");
-                    gender = getIntent().getExtras().getString("gender");
-                    dob = getIntent().getExtras().getString("dob");
-                    caseid = getIntent().getExtras().getString("caseid");
-                    formName = getIntent().getExtras().getString("formName");
+                    try {
+                        healthRegistrationId = getIntent().getExtras().getString("regid");
+                        regLinkId = getIntent().getExtras().getString("regLinkId");
+                        patientName = getIntent().getExtras().getString("name");
+                        phone = getIntent().getExtras().getString("phone");
+                        proofType = getIntent().getExtras().getString("proofType");
+                        proofNumber = getIntent().getExtras().getString("proofNumber");
+                        email = getIntent().getExtras().getString("email");
+                        gender = getIntent().getExtras().getString("gender");
+                        dob = getIntent().getExtras().getString("dob");
+                        caseid = getIntent().getExtras().getString("caseid");
+                        formName = getIntent().getExtras().getString("formName");
 
-                    int rg1 = ((RadioGroup) findViewById(R.id.denradiogroup1)).getCheckedRadioButtonId();
-                    int rg2 = ((RadioGroup) findViewById(R.id.denradiogroup2)).getCheckedRadioButtonId();
-                    int rg3 = ((RadioGroup) findViewById(R.id.denradiogroup3)).getCheckedRadioButtonId();
-                    int rg4 = ((RadioGroup) findViewById(R.id.denradiogroup4)).getCheckedRadioButtonId();
-                    int rg5 = ((RadioGroup) findViewById(R.id.denradiogroup5)).getCheckedRadioButtonId();
-                    int rg6 = ((RadioGroup) findViewById(R.id.denradiogroup6)).getCheckedRadioButtonId();
-                    int rg7 = ((RadioGroup) findViewById(R.id.denradiogroup7)).getCheckedRadioButtonId();
-                    int rg8 = ((RadioGroup) findViewById(R.id.denradiogroup8)).getCheckedRadioButtonId();
-                    int rg9 = ((RadioGroup) findViewById(R.id.denradiogroup9)).getCheckedRadioButtonId();
-                    int rg10 = ((RadioGroup) findViewById(R.id.denradiogroup10)).getCheckedRadioButtonId();
+                        int rg1 = ((RadioGroup) findViewById(R.id.denradiogroup1)).getCheckedRadioButtonId();
+                        int rg2 = ((RadioGroup) findViewById(R.id.denradiogroup2)).getCheckedRadioButtonId();
+                        int rg3 = ((RadioGroup) findViewById(R.id.denradiogroup3)).getCheckedRadioButtonId();
+                        int rg4 = ((RadioGroup) findViewById(R.id.denradiogroup4)).getCheckedRadioButtonId();
+                        int rg5 = ((RadioGroup) findViewById(R.id.denradiogroup5)).getCheckedRadioButtonId();
+                        int rg6 = ((RadioGroup) findViewById(R.id.denradiogroup6)).getCheckedRadioButtonId();
+                        int rg7 = ((RadioGroup) findViewById(R.id.denradiogroup7)).getCheckedRadioButtonId();
+                        int rg8 = ((RadioGroup) findViewById(R.id.denradiogroup8)).getCheckedRadioButtonId();
+                        int rg9 = ((RadioGroup) findViewById(R.id.denradiogroup9)).getCheckedRadioButtonId();
+                        int rg10 = ((RadioGroup) findViewById(R.id.denradiogroup10)).getCheckedRadioButtonId();
 
-                    if(rg1 != -1)
-                        painInTeeth = getCheckedValue((String) ((RadioButton) findViewById(rg1)).getText());
-                    if(rg2 != -1)
-                        severeSensitivityOfTeethOnDrinks = getCheckedValue((String) ((RadioButton) findViewById(rg2)).getText());
-                    if(rg3 != -1)
-                        painorBleedingInGums = getCheckedValue((String) ((RadioButton) findViewById(rg3)).getText());
-                    if(rg4 != -1)
-                        looseTeethWithGaps = getCheckedValue((String) ((RadioButton) findViewById(rg4)).getText());
-                    if(rg5 != -1)
-                        unpleasantTaste = getCheckedValue((String) ((RadioButton) findViewById(rg5)).getText());
-                    if(rg6 != -1)
-                        grindYourTeethWhenSleep = getCheckedValue((String) ((RadioButton) findViewById(rg6)).getText());
-                    if(rg7 != -1)
-                        swellingInGumsWithFluid = getCheckedValue((String) ((RadioButton) findViewById(rg7)).getText());
-                    if(rg8 != -1)
-                        severePainInTeethAtNight = getCheckedValue((String) ((RadioButton) findViewById(rg8)).getText());
-                    if(rg9 != -1)
-                        painnAndSwellingInGums = getCheckedValue((String) ((RadioButton) findViewById(rg9)).getText());
-                    if(rg10 != -1)
-                        irregularPlacedTeeth = getCheckedValue((String) ((RadioButton) findViewById(rg10)).getText());
+                        if(rg1 != -1)
+                            painInTeeth = getCheckedValue((String) ((RadioButton) findViewById(rg1)).getText());
+                        if(rg2 != -1)
+                            severeSensitivityOfTeethOnDrinks = getCheckedValue((String) ((RadioButton) findViewById(rg2)).getText());
+                        if(rg3 != -1)
+                            painorBleedingInGums = getCheckedValue((String) ((RadioButton) findViewById(rg3)).getText());
+                        if(rg4 != -1)
+                            looseTeethWithGaps = getCheckedValue((String) ((RadioButton) findViewById(rg4)).getText());
+                        if(rg5 != -1)
+                            unpleasantTaste = getCheckedValue((String) ((RadioButton) findViewById(rg5)).getText());
+                        if(rg6 != -1)
+                            grindYourTeethWhenSleep = getCheckedValue((String) ((RadioButton) findViewById(rg6)).getText());
+                        if(rg7 != -1)
+                            swellingInGumsWithFluid = getCheckedValue((String) ((RadioButton) findViewById(rg7)).getText());
+                        if(rg8 != -1)
+                            severePainInTeethAtNight = getCheckedValue((String) ((RadioButton) findViewById(rg8)).getText());
+                        if(rg9 != -1)
+                            painnAndSwellingInGums = getCheckedValue((String) ((RadioButton) findViewById(rg9)).getText());
+                        if(rg10 != -1)
+                            irregularPlacedTeeth = getCheckedValue((String) ((RadioButton) findViewById(rg10)).getText());
 
                     /*finalDiagnosis = ((EditText) findViewById(R.id.finalDiagnosis)).getText().toString().trim();
                     provisionalDiagnosis = ((EditText) findViewById(R.id.provisionalDiagnosis)).getText().toString().trim();*/
 
-                    ArrayList<String> formsList = new ArrayList<>();
-                    formsList.add(formName);
+                        ArrayList<String> formsList = new ArrayList<>();
+                        formsList.add(formName);
 
-                    final Map<String, Object> insertparams = new HashMap<>();
-                    insertparams.put("dentFormPainInTeeth", painInTeeth);
-                    insertparams.put("dentFormSevereSensitivityOfTeethOnDrinks", severeSensitivityOfTeethOnDrinks);
-                    insertparams.put("dentFormPainorBleedingInGums", painorBleedingInGums);
-                    insertparams.put("dentFormHaveLooseTeethWithGaps", looseTeethWithGaps);
-                    insertparams.put("dentFormHaveUnpleasantTaste", unpleasantTaste);
-                    insertparams.put("dentFormDoGrindYourTeethWhenSleep", grindYourTeethWhenSleep);
-                    insertparams.put("dentFormHaveSwellingInGumsWithFluid", swellingInGumsWithFluid);
-                    insertparams.put("dentFormSeverePainInTeethAtNight", severePainInTeethAtNight);
-                    insertparams.put("dentFormHavePainnAndSwellingInGums", painnAndSwellingInGums);
-                    insertparams.put("dentFormHaveIrregularPlacedTeeth", irregularPlacedTeeth);
-                    insertparams.put("practiceFormNameDataIndex", "1");
-                    insertparams.put("practiceFormNames", formsList);
-                    insertparams.put("actionType", "save");
-                    insertparams.put("healthRegistrationId", healthRegistrationId);
-                    insertparams.put("patientName", patientName);
-                    insertparams.put("regnLinkId", regLinkId);
+                        final Map<String, Object> insertparams = new HashMap<>();
+                        insertparams.put("dentFormPainInTeeth", painInTeeth);
+                        insertparams.put("dentFormSevereSensitivityOfTeethOnDrinks", severeSensitivityOfTeethOnDrinks);
+                        insertparams.put("dentFormPainorBleedingInGums", painorBleedingInGums);
+                        insertparams.put("dentFormHaveLooseTeethWithGaps", looseTeethWithGaps);
+                        insertparams.put("dentFormHaveUnpleasantTaste", unpleasantTaste);
+                        insertparams.put("dentFormDoGrindYourTeethWhenSleep", grindYourTeethWhenSleep);
+                        insertparams.put("dentFormHaveSwellingInGumsWithFluid", swellingInGumsWithFluid);
+                        insertparams.put("dentFormSeverePainInTeethAtNight", severePainInTeethAtNight);
+                        insertparams.put("dentFormHavePainnAndSwellingInGums", painnAndSwellingInGums);
+                        insertparams.put("dentFormHaveIrregularPlacedTeeth", irregularPlacedTeeth);
+                        insertparams.put("practiceFormNameDataIndex", "1");
+                        insertparams.put("practiceFormNames", formsList);
+                        insertparams.put("actionType", "save");
+                        insertparams.put("healthRegistrationId", healthRegistrationId);
+                        insertparams.put("patientName", patientName);
+                        insertparams.put("regnLinkId", regLinkId);
 
                     /*insertparams.put("provisionalDiagnosis", provisionalDiagnosis);
                     insertparams.put("finalDiagnosis", finalDiagnosis);*/
 
-                    if(caseid != null){
-                        insertparams.put("caseRecordNo",caseid);
-                    }
+                        if(caseid != null){
+                            insertparams.put("caseRecordNo",caseid);
+                        }
 
-                    jsonparams = new Gson().toJson(insertparams);
+                        jsonparams = new Gson().toJson(insertparams);
 
-                    if(rg1 == -1 && rg2 == -1 && rg3 == -1 && rg4 == -1 && rg5 == -1 && rg6 == -1 && rg7 == -1 && rg8 == -1 && rg9 == -1 && rg10 == -1)
-                    {
-                        new AlertDialog.Builder(context).setTitle("Alert")
-                        .setMessage("Do you want to continue with empty record").setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                saveCaseRecord(jsonparams, context);
-                            }
-                        }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
-                            }
-                        }).show();
+                        if(rg1 == -1 && rg2 == -1 && rg3 == -1 && rg4 == -1 && rg5 == -1 && rg6 == -1 && rg7 == -1 && rg8 == -1 && rg9 == -1 && rg10 == -1)
+                        {
+                            new AlertDialog.Builder(context).setTitle("Alert")
+                                    .setMessage(R.string.empty_save_record_msg).setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    saveCaseRecord(jsonparams, context);
+                                }
+                            }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.cancel();
+                                }
+                            }).show();
+                        }
+                        else{
+                            new AlertDialog.Builder(context).setTitle("Alert")
+                                    .setMessage(R.string.save_record_msg).setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    saveCaseRecord(jsonparams, context);
+                                }
+                            }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.cancel();
+                                }
+                            }).show();
+                        }
                     }
-                    else{
-                        new AlertDialog.Builder(context).setTitle("Alert")
-                                .setMessage("Do you want to save record").setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                saveCaseRecord(jsonparams, context);
-                            }
-                        }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
-                            }
-                        }).show();
+                    catch (Exception e){
                     }
                 }
-                catch (Exception e){
-                }
-            }
-        });
+            });
+        }
     }
 
     private void saveCaseRecord(String jsonparams, final Context ctx)
@@ -227,7 +229,7 @@ public class DentalAssessment extends AppCompatActivity {
                                 public void onClick(DialogInterface dialog, int id) {
                                     Intent caseRecordsActivity = new Intent(
                                             getApplicationContext(),
-                                            CaseRecordFormsActivity.class);
+                                            CaseRecordFormsMainActivity.class);
                                     caseRecordsActivity.putExtra("regid", healthRegistrationId);
                                     caseRecordsActivity.putExtra("name", patientName);
                                     caseRecordsActivity.putExtra("phone", phone);
@@ -236,7 +238,7 @@ public class DentalAssessment extends AppCompatActivity {
                                     caseRecordsActivity.putExtra("proofNumber", proofNumber);
                                     caseRecordsActivity.putExtra("gender", gender);
                                     caseRecordsActivity.putExtra("dob", dob);
-                                    caseRecordsActivity.putExtra("reqLinkId", regLinkId);
+                                    caseRecordsActivity.putExtra("regLinkId", regLinkId);
                                     caseRecordsActivity.putExtra("caserecordno", caseid);
                                     caseRecordsActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     startActivity(caseRecordsActivity);

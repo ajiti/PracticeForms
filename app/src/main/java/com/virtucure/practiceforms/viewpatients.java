@@ -12,22 +12,15 @@ import android.os.Bundle;
 import android.speech.RecognizerIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.text.Editable;
 import android.text.TextUtils;
-import android.text.TextWatcher;
-import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.miguelcatalan.materialsearchview.MaterialSearchView;
@@ -51,10 +44,9 @@ public class viewpatients extends AppCompatActivity {
     private String serverUrl = ServerUtil.serverUrl+"VCRegionalAPP/rest/view";
     private BroadcastReceiver logoutReceiver;
     private TextView emptyTxtView;
-    private EditText searchInput;
-    private ArrayList<PatientDTO> oldList;
-    private ArrayList<PatientDTO> finalList;
-    private List<String> newList;
+    private ArrayList<PatientDTO> serverSidePatientList;
+    private ArrayList<PatientDTO> searchList;
+    private List<String> concatedPatientList;
     private MaterialSearchView searchView;
 
     @Override
@@ -77,12 +69,12 @@ public class viewpatients extends AppCompatActivity {
         registerReceiver(logoutReceiver, intentFilter);
         setContentView(R.layout.activity_viewpatients);
 
-
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         if(toolbar != null){
             setSupportActionBar(toolbar);
         }
 
+        emptyTxtView = (TextView) findViewById(R.id.noPatientRecords);
         searchView = (MaterialSearchView) findViewById(R.id.search_view);
         searchView.setOnQueryTextListener(new MaterialSearchView.OnQueryTextListener() {
             @Override
@@ -93,35 +85,22 @@ public class viewpatients extends AppCompatActivity {
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                finalList = new ArrayList<>();
-/*                if(newText.toString().length() > 0){
-                    searchInput.setCompoundDrawablesWithIntrinsicBounds(R.drawable.search, 0, R.drawable.clear, 0);
-                }
-                else {
-                    searchInput.setCompoundDrawablesWithIntrinsicBounds(R.drawable.search, 0, 0, 0);
-                }*/
-
+                searchList = new ArrayList<>();
                 if (newText.length() != 0 && newText.toString().length() > 4) {
-                    for (int i = 0; (newList != null && i < newList.size()); i++) {
-                        if (newList.get(i).toLowerCase().contains(newText.toString().toLowerCase())) {
-                            finalList.add(oldList.get(i));
+                    for (int i = 0; concatedPatientList != null && i < concatedPatientList.size(); i++) {
+                        if (concatedPatientList.get(i).toLowerCase().contains(newText.toString().toLowerCase())) {
+                            searchList.add(serverSidePatientList.get(i));
                         }
                     }
-                    if (finalList.size() == 0) {
-                        emptyTxtView.setVisibility(View.VISIBLE);
-                    } else emptyTxtView.setVisibility(View.GONE);
-
-                    adapter = new PatientsAdaptor(viewpatients.this, finalList);
-                    listView.setAdapter(adapter);
-                    adapter.notifyDataSetChanged();
-                } else if (newText.toString().length() <= 4) {
-                    emptyTxtView.setVisibility(View.GONE);
-                    adapter = new PatientsAdaptor(viewpatients.this, oldList);
-                    listView.setAdapter(adapter);
-                    adapter.notifyDataSetChanged();
+                    emptyTxtView.setVisibility(searchList.isEmpty() ? View.VISIBLE : View.GONE);
+                    adapter = new PatientsAdaptor(viewpatients.this, searchList);
                 } else {
-//                    searchInput.setCompoundDrawablesWithIntrinsicBounds(R.drawable.search, 0, 0, 0);
+                    emptyTxtView.setVisibility((serverSidePatientList == null || serverSidePatientList.isEmpty()) ? View.VISIBLE : View.GONE);
+                    adapter = new PatientsAdaptor(viewpatients.this, serverSidePatientList);
                 }
+                toggleListViewScrollbar(emptyTxtView.getVisibility() == View.VISIBLE ? Boolean.FALSE : Boolean.TRUE);
+                listView.setAdapter(adapter);
+                adapter.notifyDataSetChanged();
                 return false;
             }
         });
@@ -139,14 +118,9 @@ public class viewpatients extends AppCompatActivity {
         });
 
         searchView.setVoiceSearch(false);
-        searchView.setSuggestions(getResources().getStringArray(R.array.query_suggestions));
+//        searchView.setSuggestions(getResources().getStringArray(R.array.query_suggestions));
 //        searchView.setCursorDrawable(R.drawable.custom_cursor);
-        DisplayMetrics displayMetrics = getResources().getDisplayMetrics();
         listView = (ListView) findViewById(R.id.patients_list);
-        listView.setFastScrollEnabled(true);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            listView.setFastScrollAlwaysVisible(true);
-        }
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -166,69 +140,6 @@ public class viewpatients extends AppCompatActivity {
                 startActivity(patientDetail);
             }
         });
-
-        emptyTxtView = (TextView) findViewById(R.id.noPatientRecords);
-/*        searchInput = (EditText) findViewById(R.id.searchBox);
-        searchInput.setVisibility(View.GONE);
-        searchInput.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                finalList = new ArrayList<>();
-                if(searchInput.getText().toString().length() > 0){
-                    searchInput.setCompoundDrawablesWithIntrinsicBounds(R.drawable.search, 0, R.drawable.clear, 0);
-                }
-                else {
-                    searchInput.setCompoundDrawablesWithIntrinsicBounds(R.drawable.search, 0, 0, 0);
-                }
-
-                if (searchInput.getText().length() != 0 && viewpatients.this.searchInput.getText().toString().length() > 4) {
-                    for (int i = 0; (newList != null && i < newList.size()); i++) {
-                        if (newList.get(i).toLowerCase().contains(searchInput.getText().toString().toLowerCase())) {
-                            finalList.add(oldList.get(i));
-                        }
-                    }
-                    if (finalList.size() == 0) {
-                        emptyTxtView.setVisibility(View.VISIBLE);
-                    } else emptyTxtView.setVisibility(View.GONE);
-
-                    adapter = new PatientsAdaptor(viewpatients.this, finalList);
-                    listView.setAdapter(adapter);
-                    adapter.notifyDataSetChanged();
-                } else if (searchInput.getText().toString().length() <= 4) {
-                    emptyTxtView.setVisibility(View.GONE);
-                    adapter = new PatientsAdaptor(viewpatients.this, oldList);
-                    listView.setAdapter(adapter);
-                    adapter.notifyDataSetChanged();
-                } else {
-                    searchInput.setCompoundDrawablesWithIntrinsicBounds(R.drawable.search, 0, 0, 0);
-                }
-            }
-
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-            }
-        });
-        searchInput.setOnTouchListener(new View.OnTouchListener() {
-            //            @SuppressLint("ClickableViewAccessibility")
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_UP) {
-                    if (searchInput.getCompoundDrawables()[2] != null) {
-                        if (event.getX() >= (searchInput.getRight() - searchInput.getLeft() - searchInput.getCompoundDrawables()[2].getBounds().width())) {
-                            searchInput.setText("");
-                        }
-                    }
-                }
-                return false;
-            }
-        });*/
-
-        int width = displayMetrics.widthPixels;
-        width = width*3/4;
 
         getPatientsData();
     }
@@ -253,23 +164,26 @@ public class viewpatients extends AppCompatActivity {
                     try {
                         TextView emptyTxtView = (TextView) findViewById(R.id.noPatientRecords);
                         PatientsListDTO patientsListDTO = new Gson().fromJson(result.get("result"), PatientsListDTO.class);
-                        if (patientsListDTO.getTotalCount() > 0){
+                        if (patientsListDTO != null && patientsListDTO.getTotalCount() > 0) {
                             emptyTxtView.setVisibility(View.GONE);
+                            toggleListViewScrollbar(emptyTxtView.getVisibility() == View.VISIBLE ? Boolean.FALSE : Boolean.TRUE);
 
-                            newList = new ArrayList<>();
-                            oldList = (ArrayList<PatientDTO>) patientsListDTO.getHealthRegistrationList();
+                            concatedPatientList = new ArrayList<>();
+                            serverSidePatientList = (ArrayList<PatientDTO>) patientsListDTO.getHealthRegistrationList();
 
-                            Collections.sort(oldList, new NameComparator());
+                            Collections.sort(serverSidePatientList, new NameComparator());
 
                             String details = "";
-                            for(PatientDTO patient : oldList){
-                                details = patient.getFirstName() + " " + patient.getLastName() +
-                                        patient.getRegId() + patient.getMobileNo() +
-                                        patient.getSearchCid() + patient.getProofNumber();
-                                newList.add(details);
+                            if(serverSidePatientList != null && !serverSidePatientList.isEmpty()){
+                                for(PatientDTO patient : serverSidePatientList){
+                                    details = patient.getFirstName() + " " + patient.getLastName() +
+                                            patient.getRegId() + patient.getMobileNo() +
+                                            patient.getSearchCid() + patient.getProofNumber();
+                                    concatedPatientList.add(details);
+                                }
                             }
 
-                            adapter = new PatientsAdaptor(viewpatients.this, oldList);
+                            adapter = new PatientsAdaptor(viewpatients.this, serverSidePatientList);
                             listView.setAdapter(adapter);
                         }
                         else emptyTxtView.setVisibility(View.VISIBLE);
@@ -314,11 +228,6 @@ public class viewpatients extends AppCompatActivity {
         return true;
     }
 
-/*    @Override
-    protected void onStop(){
-        super.onStop();
-    }*/
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -344,19 +253,6 @@ public class viewpatients extends AppCompatActivity {
 
             worker.execute(nameValues);
         }
-/*        if (id == R.id.action_search) {
-            // Change visibilty of your RelativeLayout here
-            if(oldList!=null && oldList.size() > 0){
-                if (searchInput.getVisibility() == View.VISIBLE) {
-                    searchInput.setVisibility(View.GONE);
-                } else {
-                    searchInput.setVisibility(View.VISIBLE);
-                    searchInput.requestFocus();
-                }
-            }
-            else Toast.makeText(this, "No Patients To Search", Toast.LENGTH_SHORT).show();
-        }*/
-        //noinspection SimplifiableIfStatement
         return super.onOptionsItemSelected(item);
     }
 
@@ -388,5 +284,10 @@ public class viewpatients extends AppCompatActivity {
             return;
         }
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    private void toggleListViewScrollbar(boolean val){
+        listView.setFastScrollEnabled(val);
+        listView.setFastScrollAlwaysVisible(val);
     }
 }

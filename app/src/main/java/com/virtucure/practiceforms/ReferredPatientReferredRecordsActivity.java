@@ -290,7 +290,7 @@ public class ReferredPatientReferredRecordsActivity extends AppCompatActivity {
                                 public void onClick(DialogInterface dialog, int id) {
                                     Intent caseRecordsActivity = new Intent(
                                             getApplicationContext(),
-                                            CaseRecordFormsActivity.class);
+                                            CaseRecordFormsMainActivity.class);
                                     caseRecordsActivity.putExtra("regid", healthRegistrationId);
                                     caseRecordsActivity.putExtra("name", referredFormDTO.getCommonData().getPatientName());
                                     caseRecordsActivity.putExtra("phone", referredFormDTO.getCommonData().getMobileNo());
@@ -299,7 +299,7 @@ public class ReferredPatientReferredRecordsActivity extends AppCompatActivity {
                                     caseRecordsActivity.putExtra("proofType", referredFormDTO.getCommonData().getProofType());
                                     caseRecordsActivity.putExtra("proofNumber", referredFormDTO.getCommonData().getProofNumber());
                                     caseRecordsActivity.putExtra("gender", referredFormDTO.getCommonData().getGender());
-                                    caseRecordsActivity.putExtra("reqLinkId", referredFormDTO.getCommonData().getRegnLinkId());
+                                    caseRecordsActivity.putExtra("regLinkId", referredFormDTO.getCommonData().getRegnLinkId());
                                     caseRecordsActivity.putExtra("caserecordno", caseid);
                                     caseRecordsActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     startActivity(caseRecordsActivity);
@@ -313,14 +313,12 @@ public class ReferredPatientReferredRecordsActivity extends AppCompatActivity {
                                 "Some error has occurred Please try after some time", Toast.LENGTH_LONG)
                                 .show();
                     }
-
                 } else {
                     new AlertDialog.Builder(ReferredPatientReferredRecordsActivity.this)
                             .setTitle("Error")
                             .setMessage(result.get("error"))
                             .show();
                 }
-
             }
         }, "Generating Record");
         worker.execute(params);

@@ -49,13 +49,12 @@ public class CaseIdAdaptor extends BaseAdapter {
     public View getView(int position, View convertView, final ViewGroup parent) {
         inflater = (LayoutInflater) activity
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        if (convertView == null)
+        if (convertView == null) {
             convertView = inflater.inflate(R.layout.caseidlayout, null);
+        }
         final CaseIdDTO caseIdDTO = caseIdDTOs.get(position);
         TextView patientName = (TextView) convertView.findViewById(R.id.patientName);
         patientName.setText(caseIdDTO.getPatientName());
-/*        TextView regid = (TextView) convertView.findViewById(R.id.regnLinkId);
-        regid.setText(caseIdDTO.getRegnLinkId());*/
         TextView finalDiagnosis = (TextView) convertView.findViewById(R.id.finaldiagnosis);
         finalDiagnosis.setText(caseIdDTO.getFinalDiagnosis());
         final TextView caserecord = (TextView) convertView.findViewById(R.id.caserecordno);
@@ -68,7 +67,7 @@ public class CaseIdAdaptor extends BaseAdapter {
             public void onClick(View v) {
                 Intent caserecordforms = new Intent(
                         v.getContext(),
-                        CaseRecordFormsActivity.class);
+                        CaseRecordFormsMainActivity.class);
                 caserecordforms.putExtra("caserecordno",caseIdDTO.getCaseRecordNo());
                 caserecordforms.putExtra("regid",patientDTO.getRegId());
                 caserecordforms.putExtra("name" ,caseIdDTO.getPatientName());

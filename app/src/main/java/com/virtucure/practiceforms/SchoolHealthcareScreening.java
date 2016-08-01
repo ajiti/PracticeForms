@@ -191,44 +191,46 @@ public class SchoolHealthcareScreening extends AppCompatActivity {
         expListView.setAdapter(listAdapter);
 
         Button btn = (Button) findViewById(R.id.shssave);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        if(btn != null){
+            btn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
-                ArrayList<String> formsList = new ArrayList<>();
-                formsList.add(formName);
+                    ArrayList<String> formsList = new ArrayList<>();
+                    formsList.add(formName);
 
-                final Map<String, Object> insertparams = new HashMap<>();
-                insertparams.put("shsFormData", new Gson().toJson(getFormValues(ageInMonths)));
-                insertparams.put("shsFormSubName", selectedSubForm);
-                insertparams.put("shsFormGender", getShortGender(gender));
-                insertparams.put("shsFormDob", dob);
-                insertparams.put("shsFormSkipParse", true);
-                insertparams.put("shsFormAgeInMonth", String.valueOf(ageInMonths));
-                insertparams.put("practiceFormNameDataIndex", "1");
-                insertparams.put("practiceFormNames", formsList);
-                insertparams.put("actionType", "save");
-                insertparams.put("healthRegistrationId", healthRegistrationId);
-                insertparams.put("patientName", patientName);
-                insertparams.put("regnLinkId", regLinkId);
-                if(caseid != null){
-                    insertparams.put("caseRecordNo", caseid);
+                    final Map<String, Object> insertparams = new HashMap<>();
+                    insertparams.put("shsFormData", new Gson().toJson(getFormValues(ageInMonths)));
+                    insertparams.put("shsFormSubName", selectedSubForm);
+                    insertparams.put("shsFormGender", getShortGender(gender));
+                    insertparams.put("shsFormDob", dob);
+                    insertparams.put("shsFormSkipParse", true);
+                    insertparams.put("shsFormAgeInMonth", String.valueOf(ageInMonths));
+                    insertparams.put("practiceFormNameDataIndex", "1");
+                    insertparams.put("practiceFormNames", formsList);
+                    insertparams.put("actionType", "save");
+                    insertparams.put("healthRegistrationId", healthRegistrationId);
+                    insertparams.put("patientName", patientName);
+                    insertparams.put("regnLinkId", regLinkId);
+                    if(caseid != null){
+                        insertparams.put("caseRecordNo", caseid);
+                    }
+
+                    jsonparams = new Gson().toJson(insertparams);
+
+                    new AlertDialog.Builder(context).setTitle("Alert")
+                            .setMessage(R.string.save_record_msg).setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int id) {
+                            saveCaseRecord(jsonparams, context);
+                        }
+                    }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            dialog.cancel();
+                        }
+                    }).show();
                 }
-
-                jsonparams = new Gson().toJson(insertparams);
-
-                new AlertDialog.Builder(context).setTitle("Alert")
-                        .setMessage("Do you want to save record").setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int id) {
-                        saveCaseRecord(jsonparams, context);
-                    }
-                }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        dialog.cancel();
-                    }
-                }).show();
-            }
-        });
+            });
+        }
     }
 
     private void saveCaseRecord(String jsonparams, final Context ctx)
@@ -254,7 +256,7 @@ public class SchoolHealthcareScreening extends AppCompatActivity {
                                 public void onClick(DialogInterface dialog, int id) {
                                     Intent caseRecordsActivity = new Intent(
                                             getApplicationContext(),
-                                            CaseRecordFormsActivity.class);
+                                            CaseRecordFormsMainActivity.class);
                                     caseRecordsActivity.putExtra("regid", healthRegistrationId);
                                     caseRecordsActivity.putExtra("name", patientName);
                                     caseRecordsActivity.putExtra("phone", phone);
@@ -262,7 +264,7 @@ public class SchoolHealthcareScreening extends AppCompatActivity {
                                     caseRecordsActivity.putExtra("proofType", proofType);
                                     caseRecordsActivity.putExtra("proofNumber", proofNumber);
                                     caseRecordsActivity.putExtra("dob", dob);
-                                    caseRecordsActivity.putExtra("reqLinkId", regLinkId);
+                                    caseRecordsActivity.putExtra("regLinkId", regLinkId);
                                     caseRecordsActivity.putExtra("caserecordno", caseid);
                                     caseRecordsActivity.putExtra("gender", getIntent().getExtras().getString("gender"));
                                     caseRecordsActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);

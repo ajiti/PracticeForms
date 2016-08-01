@@ -77,8 +77,6 @@ public class GeneralExaminationActivity extends AppCompatActivity {
     private GeneralExaminationAdapter listAdapter;
 
     private String formFieldData[];
-    private Map<String,String> formMapData;
-
     private String jsonparams;
 
     private View formView;
@@ -129,6 +127,7 @@ public class GeneralExaminationActivity extends AppCompatActivity {
                 lastExpandedPosition = groupPosition;
             }
         });
+
         expListView.setOnGroupClickListener(new ExpandableListView.OnGroupClickListener() {
             @Override
             public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
@@ -141,7 +140,6 @@ public class GeneralExaminationActivity extends AppCompatActivity {
                 return true;
             }
         });
-
 
         listDataHeader = new ArrayList<>();
         listDataHeader.add(getResources().getString(R.string.title_activity_general));
@@ -158,103 +156,100 @@ public class GeneralExaminationActivity extends AppCompatActivity {
         expListView.setAdapter(listAdapter);
 
         final Button btn = (Button) findViewById(R.id.insave);
-        btn.setOnClickListener(new View.OnClickListener() {
+        if(btn != null){
+            btn.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        if(formView != null){
+                            consciousness = ((EditText)formView.findViewById(R.id.consciousness)).getText().toString().trim();
+                            mState = ((EditText)formView.findViewById(R.id.mental_state)).getText().toString().trim();
+                            generalAppearance = ((EditText)formView.findViewById(R.id.general_appearance)).getText().toString().trim();
+                            pallor = ((EditText)formView.findViewById(R.id.pallor)).getText().toString().trim();
+                            icterus = ((EditText)formView.findViewById(R.id.icterus)).getText().toString().trim();
+                            cyanosis = ((EditText)formView.findViewById(R.id.cyanosis)).getText().toString().trim();
+                            clubbing = ((EditText)formView.findViewById(R.id.clubbing)).getText().toString().trim();
+                            lymphAdenopathy = ((EditText)formView.findViewById(R.id.lymph_adenopathy)).getText().toString().trim();
+                            edema = ((EditText)formView.findViewById(R.id.edema)).getText().toString().trim();
+                            temperature = ((EditText)formView.findViewById(R.id.temperature)).getText().toString().trim();
+                            pulse = ((EditText)formView.findViewById(R.id.pulse)).getText().toString().trim();
+                            respiration = ((EditText)formView.findViewById(R.id.respiration)).getText().toString().trim();
+                            bloodPressure = ((EditText)formView.findViewById(R.id.blood_pressure)).getText().toString().trim();
+                            height = ((EditText)formView.findViewById(R.id.height)).getText().toString().trim();
+                            weight = ((EditText)formView.findViewById(R.id.weight)).getText().toString().trim();
+                            bmi = ((EditText)formView.findViewById(R.id.bmi)).getText().toString().trim();
+                            mACircumference = ((EditText)formView.findViewById(R.id.mac)).getText().toString().trim();
+                            headCircumference = ((EditText)formView.findViewById(R.id.hc)).getText().toString().trim();
 
-                try {
-                    if(formView != null){
-                        consciousness = ((EditText)formView.findViewById(R.id.consciousness)).getText().toString().trim();
-                        mState = ((EditText)formView.findViewById(R.id.mental_state)).getText().toString().trim();
-                        generalAppearance = ((EditText)formView.findViewById(R.id.general_appearance)).getText().toString().trim();
-                        pallor = ((EditText)formView.findViewById(R.id.pallor)).getText().toString().trim();
-                        icterus = ((EditText)formView.findViewById(R.id.icterus)).getText().toString().trim();
-                        cyanosis = ((EditText)formView.findViewById(R.id.cyanosis)).getText().toString().trim();
-                        clubbing = ((EditText)formView.findViewById(R.id.clubbing)).getText().toString().trim();
-                        lymphAdenopathy = ((EditText)formView.findViewById(R.id.lymph_adenopathy)).getText().toString().trim();
-                        edema = ((EditText)formView.findViewById(R.id.edema)).getText().toString().trim();
-                        temperature = ((EditText)formView.findViewById(R.id.temperature)).getText().toString().trim();
-                        pulse = ((EditText)formView.findViewById(R.id.pulse)).getText().toString().trim();
-                        respiration = ((EditText)formView.findViewById(R.id.respiration)).getText().toString().trim();
-                        bloodPressure = ((EditText)formView.findViewById(R.id.blood_pressure)).getText().toString().trim();
-                        height = ((EditText)formView.findViewById(R.id.height)).getText().toString().trim();
-                        weight = ((EditText)formView.findViewById(R.id.weight)).getText().toString().trim();
-                        bmi = ((EditText)formView.findViewById(R.id.bmi)).getText().toString().trim();
-                        mACircumference = ((EditText)formView.findViewById(R.id.mac)).getText().toString().trim();
-                        headCircumference = ((EditText)formView.findViewById(R.id.hc)).getText().toString().trim();
-
-                        isEmptyForm = true;
-                        formFieldData = new String[]{consciousness, mState, generalAppearance, pallor, icterus, cyanosis, clubbing, lymphAdenopathy, edema, temperature, pulse, respiration, bloodPressure, height, weight, bmi, mACircumference, headCircumference};
-                        for (String field : formFieldData) {
-                            if (!field.isEmpty()) {
-                                isEmptyForm = false;
-                                break;
+                            isEmptyForm = true;
+                            formFieldData = new String[]{consciousness, mState, generalAppearance, pallor, icterus, cyanosis, clubbing, lymphAdenopathy, edema, temperature, pulse, respiration, bloodPressure, height, weight, bmi, mACircumference, headCircumference};
+                            for (String field : formFieldData) {
+                                if (!field.isEmpty()) {
+                                    isEmptyForm = false;
+                                    break;
+                                }
                             }
-                        }
 
-                        if(isEmptyForm){
-                            Toast.makeText(context, "Please Fill The Form", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-
-                        ArrayList<String> formsList = new ArrayList<String>();
-                        formsList.add(formName);
-
-                        final Map<String, Object> insertparams = new HashMap<>();
-                        insertparams.put("genFormConseiousness", consciousness);
-                        insertparams.put("genFormMentalState", mState);
-                        insertparams.put("genFormGeneralAppearance", generalAppearance);
-                        insertparams.put("genFormPallor", pallor);
-                        insertparams.put("genFormIcterus", icterus);
-                        insertparams.put("genFormCyanosis", cyanosis);
-                        insertparams.put("genFormClubbing", clubbing);
-                        insertparams.put("genFormLymphAdenopathy", lymphAdenopathy);
-                        insertparams.put("genFormEdema", edema);
-                        insertparams.put("genFormTemparature", temperature);
-                        insertparams.put("genFormPulse", pulse);
-                        insertparams.put("genFormRepisration", respiration);
-                        insertparams.put("genFormBloodPressure", bloodPressure);
-                        insertparams.put("genFormHeight", height);
-                        insertparams.put("genFormWeight", weight);
-                        insertparams.put("genFormBodyMassIndex", bmi);
-                        insertparams.put("genFormChildMidArmCircumference", mACircumference);
-                        insertparams.put("genFormChildHeadCircumference", headCircumference);
-                        insertparams.put("practiceFormNameDataIndex", "1");
-                        insertparams.put("practiceFormNames", formsList);
-                        insertparams.put("actionType", "save");
-                        insertparams.put("healthRegistrationId", healthRegistrationId);
-                        insertparams.put("patientName", patientName);
-                        insertparams.put("regnLinkId", regLinkId);
-
-                        if (caseid != null) {
-                            insertparams.put("caseRecordNo", caseid);
-                        } else {
-                            insertparams.put("caseRecordNo", "");
-                        }
-
-                        jsonparams = new Gson().toJson(insertparams);
-
-                        new AlertDialog.Builder(context).setTitle("Alert")
-                                .setMessage("Do you want to save record").setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                saveCaseRecord(jsonparams, context);
+                            if(isEmptyForm){
+                                Toast.makeText(context, R.string.fill_form_msg, Toast.LENGTH_SHORT).show();
+                                return;
                             }
-                        }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
-                            }
-                        }).show();
 
+                            ArrayList<String> formsList = new ArrayList<String>();
+                            formsList.add(formName);
+
+                            final Map<String, Object> insertparams = new HashMap<>();
+                            insertparams.put("genFormConseiousness", consciousness);
+                            insertparams.put("genFormMentalState", mState);
+                            insertparams.put("genFormGeneralAppearance", generalAppearance);
+                            insertparams.put("genFormPallor", pallor);
+                            insertparams.put("genFormIcterus", icterus);
+                            insertparams.put("genFormCyanosis", cyanosis);
+                            insertparams.put("genFormClubbing", clubbing);
+                            insertparams.put("genFormLymphAdenopathy", lymphAdenopathy);
+                            insertparams.put("genFormEdema", edema);
+                            insertparams.put("genFormTemparature", temperature);
+                            insertparams.put("genFormPulse", pulse);
+                            insertparams.put("genFormRepisration", respiration);
+                            insertparams.put("genFormBloodPressure", bloodPressure);
+                            insertparams.put("genFormHeight", height);
+                            insertparams.put("genFormWeight", weight);
+                            insertparams.put("genFormBodyMassIndex", bmi);
+                            insertparams.put("genFormChildMidArmCircumference", mACircumference);
+                            insertparams.put("genFormChildHeadCircumference", headCircumference);
+                            insertparams.put("practiceFormNameDataIndex", "1");
+                            insertparams.put("practiceFormNames", formsList);
+                            insertparams.put("actionType", "save");
+                            insertparams.put("healthRegistrationId", healthRegistrationId);
+                            insertparams.put("patientName", patientName);
+                            insertparams.put("regnLinkId", regLinkId);
+
+                            if (caseid != null) {
+                                insertparams.put("caseRecordNo", caseid);
+                            } else {
+                                insertparams.put("caseRecordNo", "");
+                            }
+
+                            jsonparams = new Gson().toJson(insertparams);
+
+                            new AlertDialog.Builder(context).setTitle("Alert")
+                                    .setMessage(R.string.save_record_msg).setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    saveCaseRecord(jsonparams, context);
+                                }
+                            }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.cancel();
+                                }
+                            }).show();
+                        }
+                    } catch(Exception e){
+                        Log.e("error", "exception occurs:" + e);
                     }
-
-                }catch(Exception e){
-                    Log.e("error", "exception occurs:" + e);
                 }
-            }
-
-       });
-
+            });
+        }
     }
 
     private void saveCaseRecord(String jsonparams, final Context ctx) {
@@ -283,7 +278,7 @@ public class GeneralExaminationActivity extends AppCompatActivity {
                                 public void onClick(DialogInterface dialog, int id) {
                                     Intent caseRecordsActivity = new Intent(
                                             getApplicationContext(),
-                                            CaseRecordFormsActivity.class);
+                                            CaseRecordFormsMainActivity.class);
                                     caseRecordsActivity.putExtra("regid", healthRegistrationId);
                                     caseRecordsActivity.putExtra("name", patientName);
                                     caseRecordsActivity.putExtra("phone", phone);
@@ -292,7 +287,7 @@ public class GeneralExaminationActivity extends AppCompatActivity {
                                     caseRecordsActivity.putExtra("proofType", proofType);
                                     caseRecordsActivity.putExtra("proofNumber", proofNumber);
                                     caseRecordsActivity.putExtra("gender", gender);
-                                    caseRecordsActivity.putExtra("reqLinkId", regLinkId);
+                                    caseRecordsActivity.putExtra("regLinkId", regLinkId);
                                     caseRecordsActivity.putExtra("caserecordno", caseid);
                                     caseRecordsActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     startActivity(caseRecordsActivity);
@@ -305,14 +300,12 @@ public class GeneralExaminationActivity extends AppCompatActivity {
                                 "Some error has occcurred Please try after some time", Toast.LENGTH_LONG)
                                 .show();
                     }
-
                 } else {
                     new AlertDialog.Builder(GeneralExaminationActivity.this)
                             .setTitle("Error")
                             .setMessage(result.get("error"))
                             .show();
                 }
-
             }
         }, "Saving Case Record");
         worker.execute(params);

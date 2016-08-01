@@ -18,17 +18,16 @@ public class GeneralExaminationAdapter extends BaseExpandableListAdapter
     private List<String> listDataHeader;
     private Context context;
     private View basicView;
-    private LinearLayout gLayout,vLayout,aLayout;
+    private LinearLayout gLayout, vLayout, aLayout;
     formListener listener;
 
     public interface formListener {
         void onFormSaveListener(View view);
     }
 
-    public GeneralExaminationAdapter(Context context,List<String> listDataHeader, formListener listener)
-    {
-        this.context=context;
-        this.listDataHeader=listDataHeader;
+    public GeneralExaminationAdapter(Context context,List<String> listDataHeader, formListener listener) {
+        this.context = context;
+        this.listDataHeader = listDataHeader;
         this.listener = listener;
         try {
             basicView = View.inflate(context, R.layout.activity_general_examination, null);
@@ -38,14 +37,13 @@ public class GeneralExaminationAdapter extends BaseExpandableListAdapter
                 aLayout = (LinearLayout) basicView.findViewById(R.id.amthropometry);
                 listener.onFormSaveListener(basicView);
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             Log.e("Exception", e.getLocalizedMessage());
         }
     }
     @Override
     public int getGroupCount() {
-        return this.listDataHeader.size();
+        return (listDataHeader != null) ? listDataHeader.size() : 0;
     }
 
     @Override
@@ -55,7 +53,7 @@ public class GeneralExaminationAdapter extends BaseExpandableListAdapter
 
     @Override
     public Object getGroup(int groupPosition) {
-        return this.listDataHeader.get(groupPosition);
+        return listDataHeader.get(groupPosition);
     }
 
     @Override
@@ -83,9 +81,9 @@ public class GeneralExaminationAdapter extends BaseExpandableListAdapter
         String headerTitle = (String) getGroup(groupPosition);
 
         if (convertView == null) {
-            LayoutInflater infalInflater = (LayoutInflater) this.context
+            LayoutInflater inflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = infalInflater.inflate(R.layout.caserecordforms_list_group, null);
+            convertView = inflater.inflate(R.layout.caserecordforms_list_group, null);
             convertView.findViewById(R.id.formShareCheckBox).setVisibility(View.GONE);
         }
 

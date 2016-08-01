@@ -29,7 +29,7 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
 
     private Context context;
     private Toolbar toolbar;
-    private FileAttachmentAdapter adapter;
+    private FileAttachmentAdapter fileAttachmentAdapter;
     private List<Form> listDataHeader;
     private Map<String, Integer> formLayoutIds;
     private Button saveBtn;
@@ -58,7 +58,7 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
 
     @Override
     public Object getGroup(int groupPosition) {
-        return this.listDataHeader.get(groupPosition);
+        return listDataHeader.get(groupPosition);
     }
 
     @Override
@@ -87,9 +87,9 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
 
         final Form form = (Form) getGroup(groupPosition);
         if (convertView == null) {
-            LayoutInflater infalInflater = (LayoutInflater) this.context
+            LayoutInflater inflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = infalInflater.inflate(R.layout.caserecordforms_list_group, null);
+            convertView = inflater.inflate(R.layout.caserecordforms_list_group, null);
         }
 
         TextView lblListHeader = (TextView) convertView.findViewById(R.id.lblListHeader);
@@ -127,8 +127,7 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
 
         if("uploadfiles".equals(headTitle)) {
             attachments = (List<FileAttachmentDTO>) form.getFormData();
-        }
-        else {
+        } else {
             formMap = (Map<String, String>) form.getFormData();
         }
 
@@ -231,8 +230,8 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
             TextView txtView14 = (TextView) v.findViewById(R.id.finalDiagnosis);
             txtView14.setVisibility(View.GONE);
             saveBtn = (Button) v.findViewById(R.id.button);
-        }
-        else if(formMap!=null && v!=null && "dentalassessment".equals(headTitle)) {
+
+        } else if(formMap!=null && v!=null && "dentalassessment".equals(headTitle)) {
             toolbar = (Toolbar) v.findViewById(R.id.toolbar);
             String dentFormPainInTeeth = formMap.get("dentFormPainInTeeth");
             String dentFormSevereSensitivityOfTeethOnDrinks = formMap.get("dentFormSevereSensitivityOfTeethOnDrinks");
@@ -269,10 +268,9 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
             txtValView8.setText(getValueInText(dentFormSeverePainInTeethAtNight));
             txtValView9.setText(getValueInText(dentFormHavePainnAndSwellingInGums));
             txtValView10.setText(getValueInText(dentFormHaveIrregularPlacedTeeth));
-
             saveBtn = (Button) v.findViewById(R.id.dentalsave);
-        }
-        else if(formMap!=null && v!=null && "generalhealthscreening".equals(headTitle)) {
+
+        } else if(formMap!=null && v!=null && "generalhealthscreening".equals(headTitle)) {
             toolbar = (Toolbar) v.findViewById(R.id.toolbar);
             String hlthScrnFormHaveDifficultiesInSeeingObjects = formMap.get("hlthScrnFormHaveDifficultiesInSeeingObjects");
             String hlthScrnFormHaveHearingTrouble = formMap.get("hlthScrnFormHaveHearingTrouble");
@@ -309,16 +307,15 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
             txtValView8.setText(getValueInText(hlthScrnFormHaveHighBloodPressure));
             txtValView9.setText(getValueInText(hlthScrnFormHaveDiabetes));
             txtValView10.setText(getValueInText(hlthScrnFormHaveDentalProblems));
-
             saveBtn = (Button) v.findViewById(R.id.gensave);
-        }
-        else if(attachments!=null && v!=null && "uploadfiles".equals(headTitle)) {
+
+        } else if(attachments!=null && v!=null && "uploadfiles".equals(headTitle)) {
             ListView uploadFileList = (ListView) v.findViewById(R.id.attachmentList);
-            adapter = new FileAttachmentAdapter(context, attachments);
-            uploadFileList.setAdapter(adapter);
+            fileAttachmentAdapter = new FileAttachmentAdapter(context, attachments);
+            uploadFileList.setAdapter(fileAttachmentAdapter);
             Util.setListViewHeightBasedOnChildren(uploadFileList);
-        }
-        else if("generalphysicalexamination".equals(headTitle) && formMap!=null && v!=null){
+
+        } else if("generalphysicalexamination".equals(headTitle) && formMap!=null && v!=null){
             toolbar = (Toolbar) v.findViewById(R.id.toolbar);
             TextView textView = (TextView)v.findViewById(R.id.consciousness);
             preventTextViewClick(textView);
@@ -374,8 +371,8 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
             TextView textView17 = (TextView)v.findViewById(R.id.hc);
             preventTextViewClick(textView17);
             textView17.setText(formMap.get("genFormChildHeadCircumference"));
-        }
-        else if("dischargesheet".equals(headTitle) && formMap!=null && v!=null){
+
+        } else if("dischargesheet".equals(headTitle) && formMap!=null && v!=null){
             toolbar = (Toolbar) v.findViewById(R.id.toolbar);
             TextView textView = (TextView)v.findViewById(R.id.method_Admission);
             preventTextViewClick(textView);
@@ -473,8 +470,8 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
             TextView textView31 = (TextView)v.findViewById(R.id.results_awaited);
             preventTextViewClick(textView31);
             textView31.setText(formMap.get("dischFormAwaitedResults"));
-        }
-        else if("investigationmicrobiology".equals(headTitle) && formMap!=null && v!=null) {
+
+        } else if("investigationmicrobiology".equals(headTitle) && formMap!=null && v!=null) {
 
             toolbar = (Toolbar) v.findViewById(R.id.toolbar);
             CheckBox ch1 = (CheckBox) v.findViewById(R.id.mrch1);
@@ -600,10 +597,9 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
             ch28.setVisibility(ch28.isChecked() ? View.VISIBLE : View.GONE);
             ch29.setVisibility(ch29.isChecked() ? View.VISIBLE : View.GONE);
             ch30.setVisibility(ch30.isChecked() ? View.VISIBLE : View.GONE);
-
             saveBtn = (Button) v.findViewById(R.id.imbsave);
 
-        }else if("investigationbiochemistry".equals(headTitle) && formMap!=null && v!=null) {
+        } else if("investigationbiochemistry".equals(headTitle) && formMap!=null && v!=null) {
 
             toolbar = (Toolbar) v.findViewById(R.id.toolbar);
             CheckBox ch1 = (CheckBox) v.findViewById(R.id.rch1);
@@ -745,8 +741,7 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
             ch67.setChecked(getBoolean(formMap.get("invstBioFormUCreatinine")));
             ch68.setChecked(getBoolean(formMap.get("invstBioFormUCalcium")));
 
-            if(!ch58.isChecked() && !ch59.isChecked() && !ch60.isChecked() && !ch61.isChecked())
-            {
+            if(!ch58.isChecked() && !ch59.isChecked() && !ch60.isChecked() && !ch61.isChecked()) {
                 fluidsTextView.setVisibility(View.GONE);
             }
 
@@ -1097,8 +1092,7 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
             ch44.setVisibility(ch44.isChecked() ? View.VISIBLE : View.GONE);
             ch45.setVisibility(ch45.isChecked() ? View.VISIBLE : View.GONE);
             ch46.setVisibility(ch46.isChecked() ? View.VISIBLE : View.GONE);
-
-            saveBtn = (Button) v.findViewById(R.id.inpsave);
+                saveBtn = (Button) v.findViewById(R.id.inpsave);
         }
 
         if(saveBtn != null){
@@ -1140,7 +1134,7 @@ public class ExpandableCaseRecordFormsListAdapter extends BaseExpandableListAdap
         return ("1".equals(value)) ? "Yes" : "No";
     }
 
-    private Boolean getBoolean(String value){
+    private Boolean getBoolean(String value) {
         return ("1".equals(value)) ? Boolean.TRUE : Boolean.FALSE;
     }
 

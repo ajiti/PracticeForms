@@ -12,7 +12,22 @@
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/custom_progress_background.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_clear_white.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_24dp.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/drawable/vertical_divider.xml">
         <config>
           <theme>@style/AppTheme</theme>
         </config>
@@ -33,6 +48,11 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_discharge_sheet_list.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_general_examination.xml">
         <config>
           <theme>@style/AppTheme</theme>
         </config>
@@ -122,12 +142,22 @@
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/layout_investigation_biochemistry.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/layout_school_health_screening.xml">
         <config>
           <theme>@style/AppTheme</theme>
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/menulist.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header.xml">
         <config>
           <theme>@style/AppTheme</theme>
         </config>
@@ -143,6 +173,11 @@
         </config>
       </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/referred_count.xml">
+        <config>
+          <theme>@style/AppTheme</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/registration_layout.xml">
         <config>
           <theme>@style/AppTheme</theme>
         </config>
@@ -247,7 +282,18 @@
     <system id="GRADLE">
       <state>
         <projects_view>
-          <tree_state />
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="PracticeForms" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
         </projects_view>
       </state>
     </system>
@@ -257,24 +303,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="case_record_forms_frame_layout.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/case_record_forms_frame_layout.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="CaseRecordFormsMainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsMainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1526946">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="153" column="8" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewpatients.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/viewpatients.java">
+      <file leaf-file-name="CaseRecordFormsFragment.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.24329159">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -286,10 +329,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
-        <option value="layoutResourceFile_vertical" />
         <option value="Interface" />
-        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="layoutResourceFile" />
         <option value="resourceFile" />
       </list>
     </option>
@@ -790,39 +833,44 @@
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:appcompat-v7:23.1.1" />
+                <option name="description" value="Prepare com.android.support:animated-vector-drawable:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportAppcompatV72311Library" />
+                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:cardview-v7:24.0.0" />
+                <option name="description" value="Prepare com.android.support:appcompat-v7:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportCardviewV72400Library" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV72340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:design:23.1.1" />
+                <option name="description" value="Prepare com.android.support:cardview-v7:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportDesign2311Library" />
+                <option name="name" value="prepareComAndroidSupportCardviewV72340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:palette-v7:24.0.0" />
+                <option name="description" value="Prepare com.android.support:design:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportPaletteV72400Library" />
+                <option name="name" value="prepareComAndroidSupportDesign2340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:recyclerview-v7:24.0.0" />
+                <option name="description" value="Prepare com.android.support:palette-v7:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportRecyclerviewV72400Library" />
+                <option name="name" value="prepareComAndroidSupportPaletteV72340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:24.0.0" />
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComAndroidSupportSupportV42400Library" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.github.fondesa:recycler-view-divider:1.0.1" />
+                <option name="description" value="Prepare com.android.support:support-v4:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="prepareComGithubFondesaRecyclerViewDivider101Library" />
+                <option name="name" value="prepareComAndroidSupportSupportV42340Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-vector-drawable:23.4.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.miguelcatalan:materialsearchview:1.4.0" />
@@ -1433,39 +1481,44 @@
                 <option name="name" value="preReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:appcompat-v7:23.1.1" />
+                <option name="description" value="Prepare com.android.support:animated-vector-drawable:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportAppcompatV72311Library" />
+                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:cardview-v7:24.0.0" />
+                <option name="description" value="Prepare com.android.support:appcompat-v7:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportCardviewV72400Library" />
+                <option name="name" value="prepareComAndroidSupportAppcompatV72340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:design:23.1.1" />
+                <option name="description" value="Prepare com.android.support:cardview-v7:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportDesign2311Library" />
+                <option name="name" value="prepareComAndroidSupportCardviewV72340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:palette-v7:24.0.0" />
+                <option name="description" value="Prepare com.android.support:design:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportPaletteV72400Library" />
+                <option name="name" value="prepareComAndroidSupportDesign2340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:recyclerview-v7:24.0.0" />
+                <option name="description" value="Prepare com.android.support:palette-v7:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportRecyclerviewV72400Library" />
+                <option name="name" value="prepareComAndroidSupportPaletteV72340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:24.0.0" />
+                <option name="description" value="Prepare com.android.support:recyclerview-v7:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComAndroidSupportSupportV42400Library" />
+                <option name="name" value="prepareComAndroidSupportRecyclerviewV72340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Prepare com.github.fondesa:recycler-view-divider:1.0.1" />
+                <option name="description" value="Prepare com.android.support:support-v4:23.4.0" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
-                <option name="name" value="prepareComGithubFondesaRecyclerViewDivider101Library" />
+                <option name="name" value="prepareComAndroidSupportSupportV42340Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Prepare com.android.support:support-vector-drawable:23.4.0" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2340Library" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Prepare com.miguelcatalan:materialsearchview:1.4.0" />
@@ -1655,7 +1708,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4394524730698" />
+        <entry key="$PROJECT_DIR$" value="4395127007969" />
         <entry key="C:\Users\AJITI\AndroidStudioProjects\PracticeForms" value="4382140301963" />
       </map>
     </option>
@@ -1839,16 +1892,17 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/external/lombok/lombok-ast/0.2.3/lombok-ast-0.2.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/abego/treelayout/org.abego.treelayout.core/1.0.1/org.abego.treelayout.core-1.0.1.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.6.2/f1bc476cc167b18e66c297df599b2377131a8947/gson-2.6.2.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/recyclerview-v7/24.0.0/7f284fb9e9e5e58b8cd2c124cab99c6c8f1e08ae/recyclerview-v7-24.0.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.fondesa/recycler-view-divider/1.0.1/bbf529b58bc8b2a26e7b6d14b6c5530a79ff72b0/recycler-view-divider-1.0.1.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/cardview-v7/24.0.0/341ed5ed8c9c5bcba3465477c13523b6f15c63fa/cardview-v7-24.0.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/palette-v7/24.0.0/11ea7b08030044cc6e130071daf716da98479fd8/palette-v7-24.0.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.4.0/recyclerview-v7-23.4.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/cardview-v7/23.4.0/cardview-v7-23.4.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/palette-v7/23.4.0/palette-v7-23.4.0.aar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.miguelcatalan/materialsearchview/1.4.0/5c6058f271e390c6475827da946c93e47392884/materialsearchview-1.4.0.aar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/24.0.0/2943c74db6d4346ab8c6531adac91fa05c137c40/support-annotations-24.0.0.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/support-v4/24.0.0/93dbc95082794e79d1968e6f843833d72cdf7454/support-v4-24.0.0.aar" />
-                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.1.1/appcompat-v7-23.1.1.aar" />
-                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/design/23.1.1/design-23.1.1.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/design/23.4.0/design-23.4.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.4.0/appcompat-v7-23.4.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-v4/23.4.0/support-v4-23.4.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/animated-vector-drawable/23.4.0/animated-vector-drawable-23.4.0.aar" />
+                            <option value="$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-vector-drawable/23.4.0/support-vector-drawable-23.4.0.aar" />
                           </list>
                         </option>
                         <option name="path" value="$PROJECT_DIR$/app" />
@@ -1934,57 +1988,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ReferredPatientHridsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ReferredPatientCaseRecordsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ReferredPatientReferredTimeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/referred_caserecordsform_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ReferredPatientReferredRecordsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ReferredPatientBranchesActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/patientshealthrecord.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_patient_detail.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/PatientDetail.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseIdAdaptor.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/case_record_forms_frame_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/SharedRecordDetailsActivity.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_search_black_24dp.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_power_settings_new_black_24dp.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_viewpatients.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/custom_cursor.xml" />
-        <option value="$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.miguelcatalan/materialsearchview/1.4.0/res/layout/search_view.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ServerUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_viewpatients.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_biochemistry_form.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_caserecord_forms.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_dental_assessment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_discharge_sheet.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_formshare.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_general_examination.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_general_health_screening.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_health_history.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_microbiology_form.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_pathology_form.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_patient_detail.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_referred_administrators.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_referred_branches.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_referred_case_records.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_referred_hrids.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_referred_records.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_referred_time.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_registration.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_school_healthcare_screening.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/menu_shared_details.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/InvestigationPathology.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/InvestigationBioChemistry.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/menulist.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/viewpatients.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_general_health_screening.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_dental_assessment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_school_healthcare_screening_0to6.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_school_healthcare_screening_6to18.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_school_healthcare_screening_preliminary_findings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_investigation_microbiology.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/caserecordsform_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/caserecordforms_list_group.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ExpandableCaseRecordFormsListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_investigation_pathology.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_school_health_screening.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_discharge_sheet_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_health_history.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/DischargeSheetAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_discharge_sheet.xml" />
+        <option value="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values/values.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ExpandableReferredCaseRecordFormsListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/layout_investigation_biochemistry.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/InvestigationBioChemistry.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/InvestigationPathology.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/InvestigationMicrobiology.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/DischargeSheetActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/GeneralExaminationActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/HealthHistory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/DentalAssessment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/GeneralHealthScreening.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/SchoolHealthcareScreening.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/FileAttachmentAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ExpandableCaseRecordFormsListAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/file_attachment_list.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/AsyncWorkerNetwork.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsMainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ServerUtil.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/loginactivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/registration_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/Registration.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/SharedRecordDetailsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/Home.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_general_examination_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/GeneralExaminationAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_general_examination.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_investigation_biochemistry.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_investigation_pathlogy.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/form_share_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/cardview_administration.xml" />
       </list>
     </option>
   </component>
@@ -2048,6 +2102,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2145,20 +2203,46 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PracticeForms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PracticeForms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistoryKey" value="Exp&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/ExpandableReferredCaseRecordFormsListAdapter.java&#10;MS&#9;FILE&#9;jar://C:/Users/AJITI/.gradle/caches/modules-2/files-2.1/com.miguelcatalan/materialsearchview/1.4.0/3b8caddbe9447c1eb0a3d1ea2bd27891c942671d/materialsearchview-1.4.0-sources.jar!/com/miguelcatalan/materialsearchview/MaterialSearchView.java&#10;CRF&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsActivity.java&#10;menuli&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/menulist.xml&#10;Ex&#9;PSI&#9;JAVA://com.virtucure.practiceforms.ExpandableReferredCaseRecordFormsListAdapter&#10;IB&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/InvestigationBioChemistry.java&#10;IP&#9;PSI&#9;JAVA://com.virtucure.practiceforms.InvestigationPathology&#10;IM&#9;PSI&#9;JAVA://com.virtucure.practiceforms.InvestigationMicrobiology&#10;Expla&#9;PSI&#9;JAVA://com.virtucure.practiceforms.ExpandableCaseRecordFormsListAdapter&#10;menu_home&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/menu/menu_home.xml&#10;home&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_home.xml&#10;menu&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/menu/menu_viewpatients.xml&#10;HO&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/Home.java&#10;sty&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/values/styles.xml&#10;sear&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/build/intermediates/exploded-aar/com.miguelcatalan/materialsearchview/1.4.0/res/layout/search_view.xml&#10;search_vie&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/build/intermediates/exploded-aar/com.miguelcatalan/materialsearchview/1.4.0/res/layout/search_view.xml&#10;style&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/values/styles.xml&#10;SU&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/ServerUtil.java&#10;ma&#9;FILE&#9;jar://C:/Users/AJITI/.gradle/caches/modules-2/files-2.1/com.miguelcatalan/materialsearchview/1.4.0/3b8caddbe9447c1eb0a3d1ea2bd27891c942671d/materialsearchview-1.4.0-sources.jar!/com/miguelcatalan/materialsearchview/MaterialSearchView.java&#10;onBac&#9;PSI&#9;JAVA://com.virtucure.practiceforms.viewpatients#onBackPressed&#10;HOm&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/Home.java&#10;string&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/values/strings.xml&#10;view&#9;PSI&#9;JAVA://com.virtucure.practiceforms.viewpatients&#10;build&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/build.gradle&#10;sp&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/SplashScreen.java&#10;Shar&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/SharedRecordDetailsActivity.java&#10;RCR&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/ReferredPatientCaseRecordsActivity.java&#10;colors&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/values/colors.xml&#10;spl&#9;PSI&#9;JAVA://com.virtucure.practiceforms.SplashScreen&#10;AM&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/AndroidManifest.xml&#10;styles&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/values/styles.xml&#10;RPB&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/ReferredPatientBranchesActivity.java&#10;Time&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/ReferredPatientReferredTimeActivity.java&#10;Re&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/ReferredPatientBranchesActivity.java&#10;Admin&#9;PSI&#9;JAVA://com.virtucure.practiceforms.ReferredPatientAdministrationsActivity&#10;Sha&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/SharedRecordDetailsActivity.java&#10;DS&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/DischargeSheetActivity.java&#10;GE&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/GeneralExaminationActivity.java&#10;Hom&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/Home.java&#10;CR&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/ExpandableReferredCaseRecordFormsListAdapter.java&#10;gener&#9;PSI&#9;JAVA://com.virtucure.practiceforms.GeneralExaminationActivity&#10;SHS&#9;PSI&#9;JAVA://com.virtucure.practiceforms.SchoolHealthcareScreening.SHSExpandable&#10;SH&#9;PSI&#9;JAVA://com.virtucure.practiceforms.SchoolHealthcareScreening&#10;GHS&#9;PSI&#9;JAVA://com.virtucure.practiceforms.GeneralHealthScreening&#10;DA&#9;PSI&#9;JAVA://com.virtucure.practiceforms.DentalAssessment&#10;hi&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_health_history.xml&#10;Hea&#9;PSI&#9;JAVA://com.virtucure.practiceforms.HealthHistory&#10;pat&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_patient_detail.xml&#10;col&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/values/colors.xml&#10;regi&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_registration.xml" />
+    <property name="SearchEverywhereHistoryKey" value="IM&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/InvestigationMicrobiology.java&#10;Admi&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/cardview_administration.xml&#10;col&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/values/colors.xml&#10;Form&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/FormShareActivity.java&#10;Fra&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsFragment.java&#10;IP&#9;PSI&#9;JAVA://com.virtucure.practiceforms.IPCExpandable&#10;patho&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/layout_investigation_pathology.xml&#10;bioc&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_investigation_biochemistry.xml&#10;IB&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/layout_investigation_biochemistry.xml&#10;admin&#9;PSI&#9;JAVA://com.virtucure.practiceforms.ReferredPatientAdministrationsActivity&#10;heal&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_health_history.xml&#10;GE&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/GeneralExaminationActivity.java&#10;HH&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/HealthHistory.java&#10;Hom&#9;PSI&#9;JAVA://com.virtucure.practiceforms.Home&#10;regi&#9;PSI&#9;JAVA://com.virtucure.practiceforms.Registration&#10;regis&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/registration_layout.xml&#10;log&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/loginactivity.java&#10;SU&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/ServerUtil.java&#10;AW&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/AsyncWorkerNetwork.java&#10;logi&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_loginactivity.xml&#10;build&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/build.gradle&#10;Frag&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsFragment.java&#10;attach&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/file_attachment_list.xml&#10;Buil&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/build.gradle&#10;A&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/FileAttachmentAdapter.java&#10;C&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsFragment.java&#10;SH&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/SchoolHealthcareScreening.java&#10;DA&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/DentalAssessment.java&#10;DS&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/DischargeSheetActivity.java&#10;str&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/values/strings.xml&#10;Hea&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/HealthHistory.java&#10;GHS&#9;PSI&#9;JAVA://com.virtucure.practiceforms.GeneralHealthScreening&#10;H&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/HealthHistory.java&#10;vie&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/viewpatients.java&#10;AN&#9;PSI&#9;JAVA://com.virtucure.practiceforms.AsyncWorkerNetwork&#10;Expan&#9;PSI&#9;JAVA://com.virtucure.practiceforms.ExpandableReferredCaseRecordFormsListAdapter&#10;stri&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/values/strings.xml&#10;Heal&#9;PSI&#9;JAVA://com.virtucure.practiceforms.HealthHistory&#10;Dis&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/DischargeSheetActivity.java&#10;Ex&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/GeneralExaminationActivity.java&#10;Scho&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/SchoolHealthcareScreening.java&#10;Fr&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsFragment.java&#10;exa&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_general_examination_list.xml&#10;Sch&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/java/com/virtucure/practiceforms/SchoolHealthcareScreening.java&#10;SHS&#9;PSI&#9;JAVA://com.virtucure.practiceforms.SchoolHealthcareScreening&#10;path&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_investigation_pathlogy.xml&#10;inv&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_investigation_microbiology.xml&#10;inves&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_investigation_biochemistry.xml&#10;dis&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_discharge_sheet.xml&#10;gener&#9;FILE&#9;file://C:/Users/AJITI/AndroidStudioProjects/PracticeForms/app/src/main/res/layout/activity_general_examination.xml" />
     <property name="android.project.structure.last.selected" value="app" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
@@ -2519,7 +2603,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2528,16 +2612,17 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5979557" sideWeight="0.43797275" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4020443" sideWeight="0.42586988" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28960818" sideWeight="0.4440242" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28960818" sideWeight="0.4440242" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23850085" sideWeight="0.56429654" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4020443" sideWeight="0.5741301" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23850085" sideWeight="0.5612708" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26746166" sideWeight="0.47276855" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2550,7 +2635,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6780239" sideWeight="0.4969743" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39965987" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -2558,14 +2642,14 @@
     <layout-to-restore>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27086884" sideWeight="0.43797275" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23850085" sideWeight="0.56429654" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4020443" sideWeight="0.42586988" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4020443" sideWeight="0.5741301" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23850085" sideWeight="0.5612708" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24357034" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
@@ -2585,8 +2669,8 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26746166" sideWeight="0.47276855" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39965987" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -2623,20 +2707,14 @@
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/SchoolHealthcareScreening.java</url>
-          <line>200</line>
-          <properties />
-          <option name="timeStamp" value="277" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/HealthHistory.java</url>
-          <line>189</line>
+          <line>190</line>
           <properties />
           <option name="timeStamp" value="311" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/SchoolHealthcareScreening.java</url>
-          <line>243</line>
+          <line>245</line>
           <properties />
           <option name="timeStamp" value="355" />
         </line-breakpoint>
@@ -2647,292 +2725,45 @@
           <option name="timeStamp" value="356" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsActivity.java</url>
-          <line>556</line>
-          <properties />
-          <option name="timeStamp" value="457" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/FileAttachmentAdapter.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="481" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsMainActivity.java</url>
-          <line>30</line>
-          <properties />
-          <option name="timeStamp" value="521" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/viewpatients.java</url>
-          <line>378</line>
+          <line>274</line>
           <properties />
           <option name="timeStamp" value="536" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsMainActivity.java</url>
+          <line>149</line>
+          <properties />
+          <option name="timeStamp" value="575" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/app/src/main/res/layout/activity_school_healthcare_screening_0to6.xml</url>
-          <line>391</line>
+          <line>394</line>
           <option name="timeStamp" value="184" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="545" />
+      <option name="time" value="576" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.miguelcatalan/materialsearchview/1.4.0/3b8caddbe9447c1eb0a3d1ea2bd27891c942671d/materialsearchview-1.4.0-sources.jar!/com/miguelcatalan/materialsearchview/utils/AnimationUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9125964">
-          <caret line="141" column="1" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ServerUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27370304">
-          <caret line="9" column="60" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/Home.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.355">
-          <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_viewpatients.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_discharge_sheet.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33730158">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-          <folding />
+        <state vertical-scroll-proportion="0.35912699">
+          <caret line="570" column="47" selection-start-line="570" selection-start-column="47" selection-end-line="570" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ExpandableReferredCaseRecordFormsListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4047619">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_addforms.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19136961">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_biochemistry_form.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15947467">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_caserecord_forms.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22326455">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_dental_assessment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19136961">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_discharge_sheet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22326455">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_drawer_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93621016">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_formshare.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25515947">
-          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_general_examination.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19136961">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_general_health_screening.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19136961">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_health_history.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19136961">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_home.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19136961">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_microbiology_form.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15947467">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_pathology_form.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15947467">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_patient_detail.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19136961">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_referred_administrators.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15947467">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_referred_branches.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15947467">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_referred_case_records.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15947467">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_referred_hrids.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15947467">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_referred_records.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15947467">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_referred_time.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15947467">
-          <caret line="5" column="64" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_registration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19136961">
-          <caret line="6" column="64" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_school_healthcare_screening.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22326455">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_shared_details.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25515947">
-          <caret line="8" column="64" selection-start-line="8" selection-start-column="64" selection-end-line="8" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu_viewpatients.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31894934">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/poupup_menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3832853">
-          <caret line="610" column="18" selection-start-line="610" selection-start-column="18" selection-end-line="610" selection-end-column="18" />
-          <folding />
+        <state vertical-scroll-proportion="-6.660107">
+          <caret line="803" column="97" selection-start-line="803" selection-start-column="97" selection-end-line="803" selection-end-column="97" />
         </state>
       </provider>
     </entry>
@@ -2941,19 +2772,363 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9325397">
-          <caret line="172" column="0" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.5952381">
+          <caret line="175" column="28" selection-start-line="175" selection-start-column="28" selection-end-line="175" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/viewpatients.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6422182">
+          <caret line="98" column="67" selection-start-line="98" selection-start-column="67" selection-end-line="98" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/InvestigationBioChemistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42218247">
+          <caret line="316" column="126" selection-start-line="316" selection-start-column="126" selection-end-line="316" selection-end-column="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/InvestigationPathology.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30053666">
+          <caret line="270" column="72" selection-start-line="270" selection-start-column="72" selection-end-line="270" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/DischargeSheetActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15205725">
+          <caret line="280" column="72" selection-start-line="280" selection-start-column="72" selection-end-line="280" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/DentalAssessment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.79427546">
+          <caret line="175" column="78" selection-start-line="175" selection-start-column="78" selection-end-line="175" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/GeneralHealthScreening.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30053666">
+          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/SchoolHealthcareScreening.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.8550985">
+          <caret line="221" column="64" selection-start-line="221" selection-start-column="64" selection-end-line="221" selection-end-column="64" />
           <folding>
-            <element signature="e#6992#7033#0" expanded="true" />
+            <element signature="e#10422#10483#0" expanded="false" />
+            <element signature="e#10517#10578#0" expanded="false" />
+            <element signature="e#10612#10673#0" expanded="false" />
+            <element signature="e#10707#10768#0" expanded="false" />
+            <element signature="e#10860#10923#0" expanded="false" />
+            <element signature="e#11168#11236#0" expanded="false" />
+            <element signature="e#11270#11338#0" expanded="false" />
+            <element signature="e#11372#11440#0" expanded="false" />
+            <element signature="e#11474#11542#0" expanded="false" />
+            <element signature="e#11614#11682#0" expanded="false" />
+            <element signature="e#11722#11784#0" expanded="false" />
+            <element signature="e#13514#13538#0" expanded="false" />
+            <element signature="e#13579#13590#0" expanded="false" />
+            <element signature="e#13842#13857#0" expanded="false" />
+            <element signature="e#15212#15223#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/InvestigationMicrobiology.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9391771">
-          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.55533594">
+          <caret line="38" column="82" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-23/android/widget/ListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33273703">
+          <caret line="467" column="16" selection-start-line="467" selection-start-column="16" selection-end-line="467" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/file_attachment.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.30538923">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/file_attachment_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15269461">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/FileAttachmentAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.6897374">
+          <caret line="76" column="13" selection-start-line="76" selection-start-column="13" selection-end-line="76" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57423973">
+          <caret line="26" column="56" selection-start-line="26" selection-start-column="56" selection-end-line="26" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_clear_white.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/AsyncWorkerNetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57781756">
+          <caret line="245" column="0" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/clear.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_action_cancel.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ServerUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27370304">
+          <caret line="9" column="64" selection-start-line="9" selection-start-column="64" selection-end-line="9" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_loginactivity.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.036363635">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/loginactivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.314848">
+          <caret line="260" column="36" selection-start-line="260" selection-start-column="36" selection-end-line="260" selection-end-column="36" />
+          <folding>
+            <element signature="e#5332#6008#0" expanded="true" />
+            <element signature="e#6007#6008#0" expanded="true" />
+            <element signature="e#6051#6727#0" expanded="true" />
+            <element signature="e#6726#6727#0" expanded="true" />
+            <element signature="e#10858#12248#0" expanded="true" />
+            <element signature="e#12247#12248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/registration_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43849206">
+          <caret line="114" column="44" selection-start-line="114" selection-start-column="44" selection-end-line="114" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39177102">
+          <caret line="188" column="23" selection-start-line="188" selection-start-column="23" selection-end-line="188" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/Registration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.8550984">
+          <caret line="141" column="11" selection-start-line="141" selection-start-column="11" selection-end-line="141" selection-end-column="11" />
+          <folding>
+            <element signature="e#2061#2461#0" expanded="true" />
+            <element signature="e#2460#2461#0" expanded="true" />
+            <element signature="e#4583#4951#0" expanded="true" />
+            <element signature="e#4950#4951#0" expanded="true" />
+            <element signature="e#5955#6323#0" expanded="true" />
+            <element signature="e#6322#6323#0" expanded="true" />
+            <element signature="e#7132#7428#0" expanded="true" />
+            <element signature="e#7427#7428#0" expanded="true" />
+            <element signature="e#9061#20254#0" expanded="true" />
+            <element signature="e#20253#20254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/HealthHistory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63506263">
+          <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
+          <folding>
+            <element signature="e#7771#7795#0" expanded="true" />
+            <element signature="e#7836#7847#0" expanded="true" />
+            <element signature="e#7849#8079#0" expanded="true" />
+            <element signature="e#8078#8079#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/Home.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57781756">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_general_examination_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8095238">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-23/android/widget/ExpandableListView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33273703">
+          <caret line="588" column="16" selection-start-line="588" selection-start-column="16" selection-end-line="588" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_health_history.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12301587">
+          <caret line="205" column="36" selection-start-line="205" selection-start-column="36" selection-end-line="205" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_general_examination.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.090909">
+          <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding>
+            <element signature="e#902#939#0" expanded="true" />
+            <element signature="e#1599#1636#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_referred_patient_administrations_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.640873">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ReferredPatientAdministrationsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="102" column="64" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ReferredPatientsAdministrationsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="87" selection-start-line="32" selection-start-column="87" selection-end-line="32" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/GeneralExaminationAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4847943">
+          <caret line="32" column="64" selection-start-line="32" selection-start-column="64" selection-end-line="32" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/GeneralExaminationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3649374">
+          <caret line="148" column="36" selection-start-line="148" selection-start-column="36" selection-end-line="148" selection-end-column="36" />
+          <folding>
+            <element signature="e#5312#5493#0" expanded="true" />
+            <element signature="e#5492#5493#0" expanded="true" />
+            <element signature="e#11394#11418#0" expanded="true" />
+            <element signature="e#11459#11470#0" expanded="true" />
+            <element signature="e#11472#11734#0" expanded="true" />
+            <element signature="e#11733#11734#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_investigation_biochemistry.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.2480159">
+          <caret line="37" column="41" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_investigation_biochemistry.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50595236">
+          <caret line="304" column="57" selection-start-line="304" selection-start-column="57" selection-end-line="304" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_investigation_pathology.xml">
@@ -2961,165 +3136,114 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43849206">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6964286">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/IPCExpandable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84794277">
-          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_investigation_pathlogy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7136842">
+          <caret line="225" column="46" selection-start-line="225" selection-start-column="46" selection-end-line="225" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/IPCExpandable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.545455">
-          <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.57781756">
+          <caret line="36" column="72" selection-start-line="36" selection-start-column="72" selection-end-line="36" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/InvestigationPathology.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/SharedRecordDetailsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/IBCExpandable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="76" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/InvestigationBioChemistry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="239" column="91" selection-start-line="239" selection-start-column="91" selection-end-line="239" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/menulist.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71014494">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/sdk/sources/android-23/android/widget/CompoundButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="128" column="23" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/caserecordsform_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6437126">
-          <caret line="163" column="0" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/caserecordforms_list_group.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.290909">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.miguelcatalan/materialsearchview/1.4.0/3b8caddbe9447c1eb0a3d1ea2bd27891c942671d/materialsearchview-1.4.0-sources.jar!/com/miguelcatalan/materialsearchview/MaterialSearchView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9391771">
-          <caret line="169" column="0" selection-start-line="169" selection-start-column="0" selection-end-line="169" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6994633">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="e#7470#7949#0" expanded="false" />
-            <element signature="e#7948#7949#0" expanded="false" />
+            <element signature="e#2585#3868#0" expanded="true" />
+            <element signature="e#2964#3048#0" expanded="true" />
+            <element signature="e#3867#3868#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsMainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6503856">
-          <caret line="211" column="0" selection-start-line="211" selection-start-column="0" selection-end-line="211" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="153" column="8" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/form_share_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5079365">
+          <caret line="116" column="17" selection-start-line="116" selection-start-column="17" selection-end-line="116" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/FormShareActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33452594">
+          <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/InvestigationMicrobiology.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42218247">
+          <caret line="169" column="80" selection-start-line="169" selection-start-column="80" selection-end-line="169" selection-end-column="80" />
           <folding>
-            <element signature="e#4267#4767#0" expanded="true" />
-            <element signature="e#4766#4767#0" expanded="true" />
+            <element signature="e#10496#10520#0" expanded="true" />
+            <element signature="e#10561#10572#0" expanded="true" />
+            <element signature="e#10574#10822#0" expanded="true" />
+            <element signature="e#10821#10822#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/PatientsAdaptor.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cardview_administration.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.7757937">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_investigation_biochemistry.xml">
       <provider editor-type-id="android-designer">
         <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0508982">
-          <caret line="309" column="0" selection-start-line="309" selection-start-column="0" selection-end-line="309" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ExpandableReferredCaseRecordFormsListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.043701798">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/ExpandableCaseRecordFormsListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.344473">
-          <caret line="993" column="0" selection-start-line="993" selection-start-column="0" selection-end-line="993" selection-end-column="0" />
-          <folding>
-            <element signature="e#3441#3669#0" expanded="true" />
-            <element signature="e#3668#3669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/case_record_forms_frame_layout.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1526946">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.27191412">
+          <caret line="525" column="74" selection-start-line="525" selection-start-column="74" selection-end-line="525" selection-end-column="74" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/viewpatients.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/virtucure/practiceforms/CaseRecordFormsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.24329159">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -66,6 +66,7 @@ public class Home extends AppCompatActivity {
                         Intent registration = new Intent(
                                 getApplicationContext(),
                                 Registration.class);
+                        registration.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(registration);
                         break;
 

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.virtucure.practiceforms"
+    android:versionCode="4"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.virtucure.practiceforms.loginactivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.Registration"
+            android:label="@string/title_activity_registration"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.viewpatients"
+            android:label="@string/title_activity_viewpatients"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.AddForms"
+            android:label="@string/title_activity_addforms"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.PatientDetail"
+            android:label="@string/title_activity_patient_detail"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.HealthHistory"
+            android:label="@string/title_activity_health_history" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.GeneralHealthScreening"
+            android:label="@string/title_activity_general_health_screening"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.DentalAssessment"
+            android:label="@string/title_activity_dentalAssessment"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.SchoolHealthcareScreening"
+            android:label="@string/title_activity_school_healthcare_screening"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.FormShareActivity"
+            android:label="@string/title_activity_form_share"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.ReferredPatientAdministrationsActivity"
+            android:label="@string/title_activity_referred_patient_admins"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.virtucure.practiceforms.ReferredPatientBranchesActivity"
+            android:label="@string/title_activity_referred_patient_branches"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.virtucure.practiceforms.ReferredPatientHridsActivity"
+            android:label="@string/title_activity_referred_patient_hrids"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.virtucure.practiceforms.ReferredPatientCaseRecordsActivity"
+            android:label="@string/title_activity_referred_patient_case_records"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.virtucure.practiceforms.ReferredPatientReferredTimeActivity"
+            android:label="@string/title_activity_referred_patient_shared_time"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.virtucure.practiceforms.ReferredPatientReferredRecordsActivity"
+            android:label="@string/title_activity_referred_patient_forms"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.virtucure.practiceforms.SharedRecordDetailsActivity"
+            android:label="@string/title_activity_shared_record"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.virtucure.practiceforms.DischargeSheetActivity"
+            android:label="@string/title_activity_discharge"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.virtucure.practiceforms.GeneralExaminationActivity"
+            android:label="@string/title_activity_physical"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.virtucure.practiceforms.CaseRecordFormsMainActivity"
+            android:label="@string/title_activity_caserecord_forms"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.virtucure.practiceforms.InvestigationBioChemistry"
+            android:label="@string/title_activity_investigation_biochemistry"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.InvestigationMicrobiology"
+            android:label="@string/title_activity_investigation_microbiology"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.virtucure.practiceforms.InvestigationPathology"
+            android:label="@string/title_activity_investigation_pathology"
+            android:launchMode="singleTask" >
+        </activity>
+    </application>
+
+</manifest>

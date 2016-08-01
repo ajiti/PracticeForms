@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.virtucare.practiceforms.dto.ReferredPatientHridCaseRecordDTO;
-import com.virtucare.practiceforms.dto.ReferredPatientHridDTO;
 
 import java.util.List;
 
@@ -42,14 +41,14 @@ public class ReferredPatientsCaseRecordsAdapter extends RecyclerView.Adapter<Ref
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView provisionalDiagnosis;
+//        public TextView provisionalDiagnosis;
         private TextView formCount;
         private TextView caseRecordNo;
 
         public ViewHolder(View itemView) {
             super(itemView);
             if(itemView != null) {
-                provisionalDiagnosis = (TextView) itemView.findViewById(R.id.prov_diag);
+//                provisionalDiagnosis = (TextView) itemView.findViewById(R.id.prov_diag);
                 caseRecordNo = (TextView) itemView.findViewById(R.id.caseRecordNo);
                 formCount = (TextView) itemView.findViewById(R.id.referred_count);
                 formCount.bringToFront();
@@ -59,7 +58,7 @@ public class ReferredPatientsCaseRecordsAdapter extends RecyclerView.Adapter<Ref
         public void bind(final ReferredPatientHridCaseRecordDTO item, final OnRecyclerItemClickListener listener) {
 
             if(item != null && itemView != null) {
-                provisionalDiagnosis.setText(checkIsEmpty(item.getProvisionalDiagnosis()));
+//                provisionalDiagnosis.setText(checkIsEmpty(item.getProvisionalDiagnosis()));
                 caseRecordNo.setText(item.getCaseRecordNo());
                 formCount.setText(item.getSharedDateCount().size()+"");
 

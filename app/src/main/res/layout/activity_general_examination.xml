@@ -1,12 +1,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="13dp"
     android:paddingBottom="13dp"
+    android:background="@color/white"
     tools:context=".GeneralExaminationActivity">
 
         <LinearLayout
@@ -14,12 +15,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:id="@+id/general">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Consciousness"/>
+                android:text="@string/gen_physical_exam_general_1"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -29,12 +32,14 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:id="@+id/consciousness"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Mental State"/>
+                android:text="@string/gen_physical_exam_general_2"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -44,12 +49,14 @@
                 android:id="@+id/mental_state"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="General Appearance"/>
+                android:text="@string/gen_physical_exam_general_3"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -59,12 +66,14 @@
                 android:id="@+id/general_appearance"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Pallor"/>
+                android:text="@string/gen_physical_exam_general_4"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -74,12 +83,14 @@
                 android:id="@+id/pallor"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Icterus"/>
+                android:text="@string/gen_physical_exam_general_5"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -89,12 +100,14 @@
                 android:id="@+id/icterus"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Cyanosis"/>
+                android:text="@string/gen_physical_exam_general_6"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -104,12 +117,14 @@
                 android:textColorHint="@color/white"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Clubbing"/>
+                android:text="@string/gen_physical_exam_general_7"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -119,12 +134,14 @@
                 android:textColorHint="@color/white"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Lymph Adenopathy"/>
+                android:text="@string/gen_physical_exam_general_8"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -134,12 +151,14 @@
                 android:gravity="top|left"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Edema"/>
+                android:text="@string/gen_physical_exam_general_9"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -149,18 +168,22 @@
                 android:id="@+id/edema"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:id="@+id/vital">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Temperature(oF)"/>
+                android:text="@string/gen_physical_exam_vital_1"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -170,12 +193,14 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:id="@+id/temperature"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Pulse(b/m)"/>
+                android:text="@string/gen_physical_exam_vital_2"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -185,12 +210,14 @@
                 android:id="@+id/pulse"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Respiration(c/m)"/>
+                android:text="@string/gen_physical_exam_vital_3"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -200,12 +227,14 @@
                 android:id="@+id/respiration"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Blood Pressure(mm/hg)"/>
+                android:text="@string/gen_physical_exam_vital_4"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -222,12 +251,14 @@
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:id="@+id/amthropometry">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Height(meters)"/>
+                android:text="@string/gen_physical_exam_amthropometry_1"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -237,12 +268,14 @@
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:id="@+id/height"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Weight(kg)"/>
+                android:text="@string/gen_physical_exam_amthropometry_2"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -252,12 +285,14 @@
                 android:id="@+id/weight"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Body Mass Index(BMI)-(kg/m2)"/>
+                android:text="@string/gen_physical_exam_amthropometry_3"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -267,12 +302,14 @@
                 android:id="@+id/bmi"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Mid-Arm Circumference(in children)-(cm)"/>
+                android:text="@string/gen_physical_exam_amthropometry_4"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"
@@ -282,12 +319,14 @@
                 android:id="@+id/mac"
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:text="Head Circumference(in children)-(cm)"/>
+                android:text="@string/gen_physical_exam_amthropometry_5"/>
+
             <EditText
                 android:inputType="textMultiLine"
                 android:minLines="4"

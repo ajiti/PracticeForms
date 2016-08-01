@@ -85,115 +85,116 @@ public class GeneralHealthScreening extends AppCompatActivity {
         }
 
         Button saveBtn = (Button) findViewById(R.id.gensave);
-        saveBtn.setOnClickListener(new View.OnClickListener() {
+        if(saveBtn != null){
+            saveBtn.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                try{
+                @Override
+                public void onClick(View v) {
+                    try{
 
-                    healthRegistrationId = getIntent().getExtras().getString("regid");
-                    regLinkId = getIntent().getExtras().getString("regLinkId");
-                    patientName = getIntent().getExtras().getString("name");
-                    caseid = getIntent().getExtras().getString("caseid");
-                    phone = getIntent().getExtras().getString("phone");
-                    proofType = getIntent().getExtras().getString("proofType");
-                    proofNumber = getIntent().getExtras().getString("proofNumber");
-                    email = getIntent().getExtras().getString("email");
-                    gender = getIntent().getExtras().getString("gender");
-                    dob = getIntent().getExtras().getString("dob");
-                    formName = getIntent().getExtras().getString("formName");
+                        healthRegistrationId = getIntent().getExtras().getString("regid");
+                        regLinkId = getIntent().getExtras().getString("regLinkId");
+                        patientName = getIntent().getExtras().getString("name");
+                        caseid = getIntent().getExtras().getString("caseid");
+                        phone = getIntent().getExtras().getString("phone");
+                        proofType = getIntent().getExtras().getString("proofType");
+                        proofNumber = getIntent().getExtras().getString("proofNumber");
+                        email = getIntent().getExtras().getString("email");
+                        gender = getIntent().getExtras().getString("gender");
+                        dob = getIntent().getExtras().getString("dob");
+                        formName = getIntent().getExtras().getString("formName");
 
-                    int rg1 = ((RadioGroup) findViewById(R.id.ghsradiogroup1)).getCheckedRadioButtonId();
-                    int rg2 = ((RadioGroup) findViewById(R.id.ghsradiogroup2)).getCheckedRadioButtonId();
-                    int rg3 = ((RadioGroup) findViewById(R.id.ghsradiogroup3)).getCheckedRadioButtonId();
-                    int rg4 = ((RadioGroup) findViewById(R.id.ghsradiogroup4)).getCheckedRadioButtonId();
-                    int rg5 = ((RadioGroup) findViewById(R.id.ghsradiogroup5)).getCheckedRadioButtonId();
-                    int rg6 = ((RadioGroup) findViewById(R.id.ghsradiogroup6)).getCheckedRadioButtonId();
-                    int rg7 = ((RadioGroup) findViewById(R.id.ghsradiogroup7)).getCheckedRadioButtonId();
-                    int rg8 = ((RadioGroup) findViewById(R.id.ghsradiogroup8)).getCheckedRadioButtonId();
-                    int rg9 = ((RadioGroup) findViewById(R.id.ghsradiogroup9)).getCheckedRadioButtonId();
-                    int rg10 = ((RadioGroup) findViewById(R.id.ghsradiogroup10)).getCheckedRadioButtonId();
+                        int rg1 = ((RadioGroup) findViewById(R.id.ghsradiogroup1)).getCheckedRadioButtonId();
+                        int rg2 = ((RadioGroup) findViewById(R.id.ghsradiogroup2)).getCheckedRadioButtonId();
+                        int rg3 = ((RadioGroup) findViewById(R.id.ghsradiogroup3)).getCheckedRadioButtonId();
+                        int rg4 = ((RadioGroup) findViewById(R.id.ghsradiogroup4)).getCheckedRadioButtonId();
+                        int rg5 = ((RadioGroup) findViewById(R.id.ghsradiogroup5)).getCheckedRadioButtonId();
+                        int rg6 = ((RadioGroup) findViewById(R.id.ghsradiogroup6)).getCheckedRadioButtonId();
+                        int rg7 = ((RadioGroup) findViewById(R.id.ghsradiogroup7)).getCheckedRadioButtonId();
+                        int rg8 = ((RadioGroup) findViewById(R.id.ghsradiogroup8)).getCheckedRadioButtonId();
+                        int rg9 = ((RadioGroup) findViewById(R.id.ghsradiogroup9)).getCheckedRadioButtonId();
+                        int rg10 = ((RadioGroup) findViewById(R.id.ghsradiogroup10)).getCheckedRadioButtonId();
 
-                    if(rg1 != -1)
-                        difficultiesInSeeingObjects = getCheckedValue((String) ((RadioButton) findViewById(rg1)).getText());
-                    if(rg2 != -1)
-                        hearingTrouble = getCheckedValue((String) ((RadioButton) findViewById(rg2)).getText());
-                    if(rg3 != -1)
-                        sufferWithFrequentEpisodesOfCold = getCheckedValue((String) ((RadioButton) findViewById(rg3)).getText());
-                    if(rg4 != -1)
-                        skinAllergies = getCheckedValue((String) ((RadioButton) findViewById(rg4)).getText());
-                    if(rg5 != -1)
-                        learningDifficulties = getCheckedValue((String) ((RadioButton) findViewById(rg5)).getText());
-                    if(rg6 != -1)
-                        historyOfFits = getCheckedValue((String) ((RadioButton) findViewById(rg6)).getText());
-                    if(rg7 != -1)
-                        historyOfBurningChest = getCheckedValue((String) ((RadioButton) findViewById(rg7)).getText());
-                    if(rg8 != -1)
-                        highBloodPressure = getCheckedValue((String) ((RadioButton) findViewById(rg8)).getText());
-                    if(rg9 != -1)
-                        diabetes = getCheckedValue((String) ((RadioButton) findViewById(rg9)).getText());
-                    if(rg10 != -1)
-                        dentalProblems = getCheckedValue((String) ((RadioButton) findViewById(rg10)).getText());
+                        if(rg1 != -1)
+                            difficultiesInSeeingObjects = getCheckedValue((String) ((RadioButton) findViewById(rg1)).getText());
+                        if(rg2 != -1)
+                            hearingTrouble = getCheckedValue((String) ((RadioButton) findViewById(rg2)).getText());
+                        if(rg3 != -1)
+                            sufferWithFrequentEpisodesOfCold = getCheckedValue((String) ((RadioButton) findViewById(rg3)).getText());
+                        if(rg4 != -1)
+                            skinAllergies = getCheckedValue((String) ((RadioButton) findViewById(rg4)).getText());
+                        if(rg5 != -1)
+                            learningDifficulties = getCheckedValue((String) ((RadioButton) findViewById(rg5)).getText());
+                        if(rg6 != -1)
+                            historyOfFits = getCheckedValue((String) ((RadioButton) findViewById(rg6)).getText());
+                        if(rg7 != -1)
+                            historyOfBurningChest = getCheckedValue((String) ((RadioButton) findViewById(rg7)).getText());
+                        if(rg8 != -1)
+                            highBloodPressure = getCheckedValue((String) ((RadioButton) findViewById(rg8)).getText());
+                        if(rg9 != -1)
+                            diabetes = getCheckedValue((String) ((RadioButton) findViewById(rg9)).getText());
+                        if(rg10 != -1)
+                            dentalProblems = getCheckedValue((String) ((RadioButton) findViewById(rg10)).getText());
 
                     /*finalDiagnosis = ((EditText) findViewById(R.id.finalDiagnosis)).getText().toString().trim();
                     provisionalDiagnosis = ((EditText) findViewById(R.id.provisionalDiagnosis)).getText().toString().trim();*/
 
-                    ArrayList<String> formsList = new ArrayList<String>();
-                    formsList.add(formName);
+                        ArrayList<String> formsList = new ArrayList<String>();
+                        formsList.add(formName);
 
-                    final Map<String, Object> insertparams = new HashMap<String, Object>();
-                    insertparams.put("hlthScrnFormHaveDifficultiesInSeeingObjects", difficultiesInSeeingObjects);
-                    insertparams.put("hlthScrnFormHaveHearingTrouble", hearingTrouble);
-                    insertparams.put("hlthScrnFormSufferWithFrequentEpisodesOfCold", sufferWithFrequentEpisodesOfCold);
-                    insertparams.put("hlthScrnFormHaveSkinAllergies", skinAllergies);
-                    insertparams.put("hlthScrnFormHaveLearningDifficulties", learningDifficulties);
-                    insertparams.put("hlthScrnFormHaveHistoryOfFits", historyOfFits);
-                    insertparams.put("hlthScrnFormHaveHistoryOfBurningChest", historyOfBurningChest);
-                    insertparams.put("hlthScrnFormHaveHighBloodPressure", highBloodPressure);
-                    insertparams.put("hlthScrnFormHaveDiabetes", diabetes);
-                    insertparams.put("hlthScrnFormHaveDentalProblems", dentalProblems);
-                    insertparams.put("practiceFormNameDataIndex", "1");
-                    insertparams.put("practiceFormNames", formsList);
-                    insertparams.put("actionType", "save");
-                    insertparams.put("healthRegistrationId", healthRegistrationId);
-                    insertparams.put("patientName", patientName);
-                    insertparams.put("regnLinkId", regLinkId);
+                        final Map<String, Object> insertparams = new HashMap<String, Object>();
+                        insertparams.put("hlthScrnFormHaveDifficultiesInSeeingObjects", difficultiesInSeeingObjects);
+                        insertparams.put("hlthScrnFormHaveHearingTrouble", hearingTrouble);
+                        insertparams.put("hlthScrnFormSufferWithFrequentEpisodesOfCold", sufferWithFrequentEpisodesOfCold);
+                        insertparams.put("hlthScrnFormHaveSkinAllergies", skinAllergies);
+                        insertparams.put("hlthScrnFormHaveLearningDifficulties", learningDifficulties);
+                        insertparams.put("hlthScrnFormHaveHistoryOfFits", historyOfFits);
+                        insertparams.put("hlthScrnFormHaveHistoryOfBurningChest", historyOfBurningChest);
+                        insertparams.put("hlthScrnFormHaveHighBloodPressure", highBloodPressure);
+                        insertparams.put("hlthScrnFormHaveDiabetes", diabetes);
+                        insertparams.put("hlthScrnFormHaveDentalProblems", dentalProblems);
+                        insertparams.put("practiceFormNameDataIndex", "1");
+                        insertparams.put("practiceFormNames", formsList);
+                        insertparams.put("actionType", "save");
+                        insertparams.put("healthRegistrationId", healthRegistrationId);
+                        insertparams.put("patientName", patientName);
+                        insertparams.put("regnLinkId", regLinkId);
                     /*insertparams.put("provisionalDiagnosis", provisionalDiagnosis);
                     insertparams.put("finalDiagnosis", finalDiagnosis);*/
-                    if(caseid != null){
-                        insertparams.put("caseRecordNo",caseid);
-                    }
+                        if(caseid != null){
+                            insertparams.put("caseRecordNo",caseid);
+                        }
 
-                    jsonparams = new Gson().toJson(insertparams);
+                        jsonparams = new Gson().toJson(insertparams);
 
-                    if(rg1 == -1 && rg2 == -1 && rg3 == -1 && rg4 == -1 && rg5 == -1 && rg6 == -1 && rg7 == -1 && rg8 == -1 && rg9 == -1 && rg10 == -1)
-                    {
-                        new AlertDialog.Builder(context).setTitle("Alert")
-                                .setMessage("Do you want to continue with empty record").setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                saveCaseRecord(jsonparams, context);
-                            }
-                        }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
-                            }
-                        }).show();
-                    }
-                    else {
-                        new AlertDialog.Builder(context).setTitle("Alert")
-                                .setMessage("Do you want to save record").setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int id) {
-                                saveCaseRecord(jsonparams, context);
-                            }
-                        }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.cancel();
-                            }
-                        }).show();
-                    }
+                        if(rg1 == -1 && rg2 == -1 && rg3 == -1 && rg4 == -1 && rg5 == -1 && rg6 == -1 && rg7 == -1 && rg8 == -1 && rg9 == -1 && rg10 == -1)
+                        {
+                            new AlertDialog.Builder(context).setTitle("Alert")
+                                    .setMessage(R.string.empty_save_record_msg).setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    saveCaseRecord(jsonparams, context);
+                                }
+                            }).setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.cancel();
+                                }
+                            }).show();
+                        }
+                        else {
+                            new AlertDialog.Builder(context).setTitle("Alert")
+                                    .setMessage(R.string.save_record_msg).setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    saveCaseRecord(jsonparams, context);
+                                }
+                            }).setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.cancel();
+                                }
+                            }).show();
+                        }
 
-                }
-                catch (Exception e){
+                    }
+                    catch (Exception e){
 /*                    new AlertDialog.Builder(GeneralHealthScreening.this)
                             .setTitle("Alert")
                             .setMessage("Please fill all the fields!").setCancelable(false).setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
@@ -212,9 +213,10 @@ public class GeneralHealthScreening extends AppCompatActivity {
                             startActivity(generalhs);
                         }
                     }).show();*/
+                    }
                 }
-            }
-        });
+            });
+        }
     }
 
     private boolean getCheckedValue(String selection){
@@ -285,7 +287,7 @@ public class GeneralHealthScreening extends AppCompatActivity {
                                 public void onClick(DialogInterface dialog, int id) {
                                     Intent caseRecordsActivity = new Intent(
                                             getApplicationContext(),
-                                            CaseRecordFormsActivity.class);
+                                            CaseRecordFormsMainActivity.class);
                                     caseRecordsActivity.putExtra("regid", healthRegistrationId);
                                     caseRecordsActivity.putExtra("name", patientName);
                                     caseRecordsActivity.putExtra("phone", phone);
@@ -294,7 +296,7 @@ public class GeneralHealthScreening extends AppCompatActivity {
                                     caseRecordsActivity.putExtra("proofNumber", proofNumber);
                                     caseRecordsActivity.putExtra("gender", gender);
                                     caseRecordsActivity.putExtra("dob", dob);
-                                    caseRecordsActivity.putExtra("reqLinkId", regLinkId);
+                                    caseRecordsActivity.putExtra("regLinkId", regLinkId);
                                     caseRecordsActivity.putExtra("caserecordno", caseid);
                                     caseRecordsActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                                     startActivity(caseRecordsActivity);

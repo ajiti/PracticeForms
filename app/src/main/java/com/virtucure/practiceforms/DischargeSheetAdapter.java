@@ -18,7 +18,7 @@ public class DischargeSheetAdapter extends BaseExpandableListAdapter
     private List<String> listDataHeader;
     private Context context;
     private View basicView;
-    private LinearLayout admissonLayout,dischargeLayout,clinicLayout,adviceLayout;
+    private LinearLayout admissonLayout, dischargeLayout, clinicLayout, adviceLayout;
     FormListener listener;
 
     public interface FormListener {
@@ -47,7 +47,7 @@ public class DischargeSheetAdapter extends BaseExpandableListAdapter
 
     @Override
     public int getGroupCount() {
-        return this.listDataHeader.size();
+        return (listDataHeader != null) ? listDataHeader.size() : 0;
     }
 
     @Override
@@ -57,7 +57,7 @@ public class DischargeSheetAdapter extends BaseExpandableListAdapter
 
     @Override
     public Object getGroup(int groupPosition) {
-        return this.listDataHeader.get(groupPosition);
+        return listDataHeader.get(groupPosition);
     }
 
     @Override
@@ -85,9 +85,9 @@ public class DischargeSheetAdapter extends BaseExpandableListAdapter
         String headerTitle = (String) getGroup(groupPosition);
 
         if (convertView == null) {
-            LayoutInflater infalInflater = (LayoutInflater) this.context
+            LayoutInflater inflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = infalInflater.inflate(R.layout.caserecordforms_list_group, null);
+            convertView = inflater.inflate(R.layout.caserecordforms_list_group, null);
             convertView.findViewById(R.id.formShareCheckBox).setVisibility(View.GONE);
         }
 

@@ -2,8 +2,11 @@ package com.virtucure.practiceforms;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.support.v4.content.ContextCompat;
 import android.webkit.CookieManager;
 
 import com.google.gson.Gson;
@@ -37,8 +40,8 @@ public class AsyncWorkerNetwork extends AsyncTask<Map<String,String>, String, Ma
 	public AsyncWorkerNetwork(Context con, ActionCallback callback, String loadingMessage) {
 		// TODO Auto-generated constructor stub
 		pd = new ProgressDialog(con);
-        pd.setMessage(loadingMessage+"...");
-        pd.setCancelable(false);
+        pd.setMessage(loadingMessage + "...");
+		pd.setCancelable(false);
         pd.setCanceledOnTouchOutside(false);
         func = callback;
 	}
@@ -102,13 +105,13 @@ public class AsyncWorkerNetwork extends AsyncTask<Map<String,String>, String, Ma
 						getPostDataString(params[0]).getBytes().length);
 				out = new PrintWriter(conn.getOutputStream());
 				out.print(getPostDataString(params[0]));
-			}else if (params[0].get("operationType") == "2"){
+			} else if (params[0].get("operationType") == "2"){
 				conn.setRequestProperty("Content-Type", "application/json");
 				conn.setRequestProperty("Accept", "application/json");
 				conn.setRequestProperty("cid", User.cid);
 				out = new PrintWriter(conn.getOutputStream());
 				out.print(params[0].get("retrieveparams"));
-			}else if(params[0].get("operationType") == "3"){
+			} else if(params[0].get("operationType") == "3"){
 				conn.setRequestProperty("Content-Type", "application/json");
 				conn.setRequestProperty("cid", params[0].get("cid"));
 				conn.setRequestProperty("brandorBranchName", params[0].get("bBname"));
@@ -120,7 +123,7 @@ public class AsyncWorkerNetwork extends AsyncTask<Map<String,String>, String, Ma
 				inputJson.remove("agree");
 				out = new PrintWriter(conn.getOutputStream());
 				out.print(inputJson);
-			}else if(params[0].get("operationType") == "4"){
+			} else if(params[0].get("operationType") == "4"){
 				conn.setRequestProperty("Content-Type", "application/json");
 				conn.setRequestProperty("cid", User.cid);
 				out = new PrintWriter(conn.getOutputStream());
@@ -137,13 +140,13 @@ public class AsyncWorkerNetwork extends AsyncTask<Map<String,String>, String, Ma
 				//conn.setFixedLengthStreamingMode(inputParams.getBytes("utf-8").length);
 				out = new PrintWriter(conn.getOutputStream());
 				out.print(inputParams);
-			}else if(params[0].get("operationType") == "7"){
+			} else if(params[0].get("operationType") == "7"){
 				conn.setRequestProperty("Content-Type", "application/json");
 				out = new PrintWriter(conn.getOutputStream());
 				JSONObject inputJson = new JSONObject();
 				inputJson.put("formType", "");
 				out.print(inputJson);
-			}else if(params[0].get("operationType") == "8"){
+			} else if(params[0].get("operationType") == "8"){
 				conn.setRequestProperty("Content-Type", "application/json");
 				conn.setRequestProperty("cid", User.cid);
 				conn.setRequestProperty("linkType", User.linkType);
@@ -152,14 +155,14 @@ public class AsyncWorkerNetwork extends AsyncTask<Map<String,String>, String, Ma
 				JSONObject jsonObject = new JSONObject();
 				jsonObject.put("caseRecordNo",params[0].get("caserecordno"));
 				out.print(jsonObject);
-			}else if(params[0].get("operationType") == "9"){
+			} else if(params[0].get("operationType") == "9"){
 				conn.setRequestProperty("Content-Type", "application/json");
 				conn.setRequestProperty("Accept", "application/json");
 				out = new PrintWriter(conn.getOutputStream());
 				JSONObject jsonObject = new JSONObject();
 				jsonObject.put("healthRegistrationId", params[0].get("healthRegistrationId"));
 				out.print(jsonObject);
-			}else if(params[0].get("operationType") == "10"){
+			} else if(params[0].get("operationType") == "10"){
 				conn.setRequestProperty("Content-Type", "application/json");
 				conn.setRequestProperty("Accept", "application/json");
 				conn.setRequestProperty("cid", User.cid);
@@ -168,7 +171,7 @@ public class AsyncWorkerNetwork extends AsyncTask<Map<String,String>, String, Ma
 				conn.setRequestProperty("brandorBranchName", User.brandorBranchName);
 				out = new PrintWriter(conn.getOutputStream());
 				out.print(params[0].get("insertparams"));
-			}else if(params[0].get("operationType") == "11") {
+			} else if(params[0].get("operationType") == "11") {
 				conn.setRequestProperty("X-ACCESS-TOKEN", User.secretHeader);
 				conn.setRequestProperty("Accept", "application/json");
 				conn.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + boundary);
@@ -201,15 +204,13 @@ public class AsyncWorkerNetwork extends AsyncTask<Map<String,String>, String, Ma
 				// send multipart form data necesssary after file data...
 				dataOutputStream.writeBytes(lineEnd);
 				dataOutputStream.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
-			}
-			else if(params[0].get("operationType") == "12") {
+			} else if(params[0].get("operationType") == "12") {
 				conn.setRequestProperty("X-ACCESS-TOKEN", User.secretHeader);
 				conn.setRequestProperty("Content-Type", "application/json");
 				conn.setRequestProperty("Accept", "application/json");
 				conn.setRequestProperty("cid", User.cid);
 				out = new PrintWriter(conn.getOutputStream());
-			}
-			else if(params[0].get("operationType") == "13") {
+			} else if(params[0].get("operationType") == "13") {
 				conn.setRequestProperty("X-ACCESS-TOKEN", User.secretHeader);
 				conn.setRequestProperty("Content-Type", "application/json");
 				conn.setRequestProperty("Accept", "application/json");
@@ -218,8 +219,7 @@ public class AsyncWorkerNetwork extends AsyncTask<Map<String,String>, String, Ma
 				conn.setRequestProperty("userType", User.userType);
 				out = new PrintWriter(conn.getOutputStream());
 				out.print(params[0].get("retrieveparams"));
-			}
-			else if(params[0].get("operationType") == "14") {
+			} else if(params[0].get("operationType") == "14") {
 				conn.setRequestProperty("X-ACCESS-TOKEN", User.secretHeader);
 				conn.setRequestProperty("Content-Type", "application/json");
 				conn.setRequestProperty("Accept", "application/json");
@@ -236,8 +236,7 @@ public class AsyncWorkerNetwork extends AsyncTask<Map<String,String>, String, Ma
 			if (responseCode == HttpURLConnection.HTTP_OK) {
 				if(params[0].get("operationType") == "1"){
 					User.secretHeader = conn.getHeaderField(SECRET_HEADER);
-				}
-				else if(params[0].get("operationType") == "6"){
+				} else if(params[0].get("operationType") == "6"){
 					User.secretHeader = "";
 					//cookie=null;
 					if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

@@ -57,7 +57,7 @@ public class ExpandableReferredCaseRecordFormsListAdapter extends BaseExpandable
 
     @Override
     public Object getChild(int groupPosition, int childPosition) {
-        return this.groupList.get(groupPosition).getCaseRecordData();
+        return groupList.get(groupPosition).getCaseRecordData();
     }
 
     @Override
@@ -78,9 +78,9 @@ public class ExpandableReferredCaseRecordFormsListAdapter extends BaseExpandable
     @Override
     public View getGroupView(int groupPosition, boolean isExpanded, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            LayoutInflater infalInflater = (LayoutInflater) this.context
+            LayoutInflater inflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = infalInflater.inflate(R.layout.caserecordforms_list_group, null);
+            convertView = inflater.inflate(R.layout.caserecordforms_list_group, null);
             convertView.findViewById(R.id.formShareCheckBox).setVisibility(View.GONE);
         }
 
@@ -104,7 +104,7 @@ public class ExpandableReferredCaseRecordFormsListAdapter extends BaseExpandable
         try {
             v = View.inflate(context, getFormLayoutId(formName), null);
 
-            if(v!=null && formDetailsDTO != null && ("dentalassessment".equals(formName) || "generalhealthscreening".equals(formName))){
+            if(v != null && formDetailsDTO != null && ("dentalassessment".equals(formName) || "generalhealthscreening".equals(formName))){
                 txtValView1 = (TextView) v.findViewById(R.id.ques1);
                 txtValView2 = (TextView) v.findViewById(R.id.ques2);
                 txtValView3 = (TextView) v.findViewById(R.id.ques3);
@@ -127,7 +127,7 @@ public class ExpandableReferredCaseRecordFormsListAdapter extends BaseExpandable
                 txtValView10.setVisibility(View.VISIBLE);
             }
 
-            if("historytaking".equals(formName) && formDetailsDTO!=null && v!=null) {
+            if("historytaking".equals(formName) && formDetailsDTO != null && v != null) {
 
                 toolbar = (Toolbar) v.findViewById(R.id.toolbar);
                 TextView txtView = (TextView) v.findViewById(R.id.presentIllness);
@@ -172,7 +172,7 @@ public class ExpandableReferredCaseRecordFormsListAdapter extends BaseExpandable
                 txtView14.setVisibility(View.GONE);
                 saveBtn = (Button) v.findViewById(R.id.button);
             }
-            else if("dentalassessment".equals(formName) && formDetailsDTO!=null && v!=null) {
+            else if("dentalassessment".equals(formName) && formDetailsDTO != null && v != null) {
 
                 toolbar = (Toolbar) v.findViewById(R.id.toolbar);
                 rg1 = (RadioGroup) v.findViewById(R.id.denradiogroup1);
@@ -201,7 +201,7 @@ public class ExpandableReferredCaseRecordFormsListAdapter extends BaseExpandable
                 txtValView10.setText(getBooleanInText(formDetailsDTO.getDentFormHaveIrregularPlacedTeeth()));
                 saveBtn = (Button) v.findViewById(R.id.dentalsave);
             }
-            else if("generalhealthscreening".equals(formName) && formDetailsDTO!=null && v!=null) {
+            else if("generalhealthscreening".equals(formName) && formDetailsDTO != null && v != null) {
 
                 toolbar = (Toolbar) v.findViewById(R.id.toolbar);
                 rg1 = (RadioGroup) v.findViewById(R.id.ghsradiogroup1);
@@ -230,7 +230,7 @@ public class ExpandableReferredCaseRecordFormsListAdapter extends BaseExpandable
                 txtValView10.setText(getBooleanInText(formDetailsDTO.getHlthScrnFormHaveDentalProblems()));
                 saveBtn = (Button) v.findViewById(R.id.gensave);
             }
-            else if("generalphysicalexamination".equals(formName) && formDetailsDTO!=null && v!=null){
+            else if("generalphysicalexamination".equals(formName) && formDetailsDTO != null && v != null){
                 toolbar = (Toolbar) v.findViewById(R.id.toolbar);
                 TextView textView = (TextView)v.findViewById(R.id.consciousness);
                 preventTextViewClick(textView);
@@ -287,7 +287,7 @@ public class ExpandableReferredCaseRecordFormsListAdapter extends BaseExpandable
                 preventTextViewClick(textView17);
                 textView17.setText(formDetailsDTO.getGenFormChildHeadCircumference());
             }
-            else if("dischargesheet".equals(formName) && formDetailsDTO!=null && v!=null){
+            else if("dischargesheet".equals(formName) && formDetailsDTO != null && v != null){
                 toolbar = (Toolbar) v.findViewById(R.id.toolbar);
                 TextView textView = (TextView)v.findViewById(R.id.method_Admission);
                 preventTextViewClick(textView);
@@ -386,7 +386,7 @@ public class ExpandableReferredCaseRecordFormsListAdapter extends BaseExpandable
                 preventTextViewClick(textView31);
                 textView31.setText(formDetailsDTO.getDischFormAwaitedResults());
             }
-            else if("investigationmicrobiology".equals(formName) && formDetailsDTO!=null && v!=null) {
+            else if("investigationmicrobiology".equals(formName) && formDetailsDTO != null && v != null) {
 
                 toolbar = (Toolbar) v.findViewById(R.id.toolbar);
                 CheckBox ch1 = (CheckBox) v.findViewById(R.id.mrch1);
@@ -515,7 +515,7 @@ public class ExpandableReferredCaseRecordFormsListAdapter extends BaseExpandable
 
                 saveBtn = (Button) v.findViewById(R.id.imbsave);
 
-            }else if("investigationbiochemistry".equals(formName) && formDetailsDTO!=null && v!=null) {
+            }else if("investigationbiochemistry".equals(formName) && formDetailsDTO != null && v != null) {
 
                 toolbar = (Toolbar) v.findViewById(R.id.toolbar);
                 CheckBox ch1 = (CheckBox) v.findViewById(R.id.rch1);
@@ -801,7 +801,7 @@ public class ExpandableReferredCaseRecordFormsListAdapter extends BaseExpandable
                 ch68.setVisibility(ch68.isChecked() ? View.VISIBLE : View.GONE);
                 saveBtn = (Button) v.findViewById(R.id.inbsave);
 
-            }else if("investigationpathology".equals(formName) && formDetailsDTO!=null && v!=null) {
+            }else if("investigationpathology".equals(formName) && formDetailsDTO != null && v != null) {
 
                 toolbar = (Toolbar) v.findViewById(R.id.toolbar);
                 CheckBox ch1 = (CheckBox) v.findViewById(R.id.hch1);

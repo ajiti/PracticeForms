@@ -33,12 +33,12 @@ public class PatientsAdaptor extends BaseAdapter implements SectionIndexer {
 
     @Override
     public int getCount() {
-        return patientDTOs.size();
+        return (patientDTOs != null) ? patientDTOs.size() : 0;
     }
 
     @Override
     public Object getItem(int position) {
-        return patientDTOs.get(position);
+        return (patientDTOs != null) ? patientDTOs.get(position) : "";
     }
 
     @Override

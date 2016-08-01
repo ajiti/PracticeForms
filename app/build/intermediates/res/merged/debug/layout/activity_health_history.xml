@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".HealthHistory">
 
     <include layout="@layout/toolbar"/>
@@ -10,25 +11,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
-        android:padding="@dimen/activity_horizontal_margin"
         android:scrollbars="none">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" android:orientation="vertical">
+            android:layout_height="match_parent"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="1) History Of Present illness"/>
+                android:textColor="@color/black"
+                android:text="@string/health_hist_1"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="4"
                 android:minLines="4"
                 android:gravity="top|left"
                 android:maxLines="10"
-                android:textColor="#000000"
-                android:textColorHint="#FFFFFF"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                 android:id="@+id/presentIllness"
@@ -37,15 +37,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="2) History of previous illness(Medical/Surgical)"/>
+                android:textColor="@color/black"
+                android:text="@string/health_hist_2"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="4"
                 android:minLines="4"
                 android:gravity="top|left"
                 android:maxLines="10"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:id="@+id/previousIlliness"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
@@ -54,15 +53,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="3)Drug History"/>
+                android:textColor="@color/black"
+                android:text="@string/health_hist_3"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="4"
                 android:minLines="4"
                 android:gravity="top|left"
                 android:maxLines="10"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:id="@+id/drugHistory"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
@@ -71,15 +69,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="4)History of Allergies and Adverse Reactions"/>
+                android:textColor="@color/black"
+                android:text="@string/health_hist_4"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="4"
                 android:minLines="4"
                 android:gravity="top|left"
                 android:maxLines="10"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:id="@+id/allergies"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
@@ -88,50 +85,47 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="5)Personal History"/>
+                android:textColor="@color/black"
+                android:text="@string/health_hist_5"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="4"
                 android:minLines="4"
                 android:gravity="top|left"
                 android:maxLines="10"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:id="@+id/personalHistory"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
-                android:scrollbars="vertical" />
+                android:scrollbars="vertical"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="6)Menstrual History(Female)"/>
+                android:textColor="@color/black"
+                android:text="@string/health_hist_6"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="4"
                 android:minLines="4"
                 android:id="@+id/menstrualhistory"
                 android:gravity="top|left"
                 android:maxLines="10"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
-                android:scrollbars="vertical" />
+                android:scrollbars="vertical"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="7)Social History"/>
+                android:textColor="@color/black"
+                android:text="@string/health_hist_7"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="4"
                 android:minLines="4"
                 android:id="@+id/socialhistory"
                 android:gravity="top|left"
                 android:maxLines="10"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                 android:scrollbars="vertical" />
@@ -139,13 +133,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="8)Family History"/>
+                android:textColor="@color/black"
+                android:text="@string/health_hist_8"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="4"
                 android:minLines="4"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:id="@+id/familyhistory"
                 android:gravity="top|left"
                 android:maxLines="10"
@@ -156,15 +149,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="9)Systems Review(General,Cardiovascular,Respiratory,Gastrointestinal,Neurological,Genitourinary,Musculoskeletal)"/>
+                android:textColor="@color/black"
+                android:text="@string/health_hist_9"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="4"
                 android:minLines="4"
                 android:gravity="top|left"
                 android:maxLines="10"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:id="@+id/systemreview"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
@@ -173,15 +165,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
-                android:textColor="#000000"
-                android:text="Summary"/>
+                android:textColor="@color/black"
+                android:text="@string/health_hist_10"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="5"
                 android:minLines="5"
                 android:id="@+id/summary"
                 android:gravity="top|left"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:maxLines="11"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
@@ -191,16 +182,15 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:id="@+id/htpdlbl"
-                android:textColor="#000000"
-                android:text="Provisional Diagnosis"/>
+                android:textColor="@color/black"
+                android:text="@string/prov_diag"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="5"
                 android:minLines="5"
                 android:id="@+id/provisionalDiagnosis"
                 android:gravity="top|left"
                 android:maxLines="11"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                 android:scrollbars="vertical" />
@@ -209,43 +199,18 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:id="@+id/htfdlbl"
-                android:textColor="#000000"
-                android:text="Final Diagnosis"/>
+                android:textColor="@color/black"
+                android:text="@string/fnl_diag"/>
             <EditText
                 android:inputType="textMultiLine"
-                android:lines="5"
                 android:minLines="5"
                 android:id="@+id/finalDiagnosis"
                 android:gravity="top|left"
                 android:maxLines="11"
-                android:textColor="#000000"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:layout_width="fill_parent"
                 android:scrollbars="vertical" />
-
-<!--            <LinearLayout
-                android:id="@+id/upload_block"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:weightSum="1"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:id="@+id/file_path"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:minLines="1"
-                    android:layout_weight="0.5"
-                    android:hint="File Name"/>
-
-                <Button android:id="@+id/upload_button"
-                    android:text="Upload"
-                    android:background="#3cb5c0"
-                    android:textColor="#fff"
-                    android:layout_weight="0.5"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>-->
 
             <Button
                 android:layout_width="fill_parent"
@@ -253,8 +218,8 @@
                 android:text="Save"
                 android:textStyle="bold"
                 android:shadowColor="#EBEBEB"
-                android:textColor="#FFFFFF"
-                android:background="#3cb5c0"
+                android:textColor="@color/white"
+                android:background="@color/button_background"
                 android:id="@+id/button"
                 android:layout_marginTop="5dp" />
         </LinearLayout>

@@ -17,35 +17,33 @@
             <TextView
                 android:id="@+id/patientNamelbl"
                 android:text="Patient Name : "
-                android:textColor="#3cb5c0"
+                android:textColor="@color/button_background"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="17dp" />
+                android:textSize="17sp"/>
             <TextView
                 android:id="@+id/patientName"
                 android:layout_toRightOf="@id/patientNamelbl"
-                android:text="patientname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="17dp" />
+                android:textSize="17sp"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/hridlbl"
-                android:textColor="#3cb5c0"
+                android:textColor="@color/button_background"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="HRID : "
-                android:textSize="17dp"/>
+                android:textSize="17sp"/>
             <TextView
                 android:id="@+id/hrid"
                 android:layout_toRightOf="@id/hridlbl"
-                android:text="hrid"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="17dp" />
+                android:textSize="17sp" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -53,37 +51,34 @@
             <TextView
                 android:id="@+id/crnolbl"
                 android:text="Case Record : "
-                android:textSize="17dp"
-                android:textColor="#3cb5c0"
+                android:textSize="17sp"
+                android:textColor="@color/button_background"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/crno"
                 android:layout_toRightOf="@id/crnolbl"
-                android:text="CR"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="17dp" />
+                android:textSize="17sp"/>
         </RelativeLayout>
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text=""
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:id="@+id/ghidcb"
             android:clickable="false"
-            android:buttonTint="#000"
-            android:shadowColor="#FFF"/>
+            android:buttonTint="@color/colorPrimary"
+            android:shadowColor="@color/white"/>
         <CheckBox
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:id="@+id/proofcb"
             android:clickable="false"
-            android:buttonTint="#000"
-            android:shadowColor="#FFF"/>
+            android:buttonTint="@color/colorPrimary"
+            android:shadowColor="@color/white"/>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -94,7 +89,7 @@
                 android:hint="Type here to get suggestions"
                 android:id="@+id/cclist"
                 android:minLines="1"
-                android:textColor="#000"/>
+                android:textColor="@color/black"/>
             <ImageView
                 android:id="@+id/addCidBtn"
                 android:layout_width="wrap_content"
@@ -110,32 +105,34 @@
             android:id="@+id/cclistlbl"
             android:layout_marginTop="30dp"
             android:text="CC List :"
-            android:textSize="18dp"
-            android:textColor="#3cb5c0"/>
+            android:textSize="17sp"
+            android:textColor="@color/button_background"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/cclistdata"
+            android:textColor="@color/black"
             android:layout_marginTop="10dp"
-            android:textSize="15dp"/>
+            android:textSize="15sp"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
+            android:textColor="@color/black"
             android:minLines="1"
             android:id="@+id/desc"
             android:layout_marginTop="10dp"
             android:hint="Description"
             android:layout_below="@+id/cclistdata"/>
         <Button
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/sendShareBtn"
             android:text="Send"
             android:textAllCaps="false"
             android:layout_gravity="center"
-            android:background="#3cb5c0"
-            android:textColor="#fff"
+            android:background="@color/button_background"
+            android:textColor="@color/white"
             android:layout_marginTop="15dp"/>
     </LinearLayout>
 

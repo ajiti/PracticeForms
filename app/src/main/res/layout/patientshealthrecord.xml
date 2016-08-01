@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="wrap_content">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <LinearLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:id="@+id/mainrecord"
         android:layout_marginTop="10dp"
-        android:layout_height="wrap_content" android:orientation="horizontal" android:weightSum="0.7">
+        android:weightSum="0.7">
 
-        <TextView android:id="@+id/textbg"
+        <TextView
+            android:id="@+id/textbg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:textColor="#FFF"
+            android:textColor="@color/white"
             android:textStyle=""
             android:height="35dip"
             android:width="35dip"
@@ -24,29 +28,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingLeft="10dp"
-        android:orientation="vertical" android:layout_weight="1" >
-
-<!--        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/namelabel"
-            android:textSize="15dp"
-            android:textColor="#3cb5c0"
-            android:layout_marginTop="10dp"
-            android:text="Name :"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="#000000"
-            android:fontFamily=""
-            android:id="@+id/name" />-->
+        android:orientation="vertical"
+        android:layout_weight="1" >
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#3f51b5"
+            android:textColor="@color/colorPrimary"
             android:textSize="22dp"
             android:textStyle="bold"
             android:gravity="start|center_vertical"/>
@@ -56,49 +45,49 @@
             android:layout_height="wrap_content"
             android:text="Phone /Email :"
             android:textSize="15dp"
-            android:textColor="#3cb5c0"
+            android:textColor="@color/colorAccent"
             android:id="@+id/phone_email_label"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:id="@+id/phone_email" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="ProofDetails :"
             android:textSize="15dp"
-            android:textColor="#3cb5c0"
+            android:textColor="@color/colorAccent"
             android:id="@+id/proof_label" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:id="@+id/proof" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#3cb5c0"
+            android:textColor="@color/colorAccent"
             android:textSize="15dp"
             android:text="Date of Birth /Gender :"
             android:id="@+id/dobgender_label" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:id="@+id/dobgender" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#3cb5c0"
+            android:textColor="@color/colorAccent"
             android:textSize="15dp"
             android:text="Reg.No :"
             android:id="@+id/hridlabel" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:id="@+id/hrid" />
     </LinearLayout>
     <ImageView

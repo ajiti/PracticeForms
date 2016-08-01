@@ -56,26 +56,27 @@ public class FileAttachmentAdapter extends BaseAdapter {
                 LayoutInflater inflater = ((Activity) context).getLayoutInflater();
                 convertView = inflater.inflate(R.layout.file_attachment, null);
             }
+
             TextView uploadFile = (TextView) convertView.findViewById(R.id.attachmentTitle);
             TextView labelNumber = (TextView) convertView.findViewById(R.id.labelNumber);
             ImageView download = (ImageView) convertView.findViewById(R.id.download);
             FileAttachmentDTO attachment = (FileAttachmentDTO) getItem(position);
             if(attachment != null) {
                 labelNumber.setText((position + 1) + ") ");
-                uploadFile.setText(attachment.getOrgfilename());
+                final String fileName = attachment.getOrgfilename();
+                uploadFile.setText(fileName);
                 String imagePath = attachment.getFullimagepath();
-                final String image = imagePath.substring(imagePath.lastIndexOf("/")+1);
+                final String fileId = imagePath.substring(imagePath.lastIndexOf("/")+1);
                 download.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent fileIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(ServerUtil.serverUrl + "VCRegionalAPP/rest/caserecordinsert/download;f=" + image));
+                        Intent fileIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(ServerUtil.serverUrl + "VCRegionalAPP/rest/caserecordinsert/download;fileId=" + fileId + ";fileName=" + fileName));
                         context.startActivity(fileIntent);
                     }
                 });
             }
-        }
-        catch (Exception e) {
-            Log.e(TAG, "Exception", e);
+        } catch (Exception e) {
+            Log.e(TAG, e.getLocalizedMessage(), e);
         }
         return convertView;
     }

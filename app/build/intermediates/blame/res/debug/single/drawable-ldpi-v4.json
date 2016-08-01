@@ -8,8 +8,16 @@
         "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_case_records.png"
     },
     {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_clear_white.png",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_clear_white.png"
+    },
+    {
         "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_menu_24dp.png",
         "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_menu_24dp.png"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_cancel_white_24dp.png",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_cancel_white_24dp.png"
     },
     {
         "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\ic_info_outline_black_24dp.png",

@@ -8,6 +8,7 @@
     android:paddingRight="16dp"
     android:paddingTop="13dp"
     android:paddingBottom="13dp"
+    android:background="@color/white"
     tools:context=".DischargeSheetActivity">
 
     <LinearLayout
@@ -20,7 +21,8 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Method of Admission"/>
+            android:text="@string/discharge_sheet_admission_1"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -30,12 +32,14 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:id="@+id/method_Admission"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Source of Admission"/>
+            android:text="@string/discharge_sheet_admission_2"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -45,12 +49,14 @@
             android:id="@+id/source_Admission"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Hospital Site"/>
+            android:text="@string/discharge_sheet_admission_3"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -60,12 +66,14 @@
             android:id="@+id/hospital_Site"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Responsible Trust"/>
+            android:text="@string/discharge_sheet_admission_4"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -75,12 +83,14 @@
             android:id="@+id/responsible_Trust"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Date of Admission"/>
+            android:text="@string/discharge_sheet_admission_5"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -90,12 +100,14 @@
             android:id="@+id/date_Admission"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Time of Admission"/>
+            android:text="@string/discharge_sheet_admission_6"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -117,7 +129,8 @@
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Date Of Discharge"/>
+            android:text="@string/discharge_sheet_discharge_1"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -127,12 +140,14 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:id="@+id/date_Discharge"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Time Of Discharge"/>
+            android:text="@string/discharge_sheet_discharge_2"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -142,12 +157,14 @@
             android:id="@+id/time_Discharge"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Discharge Method"/>
+            android:text="@string/discharge_sheet_discharge_3"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -157,12 +174,14 @@
             android:id="@+id/discharge_Method"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Discharge Destination"/>
+            android:text="@string/discharge_sheet_discharge_4"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -172,12 +191,14 @@
             android:id="@+id/discharge_Destination"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Discharge Consultant"/>
+            android:text="@string/discharge_sheet_discharge_5"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -187,12 +208,14 @@
             android:id="@+id/discharge_Consultant"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Discharge Specialty/Department"/>
+            android:text="@string/discharge_sheet_discharge_6"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -209,12 +232,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:id="@+id/clinicInformation">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Diagnosis at Discharge"/>
+            android:text="@string/discharge_sheet_clinic_1"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -224,12 +249,14 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:id="@+id/diagnosis_discharge"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Operations and Procedures"/>
+            android:text="@string/discharge_sheet_clinic_2"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -239,12 +266,14 @@
             android:id="@+id/operations_procedures"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Reason for Admission and Presenting Complaints"/>
+            android:text="@string/discharge_sheet_clinic_3"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -254,12 +283,14 @@
             android:id="@+id/admission_complaints"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Mental Capacity"/>
+            android:text="@string/discharge_sheet_clinic_4"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -269,12 +300,14 @@
             android:id="@+id/mental_capacity"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Advance decisions to refuse treatment and resuscitation status"/>
+            android:text="@string/discharge_sheet_clinic_5"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -284,12 +317,14 @@
             android:id="@+id/treatment_resuscitation"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Allergies"/>
+            android:text="@string/discharge_sheet_clinic_6"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -299,12 +334,14 @@
             android:id="@+id/allergies"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Risks And Warnings"/>
+            android:text="@string/discharge_sheet_clinic_7"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -314,12 +351,14 @@
             android:id="@+id/risks_warnings"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Clinical Narrative"/>
+            android:text="@string/discharge_sheet_clinic_8"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -329,12 +368,14 @@
             android:id="@+id/clinical_narrative"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Relevant Investigations and Results"/>
+            android:text="@string/discharge_sheet_clinic_9"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -344,12 +385,14 @@
             android:id="@+id/investigations_results"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Relevant treatment and changes made to treatments"/>
+            android:text="@string/discharge_sheet_clinic_10"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -359,12 +402,14 @@
             android:id="@+id/treatment_treatments"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Measures of Physical ability and cognitive functional"/>
+            android:text="@string/discharge_sheet_clinic_11"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -374,12 +419,14 @@
             android:id="@+id/physical_cognitive"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Medication Changes"/>
+            android:text="@string/discharge_sheet_clinic_12"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -389,12 +436,14 @@
             android:id="@+id/medication_changes"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Discharge Medications"/>
+            android:text="@string/discharge_sheet_clinic_13"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -404,12 +453,14 @@
             android:id="@+id/discharge_medications"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Medication Recommendations"/>
+            android:text="@string/discharge_sheet_clinic_14"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -426,12 +477,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:id="@+id/advice_recommendations_futureplan">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Hospital(Actions required and planned)"/>
+            android:text="@string/discharge_sheet_advice_1"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -441,12 +494,14 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:id="@+id/hospital_actions"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="GP(Actions required)"/>
+            android:text="@string/discharge_sheet_advice_2"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -456,12 +511,14 @@
             android:id="@+id/gp_actions"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Community and specialist services (actions requested/planned/agreed)"/>
+            android:text="@string/discharge_sheet_advice_3"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -471,12 +528,14 @@
             android:id="@+id/community_specialist"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Information given to patient and/or authorized representative"/>
+            android:text="@string/discharge_sheet_advice_4"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -486,12 +545,14 @@
             android:id="@+id/information_patient_authorized"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Patient's concerns,expectations and wishes"/>
+            android:text="@string/discharge_sheet_advice_5"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"
@@ -501,12 +562,14 @@
             android:id="@+id/patient_con_exp_wishes"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Results awaited"/>
+            android:text="@string/discharge_sheet_advice_6"/>
+
         <EditText
             android:inputType="textMultiLine"
             android:minLines="4"

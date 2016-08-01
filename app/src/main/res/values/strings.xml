@@ -9,6 +9,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_home">Home</string>
+    <string name="menu_referred">Referred</string>
+    <string name="menu_view">View</string>
+    <string name="menu_shared">Shared</string>
+    <string name="menu_sub_head">Case Record</string>
     <string name="action_logout">Logout</string>
     <string name="title_activity_registration">Registration</string>
     <string name="title_activity_viewpatients">View Patients</string>
@@ -27,10 +31,12 @@
     <string name="info_referred_empty_records">No Referred Records Found</string>
     <string name="info_share_empty_records">No Shared Records Found</string>
     <string name="title_activity_shared_record">Shared Records</string>
-    <string name="title_activity_health_history">Health History</string>
     <string name="ok">Ok</string>
     <string name="cancel">Cancel</string>
     <string name="shared_name_string">%1$s ( %2$s )</string>
+    <string name="fill_form_msg">Please Fill The Form</string>
+    <string name="save_record_msg">Do you want to save record</string>
+    <string name="empty_save_record_msg">Do you want to continue with empty record</string>
 
     <string-array name="query_suggestions">
         <item>Android</item>
@@ -181,6 +187,23 @@
         <item>Wisconsin</item>
         <item>Wyoming</item>
     </string-array>
+
+    <!-- health history form start-->
+    <string name="title_activity_health_history">Health History</string>
+    <string name="health_hist_1">History Of Present illness</string>
+    <string name="health_hist_2">History of previous illness(Medical/Surgical)</string>
+    <string name="health_hist_3">Drug History</string>
+    <string name="health_hist_4">History of Allergies and Adverse Reactions</string>
+    <string name="health_hist_5">Personal History</string>
+    <string name="health_hist_6">Menstrual History(Female)</string>
+    <string name="health_hist_7">Social History</string>
+    <string name="health_hist_8">Family History</string>
+    <string name="health_hist_9">Systems Review (General, Cardiovascular, Respiratory, Gastrointestinal, Neurological, Genitourinary, Musculoskeletal)</string>
+    <string name="health_hist_10">Summary</string>
+    <!-- health history form end-->
+
+    <string name="prov_diag">Provisional Diagnosis</string>
+    <string name="fnl_diag">Final Diagnosis</string>
 
     <!-- dental assessment form start-->
     <string name="title_activity_dentalAssessment">Dental Assessment</string>
@@ -473,6 +496,26 @@
     <string name="title_activity_general">General Examination</string>
     <string name="title_activity_vital">Vital Signs</string>
     <string name="title_activity_amthropometry">Amthropometry</string>
+    <string name="gen_physical_exam_general_1">Consciousness</string>
+    <string name="gen_physical_exam_general_2">Mental State</string>
+    <string name="gen_physical_exam_general_3">General Appearance</string>
+    <string name="gen_physical_exam_general_4">Pallor</string>
+    <string name="gen_physical_exam_general_5">Icterus</string>
+    <string name="gen_physical_exam_general_6">Cyanosis</string>
+    <string name="gen_physical_exam_general_7">Clubbing</string>
+    <string name="gen_physical_exam_general_8">Lymph Adenopathy</string>
+    <string name="gen_physical_exam_general_9">Edema</string>
+
+    <string name="gen_physical_exam_vital_1">Temperature(oF)</string>
+    <string name="gen_physical_exam_vital_2">Pulse(b/m)</string>
+    <string name="gen_physical_exam_vital_3">Respiration(c/m)</string>
+    <string name="gen_physical_exam_vital_4">Blood Pressure(mm/hg)</string>
+
+    <string name="gen_physical_exam_amthropometry_1">Height(meters)</string>
+    <string name="gen_physical_exam_amthropometry_2">Weight(kg)</string>
+    <string name="gen_physical_exam_amthropometry_3">Body Mass Index(BMI)-(kg/m2)</string>
+    <string name="gen_physical_exam_amthropometry_4">Mid-Arm Circumference(in children)-(cm)</string>
+    <string name="gen_physical_exam_amthropometry_5">Head Circumference(in children)-(cm)</string>
     <!--  general examination form end -->
 
     <!--  discharge sheet form start -->
@@ -481,6 +524,42 @@
     <string name="title_activity_discharge_details">Discharge Details</string>
     <string name="title_activity_clinic">Clinic Information</string>
     <string name="title_activity_advice_plan">Advice,Recommendations and Future Plan</string>
+    
+    <string name="discharge_sheet_admission_1">Method of Admission</string>
+    <string name="discharge_sheet_admission_2">Source of Admission</string>
+    <string name="discharge_sheet_admission_3">Hospital Site</string>
+    <string name="discharge_sheet_admission_4">Responsible Trust</string>
+    <string name="discharge_sheet_admission_5">Date of Admission</string>
+    <string name="discharge_sheet_admission_6">Time of Admission</string>
+
+    <string name="discharge_sheet_discharge_1">Date Of Discharge</string>
+    <string name="discharge_sheet_discharge_2">Time Of Discharge</string>
+    <string name="discharge_sheet_discharge_3">Discharge Method</string>
+    <string name="discharge_sheet_discharge_4">Discharge Destination</string>
+    <string name="discharge_sheet_discharge_5">Discharge Consultant</string>
+    <string name="discharge_sheet_discharge_6">Discharge Specialty/Department</string>
+
+    <string name="discharge_sheet_clinic_1">Diagnosis at Discharge</string>
+    <string name="discharge_sheet_clinic_2">Operations and Procedures</string>
+    <string name="discharge_sheet_clinic_3">Reason for Admission and Presenting Complaints</string>
+    <string name="discharge_sheet_clinic_4">Mental Capacity</string>
+    <string name="discharge_sheet_clinic_5">Advance decisions to refuse treatment and resuscitation status</string>
+    <string name="discharge_sheet_clinic_6">Allergies</string>
+    <string name="discharge_sheet_clinic_7">Risks And Warnings</string>
+    <string name="discharge_sheet_clinic_8">Clinical Narrative</string>
+    <string name="discharge_sheet_clinic_9">Relevant Investigations and Results</string>
+    <string name="discharge_sheet_clinic_10">Relevant treatment and changes made to treatments</string>
+    <string name="discharge_sheet_clinic_11">Measures of Physical ability and cognitive functional</string>
+    <string name="discharge_sheet_clinic_12">Medication Changes</string>
+    <string name="discharge_sheet_clinic_13">Discharge Medications</string>
+    <string name="discharge_sheet_clinic_14">Medication Recommendations</string>
+
+    <string name="discharge_sheet_advice_1">Hospital (Actions required and planned)</string>
+    <string name="discharge_sheet_advice_2">GP (Actions required)</string>
+    <string name="discharge_sheet_advice_3">Community and specialist services (actions requested / planned / agreed)</string>
+    <string name="discharge_sheet_advice_4">Information given to patient and / or authorized representative</string>
+    <string name="discharge_sheet_advice_5">Patient\'s concerns, expectations and wishes</string>
+    <string name="discharge_sheet_advice_6">Results awaited</string>
     <!--  discharge sheet form end -->
 
     <string name="title_activity_investigation_biochemistry">Investigation-BioChemistry</string>

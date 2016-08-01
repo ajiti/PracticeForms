@@ -13,6 +13,7 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -183,5 +184,19 @@ public class Util {
         params.height = totalHeight + (listView.getDividerHeight() * (listAdapter.getCount() - 1)) + 10;
         listView.setLayoutParams(params);
         listView.requestLayout();
+    }
+
+    public static void hideKeyboard(View view) {
+        InputMethodManager imm = (InputMethodManager) view.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+    }
+
+    public static void showKeyboard(View view) {
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.GINGERBREAD_MR1 && view.hasFocus()) {
+            view.clearFocus();
+        }
+        view.requestFocus();
+        InputMethodManager imm = (InputMethodManager) view.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.showSoftInput(view, 0);
     }
 }

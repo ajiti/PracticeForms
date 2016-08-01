@@ -40,10 +40,6 @@
         "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_home.xml"
     },
     {
-        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_loginactivity.xml",
-        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_loginactivity.xml"
-    },
-    {
         "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\poupup_menu.xml",
         "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\poupup_menu.xml"
     },
@@ -64,12 +60,12 @@
         "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_viewpatients.xml"
     },
     {
-        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_microbiology_form.xml",
-        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_microbiology_form.xml"
-    },
-    {
         "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_dental_assessment.xml",
         "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_dental_assessment.xml"
+    },
+    {
+        "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_microbiology_form.xml",
+        "source": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\src\\main\\res\\menu\\menu_microbiology_form.xml"
     },
     {
         "merged": "C:\\Users\\AJITI\\AndroidStudioProjects\\PracticeForms\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_patient_detail.xml",
